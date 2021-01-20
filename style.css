@@ -1,8 +1,16 @@
 body {
 	margin: 0; 
-	padding: 0;
+	padding: 0 35px;
 	font-family: 'Raleway', sans-serif;
+	/*letter-spacing: -0.5px;*/
+}
 
+h1 {
+	font-size: 30px;
+}
+
+p {
+	font-size: 18px;
 }
 
 ul {
@@ -13,8 +21,8 @@ ul {
 header {
 	display: flex;
 	justify-content: space-between;
-	padding: 0 25px;
-	border: 3px solid yellow;
+	padding: 30px 0;
+	/*border: 3px solid yellow;*/
 }
 
 header nav ul {
@@ -23,17 +31,37 @@ header nav ul {
 }
 
 header nav ul li {
-	padding: 25px;
-}
-
-header nav ul li:hover {
-	top: 0;
-	border-top: 5px solid #0065FC;
+	width: 140px;
+	text-align: center;
+	background-color: orange;
+	/*border: 3px solid grey;*/
 }
 
 header nav ul li a {
+	/*display: block;*/
+	/*position: relative;*/
 	color: black;
+	text-align: center;
 	text-decoration: none;
+	font-size: 20px;
+}
+
+header nav ul li a:hover {
+	display: flex;
+	position: relative;
+	text-align: center;
+	color: #0065FC;
+	padding-top: 50px;
+	width: 140px;
+	border-top: 5px solid #0065FC;
+}
+
+h2 {
+	width: 100%;
+	height: 30px;
+	font-size: 24px;
+	padding-left: 20px;
+	/*border: 3px solid red;*/
 }
 
 #inscription a {
@@ -42,74 +70,120 @@ header nav ul li a {
 }
 
 /* Main section zone de recherche */
+#recherche #lieu {
+	padding: 0;
+	letter-spacing: 1px;
+
+}
+
 #location {
+	position: relative;
+	top: 5px;
 	background-color: #F2F2F2;
-	color: black;
-	border: 1px solid #F2F2F2;
-	border-radius: 10px 0 0 10px;
-	padding: 12px;
+	text-align: center;
+	font-size: 24px;
+	border-radius: 14px 0 0 14px;
+	padding: 14px;
+	width: 30px;
+	height: 23px;
 }
 
 input {
 	border: 1px solid #F2F2F2;
 	padding: 12px;
+	width: 273px;
+	height: 23px;
 }
 
 ::placeholder {
 	color: black;
-	font-weight: bold;
-	font-size: 16px;
+	font-weight: 800;
+	font-size: 20px;
+	padding-left: 10px;
 }
 
 button {
+	font-size: 20px;
 	color: white;
 	background-color: #0065FC;
 	border: none;
-	border-radius: 0 10px 10px 0;
-	padding: 12px;
+	border-radius: 0 14px 14px 0;
+	padding: 13px;
+	width: 180px;
+	height: 49px;
 }
 /* Main checkboxes */
+#recherche {
+	/*border: 3px solid coral;*/
+}
+
+#recherche h1 {
+	margin: 0;
+	font-weight: 900;
+	/*border: 3px solid purple;*/
+}
+
+#recherche p {
+	letter-spacing: normal;
+	padding-left: 15px;
+}
+
 main {
-	padding: 0 25px;
+	/*padding: 0 25px;*/
 	justify-content: space-between;
-	border: 3px solid green;
+	/*border: 3px solid green;*/
 }
 
 main section ul {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1150px;
 	padding: 0;
-	font-weight: bold;
+	font-weight: 900;
 	border: 3px solid pink;
 }
 
 main section ul p {
 	display: flex;
+	align-items: center;
 	margin: 0;
-	padding: 12px 12px 12px 0;
+	font-size: 20px;
 }
 
 main section ul li {
-	padding: 12px;
+	display: flex;
+	align-items: center;
+	/*position: relative;*/
+	padding: 0 20px;
+	margin: 0 0px;
+	height: 50px;
+	/*top: 3px;*/
+	width: auto;
 	border: 3px solid #dfdede;
-	border-radius: 0 50px 50px 0;
-	font-weight: 900;
+	border-radius: 50px;
+	font-size: 20px;
 }
 /* Regarder animation css */
-main section ul li i {
+main section ul li span {
+	position: absolute;
+	/*top: 0;*/
+	/*left: 5px;*/
 	background-color: #DEEBFF;
 	color: #0065FC;
 	font-size: 16px;
 	border: 1px solid #F2F2F2;
-	width: 30px;
-	height: 30px;
-	/*text-align: center;*/
+	width: 15px;
+	height: 28px;
 	border-radius: 30px;/*revenir plus tard*/
-	padding: 20px 10px 8px 20px;
+	padding: 15px 20px 12px 20px;
+	margin-left: 5px;
 }
 
 .filtres:hover {
 	background-color: #0065FC;
 	color: white;
+	font-weight: 600;
 }
  
 #info {
@@ -124,24 +198,42 @@ main section ul li i {
 }
 
 /* Container cartes hébergements */
-article {
+#heb-pop {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#hebergements {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 	background-color: #F2F2F2;
 	border-radius: 25px;
-	width: 60%;
-	height: 1500px;
+	width: 65%;
+	height: 670px;
+	padding: 25px;
+	/*border: 3px solid blue;*/
+}
+
+#hebergements h2 {
+	margin: 0;
+	position: relative;
+	/*top: 35px;*/
 }
 
 /* Container heb1 */
 .card-heb1 {
 	display: block;
-	width: 300px;
-	height: 200px;
-	/*margin: 0px auto; /* Centrage au centre de la page, ne pas oublier display block */
+	width: 280px;
+	height: 220px;
+	margin: 20px; /* Centrage au centre de la page, ne pas oublier display block */
 	padding: 4px; /* Contour autour de l'image */
 	background-color: white;
 	box-shadow: 0px 5px 20px #997; /* Ombrage */
 	border-radius: 25px;
-	border: 5px solid orange;
+	/*border: 5px solid orange;*/
 }
 
 .card-heb1 a { /* Stylisation des liens */
@@ -162,7 +254,7 @@ article {
 }
 
 .card-image-heb1 img {
-	/* Centraged en f° de la taille de l'image */
+	/* Centrage en f° de la taille de l'image */
 	width: 100%; /* Penser à modifier selon la partie de l'img que l'on souhaite */
 	position: absolute;
 	top: 43%; /* Décale l'image de 50% du haut */
@@ -176,6 +268,7 @@ article {
 /* Card-body heb1 */
 .card-body-heb1 {
 	width: 300px;
+	line-height: 28px;
 	/*height: 100px;*/
 	text-align: left; /* Alignement de ts les éléments à l'intérieur de .card-body */
 	padding: 15px 20px; /* Evite que les éléments soient collés, et ils sont décalés du rebord */
@@ -184,6 +277,7 @@ article {
 
 .card-body-heb1 h4, .card-body-heb1 p {
 	margin: 0;
+	font-size: 20px;
 }
 
 .card-except-heb1 {
@@ -193,362 +287,147 @@ article {
 .card-except-heb1 i {
 	color: #dad6d6;
 	top: 50%;
+	font-size: 14px;
 }
 
-/* Container heb2 */
-.card-heb2 {
-	display: block;
-	width: 300px;
-	height: 200px;
-	/*margin: 0px auto; /* Centrage au centre de la page, ne pas oublier display block */
-	padding: 4px; /* Contour autour de l'image */
-	background-color: white;
-	box-shadow: 0px 5px 20px #997; /* Ombrage */
-	border-radius: 25px;
-	border: 5px solid orange;
+.card-except-heb1 span {
+	font-size: 14px;
 }
 
-.card-heb2 a { /* Stylisation des liens */
-	color: #333;
+#more {
+	top: 10px;
+	width: 100%;
+	height: 40px;
+	padding-left: 20px;
+	color: black;
+	font-weight: bold;
 	text-decoration: none;
-}
-
-.card-heb2:hover .card-image-heb2 img {
-	width: 120%; /* Zoom de l'image */
-}
- /* Card-image heb2 */
-.card-image-heb2 {
-	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	height: 120px;
-	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
-	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
-	border-radius: 25px 25px 0 0 ;
-}
-
-.card-image-heb2 img {
-	/* Centraged en f° de la taille de l'image */
-	width: 100%; /* Penser à modifier selon la partie de l'img que l'on souhaite */
-	position: absolute;
-	top: 43%; /* Décale l'image de 50% du haut */
-	left: 50%; /* Décale l'image de 50% de left */
-	transform: translate(-50%, -50%); /* Centrage de l'image */
-	/* Dynamiser grâce à une transition */
-	transition-duration: .3s;
-	transition-timing-function: ease;
-}
-
-/* Card-body heb2 */
-.card-body-heb2 {
-	width: 300px;
-	/*height: 100px;*/
-	text-align: left; /* Alignement de ts les éléments à l'intérieur de .card-body */
-	padding: 15px 20px; /* Evite que les éléments soient collés, et ils sont décalés du rebord */
-	box-sizing: border-box; /* Permet que le padding soit inclus dans notre bloc et non en plus du bloc */
-}
-
-.card-body-heb2 h4, .card-body-heb2 p {
-	margin: 0;
-}
-
-.card-except-heb2 {
-	color: #0065FC;
-}
-
-.card-except-heb2 i {
-	color: #dad6d6;
-	top: 50%;
-}
-
-/* Container heb3 */
-.card-heb3 {
-	display: block;
-	width: 300px;
-	height: 200px;
-	/*margin: 0px auto; /* Centrage au centre de la page, ne pas oublier display block */
-	padding: 4px; /* Contour autour de l'image */
-	background-color: white;
-	box-shadow: 0px 5px 20px #997; /* Ombrage */
-	border-radius: 25px;
-	border: 5px solid orange;
-}
-
-.card-heb3 a { /* Stylisation des liens */
-	color: #333;
-	text-decoration: none;
-}
-
-.card-heb3:hover .card-image-heb3 img {
-	width: 120%; /* Zoom de l'image */
-}
- /* Card-image heb3 */
-.card-image-heb3 {
-	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	height: 120px;
-	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
-	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
-	border-radius: 25px 25px 0 0 ;
-}
-
-.card-image-heb3 img {
-	/* Centraged en f° de la taille de l'image */
-	width: 100%; /* Penser à modifier selon la partie de l'img que l'on souhaite */
-	position: absolute;
-	top: 43%; /* Décale l'image de 50% du haut */
-	left: 50%; /* Décale l'image de 50% de left */
-	transform: translate(-50%, -50%); /* Centrage de l'image */
-	/* Dynamiser grâce à une transition */
-	transition-duration: .3s;
-	transition-timing-function: ease;
-}
-
-/* Card-body heb3 */
-.card-body-heb3 {
-	width: 300px;
-	/*height: 100px;*/
-	text-align: left; /* Alignement de ts les éléments à l'intérieur de .card-body */
-	padding: 15px 20px; /* Evite que les éléments soient collés, et ils sont décalés du rebord */
-	box-sizing: border-box; /* Permet que le padding soit inclus dans notre bloc et non en plus du bloc */
-}
-
-.card-body-heb3 h4, .card-body-heb3 p {
-	margin: 0;
-}
-
-.card-except-heb3 {
-	color: #0065FC;
-}
-
-.card-except-heb3 i {
-	color: #dad6d6;
-	top: 50%;
-}
-
-/* Container heb4 */
-.card-heb4 {
-	display: block;
-	width: 300px;
-	height: 200px;
-	/*margin: 0px auto; /* Centrage au centre de la page, ne pas oublier display block */
-	padding: 4px; /* Contour autour de l'image */
-	background-color: white;
-	box-shadow: 0px 5px 20px #997; /* Ombrage */
-	border-radius: 25px;
-	border: 5px solid orange;
-}
-
-.card-heb4 a { /* Stylisation des liens */
-	color: #333;
-	text-decoration: none;
-}
-
-.card-heb4:hover .card-image-heb4 img {
-	width: 120%; /* Zoom de l'image */
-}
- /* Card-image heb4 */
-.card-image-heb4 {
-	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	height: 120px;
-	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
-	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
-	border-radius: 25px 25px 0 0 ;
-}
-
-.card-image-heb4 img {
-	/* Centraged en f° de la taille de l'image */
-	width: 100%; /* Penser à modifier selon la partie de l'img que l'on souhaite */
-	position: absolute;
-	top: 43%; /* Décale l'image de 50% du haut */
-	left: 50%; /* Décale l'image de 50% de left */
-	transform: translate(-50%, -50%); /* Centrage de l'image */
-	/* Dynamiser grâce à une transition */
-	transition-duration: .3s;
-	transition-timing-function: ease;
-}
-
-/* Card-body heb4 */
-.card-body-heb4 {
-	width: 300px;
-	/*height: 100px;*/
-	text-align: left; /* Alignement de ts les éléments à l'intérieur de .card-body */
-	padding: 15px 20px; /* Evite que les éléments soient collés, et ils sont décalés du rebord */
-	box-sizing: border-box; /* Permet que le padding soit inclus dans notre bloc et non en plus du bloc */
-}
-
-.card-body-heb4 h4, .card-body-heb4 p {
-	margin: 0;
-}
-
-.card-except-heb4 {
-	color: #0065FC;
-}
-
-.card-except-heb4 i {
-	color: #dad6d6;
-	top: 50%;
-}
-
-/* Container heb5 */
-.card-heb5 {
-	display: block;
-	width: 300px;
-	height: 200px;
-	/*margin: 0px auto; /* Centrage au centre de la page, ne pas oublier display block */
-	padding: 4px; /* Contour autour de l'image */
-	background-color: white;
-	box-shadow: 0px 5px 20px #997; /* Ombrage */
-	border-radius: 25px;
-	border: 5px solid orange;
-}
-
-.card-heb5 a { /* Stylisation des liens */
-	color: #333;
-	text-decoration: none;
-}
-
-.card-heb5:hover .card-image-heb5 img {
-	width: 120%; /* Zoom de l'image */
-}
- /* Card-image heb5 */
-.card-image-heb5 {
-	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	height: 120px;
-	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
-	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
-	border-radius: 25px 25px 0 0 ;
-}
-
-.card-image-heb5 img {
-	/* Centraged en f° de la taille de l'image */
-	width: 100%; /* Penser à modifier selon la partie de l'img que l'on souhaite */
-	position: absolute;
-	top: 43%; /* Décale l'image de 50% du haut */
-	left: 50%; /* Décale l'image de 50% de left */
-	transform: translate(-50%, -50%); /* Centrage de l'image */
-	/* Dynamiser grâce à une transition */
-	transition-duration: .3s;
-	transition-timing-function: ease;
-}
-
-/* Card-body heb5 */
-.card-body-heb5 {
-	width: 300px;
-	/*height: 100px;*/
-	text-align: left; /* Alignement de ts les éléments à l'intérieur de .card-body */
-	padding: 15px 20px; /* Evite que les éléments soient collés, et ils sont décalés du rebord */
-	box-sizing: border-box; /* Permet que le padding soit inclus dans notre bloc et non en plus du bloc */
-}
-
-.card-body-heb5 h4, .card-body-heb5 p {
-	margin: 0;
-}
-
-.card-except-heb5 {
-	color: #0065FC;
-}
-
-.card-except-heb5 i {
-	color: #dad6d6;
-	top: 50%;
-}
-
-/* Container heb6 */
-.card-heb6 {
-	display: block;
-	width: 300px;
-	height: 200px;
-	/*margin: 0px auto; /* Centrage au centre de la page, ne pas oublier display block */
-	padding: 4px; /* Contour autour de l'image */
-	background-color: white;
-	box-shadow: 0px 5px 20px #997; /* Ombrage */
-	border-radius: 25px;
-	border: 5px solid orange;
-}
-
-.card-heb6 a { /* Stylisation des liens */
-	color: #333;
-	text-decoration: none;
-}
-
-.card-heb6:hover .card-image-heb6 img {
-	width: 120%; /* Zoom de l'image */
-}
- /* Card-image heb6 */
-.card-image-heb6 {
-	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	height: 120px;
-	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
-	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
-	border-radius: 25px 25px 0 0 ;
-}
-
-.card-image-heb6 img {
-	/* Centraged en f° de la taille de l'image */
-	width: 100%; /* Penser à modifier selon la partie de l'img que l'on souhaite */
-	position: absolute;
-	top: 43%; /* Décale l'image de 50% du haut */
-	left: 50%; /* Décale l'image de 50% de left */
-	transform: translate(-50%, -50%); /* Centrage de l'image */
-	/* Dynamiser grâce à une transition */
-	transition-duration: .3s;
-	transition-timing-function: ease;
-}
-
-/* Card-body heb6 */
-.card-body-heb6 {
-	width: 300px;
-	/*height: 100px;*/
-	text-align: left; /* Alignement de ts les éléments à l'intérieur de .card-body */
-	padding: 15px 20px; /* Evite que les éléments soient collés, et ils sont décalés du rebord */
-	box-sizing: border-box; /* Permet que le padding soit inclus dans notre bloc et non en plus du bloc */
-}
-
-.card-body-heb6 h4, .card-body-heb6 p {
-	margin: 0;
-}
-
-.card-except-heb6 {
-	color: #0065fc;
-}
-
-.card-except-heb6 i {
-	color: #dad6d6;
-	top: 50%;
+	/*border: 3px solid yellow;*/
 }
 
 /* Container populaires 1 */
-.card-pop1 {
+aside {
 	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #F2F2F2;
+	border-radius: 25px;
+	width: 25%;
+	height: 670px;
+	/*border: 3px solid purple;*/
+	padding: 25px;
+}
+#stats h2 {
+	margin: 0;
+	position: relative;
+	float: left;
+	top: 8px;
+	left: -15px;
 	width: 350px;
-	height: 200px;
-	/*margin: 0px auto; /* Centrage au centre de la page, ne pas oublier display block */
+	font-size: 24px;
+}
+#stats i {
+	position: relative;
+	float: right;
+	top: -28px;
+	font-size: 30px;
+}
+
+.card-pop {
+	position: relative;
+	top: -30px;
+	/*height: 800px;*/
+	/*border: 3px solid black;*/
+}
+
+.card-pop1, .card-pop2, .card-pop3 {
+	width: 380px;
+	height: 135px;
+	margin-top: 50px; /* Centrage au centre de la page, ne pas oublier display block */
 	padding: 4px; /* Contour autour de l'image */
 	background-color: white;
 	box-shadow: 0px 5px 20px #997; /* Ombrage */
 	border-radius: 25px;
-	border: 5px solid orange;
+	/*border: 5px solid yellow;*/
 }
 
-.card-pop1 a { /* Stylisation des liens */
+.card-pop1 a, .card-pop2 a, .card-pop3 a { /* Stylisation des liens */
 	color: #333;
 	text-decoration: none;
 }
 
-.card-pop1:hover .card-image-pop1 img {
-	width: 120%; /* Zoom de l'image */
+.card-pop1:hover .card-image-pop1 img { 
+	width: 210%; /* Zoom de l'image */
 }
- /* Card-image pop1 */
+
+.card-pop2:hover .card-image-pop2 img { 
+	width: 210%; /* Zoom de l'image */
+}
+
+.card-pop3:hover .card-image-pop3 img { 
+	width: 210%; /* Zoom de l'image */
+}
+ /* Card-image pop1, pop2, pop3 */
 .card-image-pop1 {
 	float: left;
 	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
 	width: 120px;
-	height: 120px;
+	height: 130px;
 	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
 	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
 	border-radius: 25px 0px 0px 25px;
+	/*border: 3px solid orange;*/
 }
 
 .card-image-pop1 img {
-	/* Centraged en f° de la taille de l'image */
+	/* Centrage en f° de la taille de l'image */
+	width: 170%; /* Penser à modifier selon la partie de l'img que l'on souhaite */
+	position: absolute;
+	top: 50%; /* Décale l'image de 50% du haut */
+	left: 10%; /* Décale l'image de 50% de left */
+	transform: translate(-27%, -50%); /* Centrage de l'image */
+	/* Dynamiser grâce à une transition */
+	transition-duration: .3s;
+	transition-timing-function: ease;
+}
+
+.card-image-pop2 {
+	float: left;
+	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
+	width: 120px;
+	height: 130px;
+	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
+	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
+	border-radius: 25px 0px 0px 25px;
+	/*border: 3px solid orange;*/
+}
+
+.card-image-pop2 img {
+	/* Centrage en f° de la taille de l'image */
+	width: 150%; /* Penser à modifier selon la partie de l'img que l'on souhaite */
+	position: absolute;
+	top: 50%; /* Décale l'image de 50% du haut */
+	left: 10%; /* Décale l'image de 50% de left */
+	transform: translate(-23%, -50%); /* Centrage de l'image */
+	/* Dynamiser grâce à une transition */
+	transition-duration: .3s;
+	transition-timing-function: ease;
+}
+
+.card-image-pop3 {
+	float: left;
+	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
+	width: 120px;
+	height: 130px;
+	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
+	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
+	border-radius: 25px 0px 0px 25px;
+	/*border: 3px solid orange;*/
+}
+
+.card-image-pop3 img {
+	/* Centrage en f° de la taille de l'image */
 	width: 100%; /* Penser à modifier selon la partie de l'img que l'on souhaite */
 	position: absolute;
 	top: 50%; /* Décale l'image de 50% du haut */
@@ -561,158 +440,90 @@ article {
 
 /* Card-body pop1 */
 .card-body-pop1 {
-	width: 300px;
-	height: 200px;
-	text-align: left; /* Alignement de ts les éléments à l'intérieur de .card-body */
+	display: flex;
+	flex-wrap: wrap;
+	/*left: 80px;*/
+	width: 250px;
+	height: 130px;
+	letter-spacing: 0.1px;
+	/*text-align: right; /* Alignement de ts les éléments à l'intérieur de .card-body */
 	padding: 0px 5px; /* Evite que les éléments soient collés, et ils sont décalés du rebord */
 	box-sizing: border-box; /* Permet que le padding soit inclus dans notre bloc et non en plus du bloc */
+	/*border: 3px solid green;*/
 }
 
-.card-body-pop1 h4, .card-body-pop1 p {
-	margin: 0;
+.card-body-pop1 h4 {
+	position: relative;
+	top: -12px;
+	margin: 10px;
+	font-size: 20px;
+	/*border: 3px solid grey;*/
 }
 
+.card-body-pop1 p {
+	position: relative;
+	top: -28px;
+	margin: 10px;
+	font-size: 16px;
+	/*border: 3px solid grey;*/
+}
 .card-except-pop1 {
-	margin-top: 20px;
+	margin: 10px;
 	color: #0065fc;
 }
 
 .card-except-pop1 i {
+	padding: 0;
 	color: #dad6d6;
-	top: 50%;
+	position: relative;
+	top: -10px;
+	font-size: 14px;
 }
 
-/* Container pop2 */
-.card-pop2 {
-	display: block;
-	width: 300px;
-	height: 120px;
-	/*margin: 0px auto; /* Centrage au centre de la page, ne pas oublier display block */
-	padding: 4px; /* Contour autour de l'image */
-	background-color: white;
-	box-shadow: 0px 5px 20px #997; /* Ombrage */
-	border-radius: 25px;
-	border: 5px solid orange;
+.card-except-pop1 span {
+	padding: 0;
+	position: relative;
+	top: -10px;
+	font-size: 14px;
+	/*border: 3px solid orange;*/
 }
 
-.card-pop2 a { /* Stylisation des liens */
-	color: #333;
-	text-decoration: none;
-}
-
-.card-pop2:hover .card-image-pop2 img {
-	width: 120%; /* Zoom de l'image */
-}
- /* Card-image pop2 */
-.card-image-pop2 {
-	float: left;
-	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	width: 120px;
-	height: 120px;
-	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
-	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
-	border-radius: 25px 0px 0px 25px;
-}
-
-.card-image-pop2 img {
-	/* Centraged en f° de la taille de l'image */
-	width: 100%; /* Penser à modifier selon la partie de l'img que l'on souhaite */
-	position: absolute;
-	top: 43%; /* Décale l'image de 50% du haut */
-	left: 50%; /* Décale l'image de 50% de left */
-	transform: translate(-50%, -50%); /* Centrage de l'image */
-	/* Dynamiser grâce à une transition */
-	transition-duration: .3s;
-	transition-timing-function: ease;
-}
-
-/* Card-body pop2 */
-.card-body-pop2 {
-	width: 300px;
-	/*height: 100px;*/
-	text-align: left; /* Alignement de ts les éléments à l'intérieur de .card-body */
-	padding: 15px 20px; /* Evite que les éléments soient collés, et ils sont décalés du rebord */
-	box-sizing: border-box; /* Permet que le padding soit inclus dans notre bloc et non en plus du bloc */
-}
-
-.card-body-pop2 h4, .card-body-pop2 p {
-	margin: 0;
-}
-
-.card-except-pop2 {
-	color: #0065fc;
-}
-
-.card-except-pop2 i {
-	color: #dad6d6;
-	top: 50%;
-}
-
-/* Container pop3 */
-.card-pop3 {
-	display: block;
-	width: 300px;
-	height: 200px;
-	/*margin: 0px auto; /* Centrage au centre de la page, ne pas oublier display block */
-	padding: 4px; /* Contour autour de l'image */
-	background-color: white;
-	box-shadow: 0px 5px 20px #997; /* Ombrage */
-	border-radius: 25px;
-	border: 5px solid orange;
-}
-
-.card-pop3 a { /* Stylisation des liens */
-	color: #333;
-	text-decoration: none;
-}
-
-.card-pop3:hover .card-image-pop3 img {
-	width: 120%; /* Zoom de l'image */
-}
- /* Card-image pop3 */
-.card-image-pop3 {
-	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	height: 120px;
-	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
-	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
-	border-radius: 25px 25px 0 0 ;
-}
-
-.card-image-pop3 img {
-	/* Centraged en f° de la taille de l'image */
-	width: 100%; /* Penser à modifier selon la partie de l'img que l'on souhaite */
-	position: absolute;
-	top: 43%; /* Décale l'image de 50% du haut */
-	left: 50%; /* Décale l'image de 50% de left */
-	transform: translate(-50%, -50%); /* Centrage de l'image */
-	/* Dynamiser grâce à une transition */
-	transition-duration: .3s;
-	transition-timing-function: ease;
-}
-
-/* Card-body pop3 */
-.card-body-pop3 {
-	width: 300px;
-	/*height: 100px;*/
-	text-align: left; /* Alignement de ts les éléments à l'intérieur de .card-body */
-	padding: 15px 20px; /* Evite que les éléments soient collés, et ils sont décalés du rebord */
-	box-sizing: border-box; /* Permet que le padding soit inclus dans notre bloc et non en plus du bloc */
-}
-
-.card-body-pop3 h4, .card-body-pop3 p {
-	margin: 0;
-}
-
-.card-except-pop3 {
-	color: #0065fc;
-}
-
-.card-except-pop3 i {
-	color: #dad6d6;
-	top: 50%;
+.card-title-pop1 {
+	/*margin: 0;
+	text-align: left;*/
 }
 
 /* Container activités1 */
+.activites-p1 {
+	border: 3px solid blue;
+	width: 50%;
+}
+
+.activites-p2 {
+	border: 3px solid purple;
+	width: 50%;
+}
+#activites {
+	padding: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	/*justify-content: space-between;
+	/*flex-wrap: wrap;*/
+	/*flex-direction: row;*/
+	/*justify-content: space-between;*/
+	/*align-items: center;*/
+	/*width: 100%;
+	height: 600px;
+	border: 3px solid grey;*/
+}
+
+#activites h2 {
+	margin: 0;
+	position: relative;
+	width: 90%;
+	top: 0;
+}
+
 .card-activites1 {
 	width: 300px;
 	/*height: 200px;*/
@@ -721,6 +532,7 @@ article {
 	background-color: white;
 	box-shadow: 0px 5px 20px #997; /* Ombrage */
 	border-radius: 25px;
+	border: 3px solid orange;
 }
 
 .card-activites1 a {
@@ -729,23 +541,23 @@ article {
 }
 
 .card-activites1:hover .card-image-activites1 img {
-	width: 120%; 
+	width: 240%; 
 }
 
 /* Card-image activités1*/
 .card-image-activites1 {
-	height: 120px;
+	height: 400px;
 	position: relative; 
 	overflow: hidden; 
 	border-radius: 25px 25px 0px 0px ;
 }
 
 .card-image-activites1 img {
-	width: 100%; 
+	width: 200%; /* Taille de l'image */
 	position: absolute;
-	top: 43%; 
-	left: 50%; 
-	transform: translate(-50%, -50%); 
+	top: 50%; 
+	left: 70%; 
+	transform: translate(-50%, -60%); 
 	transition-duration: .3s;
 	transition-timing-function: ease;
 }
@@ -772,12 +584,13 @@ article {
 /* Container activités2 */
 .card-activites2 {
 	width: 300px;
-	/*height: 200px;*/
+	height: 210px;
 	display: block;
 	margin: 0px auto; 
 	background-color: white;
 	box-shadow: 0px 5px 20px #997; 
 	border-radius: 25px;
+	border: 3px solid black;
 }
 
 .card-activites2 a {
@@ -791,7 +604,7 @@ article {
 
 /* Card-image activités2*/
 .card-image-activites2 {
-	height: 120px;
+	height: 170px;
 	position: relative; 
 	overflow: hidden; 
 	border-radius: 25px 25px 0px 0px ;
@@ -829,7 +642,7 @@ article {
 /* Container activités3 */
 .card-activites3 {
 	width: 300px;
-	/*height: 200px;*/
+	height: 150px;
 	display: block;
 	margin: 0px auto; 
 	background-color: white;
@@ -848,7 +661,7 @@ article {
 
 /* Card-image activités3 */
 .card-image-activites3 {
-	height: 120px;
+	height: 100px;
 	position: relative; 
 	overflow: hidden; 
 	border-radius: 25px 25px 0px 0px ;
@@ -885,14 +698,16 @@ article {
 
 /* Footer */
 footer {
-	padding: 0 25px;
+	/*padding: 0 25px;*/
 	display: flex;
 	background-color: #F2F2F2;
-	border: 5px solid blue;
+	/*border: 5px solid blue;*/
 }
 
 footer ul {
 	padding: 0;
+	/*margin: 0;*/
+	/*border: 3px solid black;*/
 }
 
 footer li {
@@ -902,24 +717,26 @@ footer li {
 
 footer li a {
 	text-decoration: none;
+	color: black;
 }
 footer h3 {
+	margin-bottom: 0;
 	/*font-weight: bold;*/
 }
 #fpropos {
 	width: 33%;
 	text-align: left;
-	border: 3px solid red;
+	/*border: 3px solid red;*/
 }
 
 #fhebergements {
 	width: 33%;
-	border: 3px solid rgb(250, 247, 81);
+	/*border: 3px solid rgb(250, 247, 81);*/
 }
 
 #fassistance {
 	width: 33%;
-	border: 3px solid purple;
+	/*border: 3px solid purple;*/
 }
 
 @media all and (max-width: 375px)
