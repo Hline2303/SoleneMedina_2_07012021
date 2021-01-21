@@ -2,7 +2,6 @@ body {
 	margin: 0; 
 	padding: 0 35px;
 	font-family: 'Raleway', sans-serif;
-	/*letter-spacing: -0.5px;*/
 }
 
 h1 {
@@ -22,7 +21,6 @@ header {
 	display: flex;
 	justify-content: space-between;
 	padding: 30px 0;
-	/*border: 3px solid yellow;*/
 }
 
 header nav ul {
@@ -34,12 +32,9 @@ header nav ul li {
 	width: 140px;
 	text-align: center;
 	background-color: orange;
-	/*border: 3px solid grey;*/
 }
 
 header nav ul li a {
-	/*display: block;*/
-	/*position: relative;*/
 	color: black;
 	text-align: center;
 	text-decoration: none;
@@ -49,7 +44,6 @@ header nav ul li a {
 header nav ul li a:hover {
 	display: flex;
 	position: relative;
-	top: 0;
 	text-align: center;
 	color: #0065FC;
 	padding-top: 50px;
@@ -62,7 +56,6 @@ h2 {
 	height: 30px;
 	font-size: 24px;
 	padding-left: 20px;
-	/*border: 3px solid red;*/
 }
 
 #inscription a {
@@ -116,7 +109,6 @@ button {
 
 /* Filtres */
 #toggle {
-	/*border: 3px solid orange;*/
 	display: flex;
 }
 
@@ -125,24 +117,6 @@ button {
 	color: black;
 	font-weight: bold;
 }
-/*
-#toggle .filtres {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	padding-left: 25px; 
-	border: 3px solid #CFCDCD;
-	width: auto;
-	height: 48px;
-	font-size: 25px;
-	color: black;
-	font-weight: bold;
-	text-align: center;
-	border-radius: 50px;
-	/*transition: color, background-color;*
-	transition: 1s all ease ;
-}*/
 
 .filtres-eco {
 	display: flex;
@@ -170,7 +144,6 @@ button {
 	color: #0065FC;
 	background-color: #D2E3FE;
 	font-size: 20px;
-	/*border: 3px solid orange;*/
 	border-radius: 50px;
 	padding: 13px 0 10px 0;
 	text-align: center;
@@ -203,7 +176,6 @@ button {
 	color: #0065FC;
 	background-color: #D2E3FE;
 	font-size: 20px;
-	/*border: 3px solid orange;*/
 	border-radius: 50px;
 	padding: 13px 0 10px 0;
 	text-align: center;
@@ -236,7 +208,6 @@ button {
 	color: #0065FC;
 	background-color: #D2E3FE;
 	font-size: 20px;
-	/*border: 3px solid orange;*/
 	border-radius: 50px;
 	padding: 13px 0 10px 0;
 	text-align: center;
@@ -270,7 +241,6 @@ button {
 	color: #0065FC;
 	background-color: #D2E3FE;
 	font-size: 20px;
-	/*border: 3px solid orange;*/
 	border-radius: 50px;
 	padding: 13px 0 10px 0;
 	text-align: center;
@@ -304,81 +274,6 @@ button {
 	color: white;
 	background-color: #0065FC;
 }
-
-/* Main checkboxes */
-/*
-#recherche {
-	/*border: 3px solid coral;
-}
-
-#recherche h1 {
-	margin: 0;
-	font-weight: 900;
-	/*border: 3px solid purple;
-}
-
-#recherche p {
-	letter-spacing: normal;
-	padding-left: 15px;
-}
-
-main {
-	padding: 0 25px;
-	justify-content: space-between;
-	/*border: 3px solid green;
-}
-
-main section ul {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 1150px;
-	padding: 0;
-	font-weight: 900;
-	border: 3px solid pink;
-}
-
-main section ul p {
-	display: flex;
-	align-items: center;
-	margin: 0;
-	font-size: 20px;
-}
-
-main section ul li {
-	display: flex;
-	align-items: center;
-	/*position: relative;
-	padding: 0 20px;
-	margin: 0 0px;
-	height: 50px;
-	/*top: 3px;
-	width: auto;
-	border: 3px solid #dfdede;
-	border-radius: 50px;
-	font-size: 20px;
-}/*
-/* Regarder animation css 
-main section ul li span {
-	position: absolute;
-	/*top: 0;*/
-	/*left: 5px;
-	background-color: #DEEBFF;
-	color: #0065FC;
-	font-size: 16px;
-	border: 1px solid #F2F2F2;
-	width: 15px;
-	height: 28px;
-	border-radius: 30px;/*revenir plus tard
-	padding: 15px 20px 12px 20px;
-	margin-left: 35px;
-}*/
-/*
-.filtres:hover {
-	background-color: #0065FC;
-	color: white;
-	font-weight: 600;
-}*/
  
 #info {
 	width: 15px;
@@ -408,7 +303,6 @@ main section ul li span {
 	width: 65%;
 	height: 670px;
 	padding: 25px;
-	/*border: 3px solid blue;*/
 }
 
 #hebergements h2 {
@@ -427,7 +321,6 @@ main section ul li span {
 	background-color: white;
 	box-shadow: 0px 5px 20px #997; /* Ombrage */
 	border-radius: 25px;
-	/*border: 5px solid orange;*/
 }
 
 .card-heb1 a { /* Stylisation des liens */
@@ -496,7 +389,6 @@ main section ul li span {
 	color: black;
 	font-weight: bold;
 	text-decoration: none;
-	/*border: 3px solid yellow;*/
 }
 
 /* Container populaires 1 */
@@ -509,7 +401,6 @@ aside {
 	border-radius: 25px;
 	width: 25%;
 	height: 670px;
-	/*border: 3px solid purple;*/
 	padding: 25px;
 }
 #stats h2 {
@@ -531,8 +422,6 @@ aside {
 .card-pop {
 	position: relative;
 	top: 30px;
-	/*height: 800px;*/
-	/*border: 3px solid black;*/
 }
 
 .card-pop1, .card-pop2, .card-pop3 {
@@ -543,7 +432,6 @@ aside {
 	background-color: white;
 	box-shadow: 0px 5px 20px #997; /* Ombrage */
 	border-radius: 25px;
-	/*border: 5px solid yellow;*/
 }
 
 .card-pop1 a, .card-pop2 a, .card-pop3 a { /* Stylisation des liens */
@@ -573,7 +461,6 @@ aside {
 	left: 4px;
 	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
 	border-radius: 25px 0px 0px 25px;
-	/*border: 3px solid orange;*/
 }
 
 .card-image-pop1 img {
@@ -598,7 +485,6 @@ aside {
 	left: 4px;
 	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
 	border-radius: 25px 0px 0px 25px;
-	/*border: 3px solid orange;*/
 }
 
 .card-image-pop2 img {
@@ -623,7 +509,6 @@ aside {
 	left: 4px;
 	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
 	border-radius: 25px 0px 0px 25px;
-	/*border: 3px solid orange;*/
 }
 
 .card-image-pop3 img {
@@ -642,14 +527,12 @@ aside {
 .card-body-pop1 {
 	display: flex;
 	flex-wrap: wrap;
-	/*left: 80px;*/
 	width: 220px;
 	height: 160px;
 	letter-spacing: 0.1px;
 	/*text-align: right; /* Alignement de ts les éléments à l'intérieur de .card-body */
 	padding: 0px 5px; /* Evite que les éléments soient collés, et ils sont décalés du rebord */
 	box-sizing: border-box; /* Permet que le padding soit inclus dans notre bloc et non en plus du bloc */
-	/*border: 3px solid green;*/
 }
 
 .card-body-pop1 h4 {
@@ -657,7 +540,6 @@ aside {
 	top: -2px;
 	margin: 10px;
 	font-size: 20px;
-	/*border: 3px solid grey;*/
 }
 
 .card-body-pop1 p {
@@ -665,7 +547,6 @@ aside {
 	top: -20px;
 	margin: 10px;
 	font-size: 16px;
-	/*border: 3px solid grey;*/
 }
 .card-except-pop1 {
 	margin: 10px;
@@ -676,21 +557,13 @@ aside {
 	padding: 0;
 	color: #dad6d6;
 	position: relative;
-	/*top: -10px;*/
 	font-size: 14px;
 }
 
 .card-except-pop1 span {
 	padding: 0;
 	position: relative;
-	/*top: -5px;*/
 	font-size: 14px;
-	/*border: 3px solid orange;*/
-}
-
-.card-title-pop1 {
-	/*margin: 0;
-	text-align: left;*/
 }
 
 /* Container activités1 */
@@ -699,7 +572,6 @@ aside {
 	flex-flow: wrap column;
 	justify-content: space-between;
 	align-content: space-between;
-	/*border: 3px solid blue;*/
 	height: 600px;
 	width: 48%;
 	padding-right: 10px;
@@ -710,26 +582,17 @@ aside {
 	flex-flow: wrap column;
 	justify-content: space-between;
 	align-content: space-between;
-	/*position: relative;
-	left: 13px;*/
-	/*border: 3px solid purple;*/
 	height: 600px;
 	width: 48%;
 	padding-left: 10px;
 }
 #activites {
-	/*padding: 25px;*/
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	/*margin: 20px;*/
-	/*flex-direction: row;*/
-	/*justify-content: space-between;*/
-	/*align-items: center;*/
 	width: 100%;
 	height: 750px;
 	margin-top: 30px;
-	/*border: 3px solid grey;*/
 }
 
 #activites h2 {
@@ -744,11 +607,9 @@ aside {
 	width: 380px;
 	height: 620px;
 	display: block;
-	/*margin: 0px auto; */
 	background-color: white;
 	box-shadow: 0px 5px 20px #997; /* Ombrage */
 	border-radius: 25px;
-	/*border: 3px solid orange;*/
 }
 
 .card-activites1 a {
@@ -790,10 +651,9 @@ aside {
 }
 
 .card-title-activites1 {
-	/*position: relative;
-	top: -45px;*/
+	position: relative;
+	top: 10px;
 	font-size: 16px;
-	/*border: 3px solid yellow;*/
 }
 .card-except-activites1 {
 	font-size: 15px;
@@ -804,12 +664,9 @@ aside {
 	width: 380px;
 	height: 310px;
 	display: block;
-	/*margin: 0px auto; */
 	background-color: white;
 	box-shadow: 0px 5px 20px #997; 
 	border-radius: 25px;
-	/*margin-left: 50px;*/
-	/*border: 3px solid black;*/
 }
 
 .card-activites2 a {
@@ -855,7 +712,6 @@ aside {
 	position: relative;
 	top: 15px;
 	font-size: 16px;
-	/*border: 3px solid yellow;*/
 }
 .card-except-activites2 {
 	font-size: 15px;
@@ -866,7 +722,6 @@ aside {
 	width: 380px;
 	height: 210px;
 	display: block;
-	/*margin: 0px auto; */
 	background-color: white;
 	box-shadow: 0px 5px 20px #997; 
 	border-radius: 25px;
@@ -913,7 +768,7 @@ aside {
 
 .card-title-activites3 {
 	position: relative;
-	top: 15px;
+	top: 10px;
 	font-size: 16px;
 }
 .card-except-activites3 {
@@ -922,7 +777,6 @@ aside {
 
 /* Footer */
 footer {
-	/*width: 100%;*/
 	padding: 30px 0;
 	display: flex;
 	background-color: #F2F2F2;
@@ -931,13 +785,11 @@ footer {
 
 footer ul {
 	padding: 0;
-	/*margin: 0;*/
-	/*border: 3px solid black;*/
 }
 
 footer li {
 	line-height: 30px;
-	/*font-size: 16px;*/
+	font-size: 20px;
 }
 
 footer li a {
@@ -946,22 +798,18 @@ footer li a {
 }
 footer h3 {
 	margin-bottom: 0;
-	/*font-weight: bold;*/
 }
 #fpropos {
 	width: 33%;
 	text-align: left;
-	/*border: 3px solid red;*/
 }
 
 #fhebergements {
 	width: 33%;
-	/*border: 3px solid rgb(250, 247, 81);*/
 }
 
 #fassistance {
 	width: 33%;
-	/*border: 3px solid purple;*/
 }
 
 @media all and (max-width: 375px)
