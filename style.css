@@ -49,6 +49,7 @@ header nav ul li a {
 header nav ul li a:hover {
 	display: flex;
 	position: relative;
+	top: 0;
 	text-align: center;
 	color: #0065FC;
 	padding-top: 50px;
@@ -112,15 +113,208 @@ button {
 	width: 180px;
 	height: 49px;
 }
+
+/* Filtres */
+#toggle {
+	/*border: 3px solid orange;*/
+	display: flex;
+}
+
+#toggle p {
+	font-size: 25px;
+	color: black;
+	font-weight: bold;
+}
+/*
+#toggle .filtres {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	padding-left: 25px; 
+	border: 3px solid #CFCDCD;
+	width: auto;
+	height: 48px;
+	font-size: 25px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 50px;
+	/*transition: color, background-color;*
+	transition: 1s all ease ;
+}*/
+
+.filtres-eco {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 288px;
+	left: 150px;
+	padding-left: 25px; 
+	border: 3px solid #CFCECE;
+	width: 200px;
+	height: 55px;
+	font-size: 25px;
+	text-align: center;
+	border-radius: 50px;
+	/*transition: color, background-color;*/
+}
+
+#btn-eco {
+	position: relative;
+	top: 11px;
+	left: 20px;
+	width: 60px;
+	height: 38px;
+	color: #0065FC;
+	background-color: #D2E3FE;
+	font-size: 20px;
+	/*border: 3px solid orange;*/
+	border-radius: 50px;
+	padding: 13px 0 10px 0;
+	text-align: center;
+	transition: left 2s, color 2s, background-color 2s;
+}
+
+.filtres-fam {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 288px;
+	left: 425px;
+	padding-left: 25px; 
+	border: 3px solid #CFCECE;
+	width: 150px;
+	height: 55px;
+	font-size: 25px;
+	text-align: center;
+	border-radius: 50px;
+	/*transition: color, background-color;*/
+}
+
+#btn-famille {
+	position: relative;
+	top: 11px; 
+	left: 236px;
+	width: 60px;
+	height: 38px;
+	color: #0065FC;
+	background-color: #D2E3FE;
+	font-size: 20px;
+	/*border: 3px solid orange;*/
+	border-radius: 50px;
+	padding: 13px 0 10px 0;
+	text-align: center;
+	transition: left 2s, color 2s, background-color 2s;
+}
+
+.filtres-love {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 288px;
+	left: 650px;
+	padding-left: 35px; 
+	border: 3px solid #CFCECE;
+	width: 200px;
+	height: 55px;
+	font-size: 25px;
+	text-align: center;
+	border-radius: 50px;
+	/*transition: color, background-color;*/
+}
+
+#btn-love {
+	position: relative;
+	top: 11px; 
+	left: 408px;
+	width: 60px;/**/
+	height: 38px;/**/
+	color: #0065FC;
+	background-color: #D2E3FE;
+	font-size: 20px;
+	/*border: 3px solid orange;*/
+	border-radius: 50px;
+	padding: 13px 0 10px 0;
+	text-align: center;
+	transition: left 2s, color 2s, background-color 2s;
+}
+
+.filtres-dog {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 288px;
+	left: 925px;
+	padding-left: 35px;/**/
+	padding-right: -5px; /**/
+	border: 3px solid #CFCECE;
+	width: 290px;
+	height: 55px;
+	font-size: 25px;
+	text-align: center;
+	border-radius: 50px;
+	/*transition: color, background-color;*/
+}
+
+#btn-dog {
+	position: relative;
+	top: 11px; 
+	left: 633px;/**/
+	width: 60px;
+	height: 38px;
+	color: #0065FC;
+	background-color: #D2E3FE;
+	font-size: 20px;
+	/*border: 3px solid orange;*/
+	border-radius: 50px;
+	padding: 13px 0 10px 0;
+	text-align: center;
+	transition: left 2s, color 2s, background-color 2s;
+}
+
+#btn-eco:hover {
+	cursor: pointer;
+	left: 210px;
+	color: white;
+	background-color: #0065FC;
+}
+
+#btn-famille:hover {
+	cursor: pointer;
+	left: 380px;
+	color: white;
+	background-color: #0065FC;
+}
+
+#btn-love:hover {
+	cursor: pointer;
+	left: 600px;
+	color: white;
+	background-color: #0065FC;
+}
+
+#btn-dog:hover {
+	cursor: pointer;
+	left: 905px;
+	color: white;
+	background-color: #0065FC;
+}
+
 /* Main checkboxes */
+/*
 #recherche {
-	/*border: 3px solid coral;*/
+	/*border: 3px solid coral;
 }
 
 #recherche h1 {
 	margin: 0;
 	font-weight: 900;
-	/*border: 3px solid purple;*/
+	/*border: 3px solid purple;
 }
 
 #recherche p {
@@ -129,9 +323,9 @@ button {
 }
 
 main {
-	/*padding: 0 25px;*/
+	padding: 0 25px;
 	justify-content: space-between;
-	/*border: 3px solid green;*/
+	/*border: 3px solid green;
 }
 
 main section ul {
@@ -154,37 +348,37 @@ main section ul p {
 main section ul li {
 	display: flex;
 	align-items: center;
-	/*position: relative;*/
+	/*position: relative;
 	padding: 0 20px;
 	margin: 0 0px;
 	height: 50px;
-	/*top: 3px;*/
+	/*top: 3px;
 	width: auto;
 	border: 3px solid #dfdede;
 	border-radius: 50px;
 	font-size: 20px;
-}
-/* Regarder animation css */
+}/*
+/* Regarder animation css 
 main section ul li span {
 	position: absolute;
 	/*top: 0;*/
-	/*left: 5px;*/
+	/*left: 5px;
 	background-color: #DEEBFF;
 	color: #0065FC;
 	font-size: 16px;
 	border: 1px solid #F2F2F2;
 	width: 15px;
 	height: 28px;
-	border-radius: 30px;/*revenir plus tard*/
+	border-radius: 30px;/*revenir plus tard
 	padding: 15px 20px 12px 20px;
-	margin-left: 5px;
-}
-
+	margin-left: 35px;
+}*/
+/*
 .filtres:hover {
 	background-color: #0065FC;
 	color: white;
 	font-weight: 600;
-}
+}*/
  
 #info {
 	width: 15px;
@@ -220,13 +414,13 @@ main section ul li span {
 #hebergements h2 {
 	margin: 0;
 	position: relative;
-	/*top: 35px;*/
+	top: 15px;
 }
 
 /* Container heb1 */
 .card-heb1 {
 	display: block;
-	width: 280px;
+	width: 310px;
 	height: 220px;
 	margin: 20px; /* Centrage au centre de la page, ne pas oublier display block */
 	padding: 4px; /* Contour autour de l'image */
@@ -322,7 +516,7 @@ aside {
 	margin: 0;
 	position: relative;
 	float: left;
-	top: 8px;
+	top: 15px;
 	left: -15px;
 	width: 350px;
 	font-size: 24px;
@@ -330,22 +524,22 @@ aside {
 #stats i {
 	position: relative;
 	float: right;
-	top: -28px;
+	top: 15px;
 	font-size: 30px;
 }
 
 .card-pop {
 	position: relative;
-	top: -30px;
+	top: 30px;
 	/*height: 800px;*/
 	/*border: 3px solid black;*/
 }
 
 .card-pop1, .card-pop2, .card-pop3 {
 	width: 380px;
-	height: 135px;
-	margin-top: 50px; /* Centrage au centre de la page, ne pas oublier display block */
-	padding: 4px; /* Contour autour de l'image */
+	height: 160px;
+	margin-bottom: 40px; /* Centrage au centre de la page, ne pas oublier display block */
+	padding: 2px; /* Contour autour de l'image */
 	background-color: white;
 	box-shadow: 0px 5px 20px #997; /* Ombrage */
 	border-radius: 25px;
@@ -372,9 +566,11 @@ aside {
 .card-image-pop1 {
 	float: left;
 	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	width: 120px;
-	height: 130px;
+	width: 150px;
+	height: 150px;
 	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
+	top: 4px;
+	left: 4px;
 	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
 	border-radius: 25px 0px 0px 25px;
 	/*border: 3px solid orange;*/
@@ -384,7 +580,7 @@ aside {
 	/* Centrage en f° de la taille de l'image */
 	width: 170%; /* Penser à modifier selon la partie de l'img que l'on souhaite */
 	position: absolute;
-	top: 50%; /* Décale l'image de 50% du haut */
+	top: 49%; /* Décale l'image de 50% du haut */
 	left: 10%; /* Décale l'image de 50% de left */
 	transform: translate(-27%, -50%); /* Centrage de l'image */
 	/* Dynamiser grâce à une transition */
@@ -395,9 +591,11 @@ aside {
 .card-image-pop2 {
 	float: left;
 	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	width: 120px;
-	height: 130px;
+	width: 150px;
+	height: 150px;
 	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
+	top: 4px;
+	left: 4px;
 	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
 	border-radius: 25px 0px 0px 25px;
 	/*border: 3px solid orange;*/
@@ -418,9 +616,11 @@ aside {
 .card-image-pop3 {
 	float: left;
 	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	width: 120px;
-	height: 130px;
+	width: 150px;
+	height: 150px;
 	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
+	top: 4px;
+	left: 4px;
 	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
 	border-radius: 25px 0px 0px 25px;
 	/*border: 3px solid orange;*/
@@ -443,8 +643,8 @@ aside {
 	display: flex;
 	flex-wrap: wrap;
 	/*left: 80px;*/
-	width: 250px;
-	height: 130px;
+	width: 220px;
+	height: 160px;
 	letter-spacing: 0.1px;
 	/*text-align: right; /* Alignement de ts les éléments à l'intérieur de .card-body */
 	padding: 0px 5px; /* Evite que les éléments soient collés, et ils sont décalés du rebord */
@@ -454,7 +654,7 @@ aside {
 
 .card-body-pop1 h4 {
 	position: relative;
-	top: -12px;
+	top: -2px;
 	margin: 10px;
 	font-size: 20px;
 	/*border: 3px solid grey;*/
@@ -462,7 +662,7 @@ aside {
 
 .card-body-pop1 p {
 	position: relative;
-	top: -28px;
+	top: -20px;
 	margin: 10px;
 	font-size: 16px;
 	/*border: 3px solid grey;*/
@@ -476,14 +676,14 @@ aside {
 	padding: 0;
 	color: #dad6d6;
 	position: relative;
-	top: -10px;
+	/*top: -10px;*/
 	font-size: 14px;
 }
 
 .card-except-pop1 span {
 	padding: 0;
 	position: relative;
-	top: -10px;
+	/*top: -5px;*/
 	font-size: 14px;
 	/*border: 3px solid orange;*/
 }
@@ -497,46 +697,54 @@ aside {
 .activites-p1 {
 	display: flex;
 	flex-flow: wrap column;
-	justify-content: space-around;
+	justify-content: space-between;
+	align-content: space-between;
 	/*border: 3px solid blue;*/
-	height: 500px;
-	width: 50%;
+	height: 600px;
+	width: 48%;
+	padding-right: 10px;
 }
 
 .activites-p2 {
 	display: flex;
 	flex-flow: wrap column;
-	justify-content: space-around;
+	justify-content: space-between;
+	align-content: space-between;
+	/*position: relative;
+	left: 13px;*/
 	/*border: 3px solid purple;*/
-	height: 500px;
-	width: 49%;
+	height: 600px;
+	width: 48%;
+	padding-left: 10px;
 }
 #activites {
-	padding: 25px;
+	/*padding: 25px;*/
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap;
-	margin: 20px;
+	/*margin: 20px;*/
 	/*flex-direction: row;*/
 	/*justify-content: space-between;*/
 	/*align-items: center;*/
-	width: 90%;
-	/*height: 600px;
+	width: 100%;
+	height: 750px;
+	margin-top: 30px;
 	/*border: 3px solid grey;*/
 }
 
 #activites h2 {
 	margin: 0;
+	padding: 0; 
 	position: relative;
-	width: 90%;
-	top: 0;
+	width: 100%;
+	top: 40px;
 }
 
 .card-activites1 {
-	width: 300px;
-	/*height: 200px;*/
+	width: 380px;
+	height: 620px;
 	display: block;
-	margin: 0px auto; 
+	/*margin: 0px auto; */
 	background-color: white;
 	box-shadow: 0px 5px 20px #997; /* Ombrage */
 	border-radius: 25px;
@@ -549,23 +757,23 @@ aside {
 }
 
 .card-activites1:hover .card-image-activites1 img {
-	width: 240%; 
+	width: 250%; 
 }
 
 /* Card-image activités1*/
 .card-image-activites1 {
-	height: 400px;
+	height: 528px;
 	position: relative; 
 	overflow: hidden; 
 	border-radius: 25px 25px 0px 0px ;
 }
 
 .card-image-activites1 img {
-	width: 200%; /* Taille de l'image */
+	width: 220%; /* Taille de l'image */
 	position: absolute;
-	top: 50%; 
-	left: 70%; 
-	transform: translate(-50%, -60%); 
+	top: 10%; 
+	left: 50%; 
+	transform: translate(-50%, -10%); 
 	transition-duration: .3s;
 	transition-timing-function: ease;
 }
@@ -579,11 +787,13 @@ aside {
 
 .card-title-activites1, .card-except-activites1 {
 	line-height: 3px;
-	padding-left: 8px;
 }
 
 .card-title-activites1 {
+	/*position: relative;
+	top: -45px;*/
 	font-size: 16px;
+	/*border: 3px solid yellow;*/
 }
 .card-except-activites1 {
 	font-size: 15px;
@@ -591,13 +801,14 @@ aside {
 
 /* Container activités2 */
 .card-activites2 {
-	width: 300px;
-	height: 210px;
+	width: 380px;
+	height: 310px;
 	display: block;
-	margin: 0px auto; 
+	/*margin: 0px auto; */
 	background-color: white;
 	box-shadow: 0px 5px 20px #997; 
 	border-radius: 25px;
+	/*margin-left: 50px;*/
 	/*border: 3px solid black;*/
 }
 
@@ -612,7 +823,7 @@ aside {
 
 /* Card-image activités2*/
 .card-image-activites2 {
-	height: 170px;
+	height: 230px;
 	position: relative; 
 	overflow: hidden; 
 	border-radius: 25px 25px 0px 0px ;
@@ -623,7 +834,7 @@ aside {
 	position: absolute;
 	top: 43%; 
 	left: 50%; 
-	transform: translate(-50%, -50%); 
+	transform: translate(-50%, -41%); 
 	transition-duration: .3s;
 	transition-timing-function: ease;
 }
@@ -641,7 +852,10 @@ aside {
 }
 
 .card-title-activites2 {
+	position: relative;
+	top: 15px;
 	font-size: 16px;
+	/*border: 3px solid yellow;*/
 }
 .card-except-activites2 {
 	font-size: 15px;
@@ -649,10 +863,10 @@ aside {
 
 /* Container activités3 */
 .card-activites3 {
-	width: 300px;
-	height: 150px;
+	width: 380px;
+	height: 210px;
 	display: block;
-	margin: 0px auto; 
+	/*margin: 0px auto; */
 	background-color: white;
 	box-shadow: 0px 5px 20px #997; 
 	border-radius: 25px;
@@ -669,7 +883,7 @@ aside {
 
 /* Card-image activités3 */
 .card-image-activites3 {
-	height: 100px;
+	height: 140px;
 	position: relative; 
 	overflow: hidden; 
 	border-radius: 25px 25px 0px 0px ;
@@ -680,7 +894,7 @@ aside {
 	position: absolute;
 	top: 43%; 
 	left: 50%; 
-	transform: translate(-50%, -50%); 
+	transform: translate(-50%, -31%); 
 	transition-duration: .3s;
 	transition-timing-function: ease;
 }
@@ -698,6 +912,8 @@ aside {
 }
 
 .card-title-activites3 {
+	position: relative;
+	top: 15px;
 	font-size: 16px;
 }
 .card-except-activites3 {
@@ -706,10 +922,11 @@ aside {
 
 /* Footer */
 footer {
-	width: 100%;
+	/*width: 100%;*/
+	padding: 30px 0;
 	display: flex;
 	background-color: #F2F2F2;
-	/*border: 5px solid blue;*/
+	border: 5px solid blue;
 }
 
 footer ul {
@@ -769,6 +986,11 @@ footer h3 {
 		flex-direction: column;
 	}
 }
+
+
+
+
+
 
 
 

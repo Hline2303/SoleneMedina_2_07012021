@@ -33,13 +33,30 @@
 
 			<span id="location" class="fa fa-map-marker" aria-hidden="true"></span><input type="text" placeholder="Marseille, France"><button>Rechercher</button>
 
-			<ul>
+			<div id="toggle">
 				<p>Filtres</p>
-				<li class="filtres"><span class="fas fa-money-bill-wave"></span>Economique</li>
-				<li class="filtres"><span class="fa fa-child"></span>Familial</li>
-				<li class="filtres"><span class="fa fa-heart"></span>Romantique</li>
-				<li class="filtres"><span class="fas fa-dog"></span>Animaux autorisés</li>
-			</ul>
+
+				<div id="eco">
+				<p class="filtres-eco">Economique</p>
+				<span  id="btn-eco" id="btn-heart" class="fas fa-money-bill-wave"></span>
+				</div>
+                 
+				<div id="famille">
+				<p class="filtres-fam">Familial</p>	
+				<span  id="btn-famille" class="fa fa-child"></span>
+                </div>
+
+                <div id="love">
+				<p class="filtres-love">Romantique</p>	
+				<span id="btn-love" class="fa fa-heart"></span>
+                </div>
+
+                <div id="dog">
+				<p class="filtres-dog">Animaux autorisés</p>	
+				<span id="btn-dog" class="fa fa-dog"></span>
+                </div>
+			
+			</div>
 
 			<p><span id="info" class="fa fa-info" aria-hidden="true"></span>Plus de 500 logements sont disponibles dans cette ville</p>			
 		</section>
