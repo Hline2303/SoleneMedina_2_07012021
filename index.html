@@ -31,31 +31,32 @@
 			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 			<p id="lieu">En plein centre ville ou en pleine nature</p>
 
+			<div id="search-bar">
 			<span id="location" class="fa fa-map-marker" aria-hidden="true"></span><input type="text" placeholder="Marseille, France"><button>Rechercher</button>
+			</div>
 
-			<div id="toggle">
+			<div class="toggleBox">
 				<p>Filtres</p>
 
-				<div id="eco">
-				<p class="filtres-eco">Economique</p>
-				<span  id="btn-eco" class="fas fa-money-bill-wave"></span>
+				<div class="toggle">
+					<input type="checkbox" id="box-eco" class="fas fa-money-bill-wave">
+					<label for="" id="eco-btn">Economique</label>
 				</div>
-                 
-				<div id="famille">
-				<p class="filtres-fam">Familial</p>	
-				<span  id="btn-famille" class="fa fa-child"></span>
-                </div>
 
-                <div id="love">
-				<p class="filtres-love">Romantique</p>	
-				<span id="btn-love" class="fa fa-heart"></span>
-                </div>
+				<div class="toggle">
+					<input type="checkbox" class="fas fa-child" id="box-fam">
+					<label for="" id="fam-btn" >Familial</label>
+				</div>
 
-                <div id="dog">
-				<p class="filtres-dog">Animaux autorisés</p>	
-				<span id="btn-dog" class="fa fa-dog"></span>
-                </div>
-			
+				<div class="toggle">
+					<input type="checkbox" class="fas fa-heart" id="box-love">
+					<label for="" id="love-btn" >Romantique</label>
+				</div>
+
+				<div class="toggle">
+					<input type="checkbox" class="fas fa-dog" id="box-dog">
+					<label for="" id="dog-btn" >Animaux autorisés</label>
+				</div>
 			</div>
 
 			<p><span id="info" class="fa fa-info" aria-hidden="true"></span>Plus de 500 logements sont disponibles dans cette ville</p>			
@@ -406,10 +407,11 @@
 
                     <div class="card-activites2">
                         <a href="#">
-                            <div class="card-image-activites2"><img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Palais de Napoléon 3"></div>
+                            <div class="card-image-activites2">
+                            	<img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Palais de Napoléon 3">
+                            </div>
 
                             <div class="card-body-activites2">
-
                                 <div class="card-title-activites2">
                                     <h4>Parc Longchamp</h4>
                                 </div>
@@ -423,29 +425,31 @@
 
 	<!-- Footer -->
     <footer>
-        <div id="fpropos">
-            <h3>A propos</h3>
-            <ul>
-                <li><a href="#">Fonctionnement du site</a></li>
-                <li><a href="#">Conditions générales de vente</a></li>
-                <li><a href="#">Données et confidentialité</a></li>
-            </ul>
-        </div>
-        <div id="fhebergements">
-            <h3>Nos hébergements</h3>
-            <ul>
-                <li><a href="#">Charte qualité</a></li>
-                <li><a href="#">Soumettre votre hôtel</a></li>
-            </ul>
-        </div>
+    	<div>
+	        <div id="fpropos">
+	            <h3>A propos</h3>
+	            <ul>
+	                <li><a href="#">Fonctionnement du site</a></li>
+	                <li><a href="#">Conditions générales de vente</a></li>
+	                <li><a href="#">Données et confidentialité</a></li>
+	            </ul>
+	        </div>
+	        <div id="fhebergements">
+	            <h3>Nos hébergements</h3>
+	            <ul>
+	                <li><a href="#">Charte qualité</a></li>
+	                <li><a href="#">Soumettre votre hôtel</a></li>
+	            </ul>
+	        </div>
 
-        <div id="fassistance">
-            <h3>Assistance</h3>
-            <ul>
-                <li><a href="#">Centre d'aide</a></li>
-                <li><a href="#">Nous contacter</a></li>
-            </ul>
-        </div>
+	        <div id="fassistance">
+	            <h3>Assistance</h3>
+	            <ul>
+	                <li><a href="#">Centre d'aide</a></li>
+	                <li><a href="#">Nous contacter</a></li>
+	            </ul>
+	        </div>
+	    </div>    
     </footer>
 </body>
 </html>

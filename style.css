@@ -18,37 +18,55 @@ ul {
 
 /* Header */
 header {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	padding: 30px 0;
 }
 
+header nav {
+	width: 33%;
+	text-align: right;
+}
 header nav ul {
-	display: flex;
 	text-decoration: none;
 }
 
 header nav ul li {
-	width: 140px;
-	text-align: center;
-	background-color: orange;
+	display: inline-block;
 }
 
 header nav ul li a {
+	display: inline-block;
+	padding: 25px;
 	color: black;
-	text-align: center;
 	text-decoration: none;
 	font-size: 20px;
+	margin: 0 15px;
 }
 
 header nav ul li a:hover {
-	display: flex;
-	position: relative;
-	text-align: center;
 	color: #0065FC;
-	padding-top: 50px;
-	width: 140px;
-	border-top: 5px solid #0065FC;
+}
+
+header nav ul li a {
+	position: relative;
+}
+
+header nav ul li a:after {
+	position: absolute;
+	bottom: 117px;
+	left: 0;
+	/*right: 500px;*/
+	margin: auto;
+	width: 0%;
+	content: "";
+	background: blue;
+	height: 4px;
+}
+
+header nav ul li a:hover:after {
+	width: 100%;
 }
 
 h2 {
@@ -64,29 +82,35 @@ h2 {
 }
 
 /* Main section zone de recherche */
+section {
+	width: 100%;
+}
 #recherche #lieu {
 	padding: 0;
 	letter-spacing: 1px;
+}
 
+#search-bar {
+	width: 35%;
+	display: flex;
 }
 
 #location {
-	position: relative;
-	top: 5px;
 	background-color: #F2F2F2;
 	text-align: center;
 	font-size: 24px;
 	border-radius: 14px 0 0 14px;
 	padding: 14px;
 	width: 30px;
-	height: 23px;
+	height: 32px;
 }
 
 input {
 	border: 1px solid #F2F2F2;
-	padding: 12px;
 	width: 273px;
-	height: 23px;
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
 }
 
 ::placeholder {
@@ -104,177 +128,184 @@ button {
 	border-radius: 0 14px 14px 0;
 	padding: 13px;
 	width: 180px;
-	height: 49px;
+	height: 60px;
 }
 
 /* Filtres */
-#toggle {
+.toggleBox {
+	width: 75%;
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 3px solid blue;
 }
 
-#toggle p {
-	font-size: 25px;
+.toggleBox p {
+	font-size: 20px;
 	color: black;
-	font-weight: bold;
+	font-weight: 900;
+	border: 3px solid orange;
 }
 
-.filtres-eco {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	top: 288px;
-	left: 150px;
-	padding-left: 25px; 
-	border: 3px solid #CFCECE;
-	width: 200px;
-	height: 55px;
-	font-size: 25px;
-	text-align: center;
-	border-radius: 50px;
-	/*transition: color, background-color;*/
-}
-
-#btn-eco {
+input[type="checkbox"] {
 	position: relative;
-	top: 11px;
-	left: 20px;
-	width: 60px;
-	height: 38px;
-	color: #0065FC;
-	background-color: #D2E3FE;
-	font-size: 20px;
-	border-radius: 50px;
-	padding: 13px 0 10px 0;
-	text-align: center;
-	transition: left 2s, color 2s, background-color 2s;
+	top: 3px;
+	 /* Taille de ....... */
+	height: 40px; /* ...... la checkbox */
+	background: pink; /* Couleur de fond de la checkbox */
+	-webkit-appearance: none; /* Annule la forme de base de la checkbox */
+	border-radius: 20px; /* Arrondi la forme de la checkbox */
+	cursor: pointer; /* Modifie la forme du curseur de la souris flèche en main */
 }
 
-.filtres-fam {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+input[id="box-eco"] {
+	width: 140px;
+	outline: none;
+}
+
+input[id="box-fam"] {
+	width: 115px;
+	outline: none;
+}
+
+input[id="box-love"] {
+	width: 135px;
+	outline: none;
+}
+
+input[id="box-dog"] {
+	width: 210px;
+	outline: none;
+}
+
+input[type="checkbox"]::before {
 	position: absolute;
-	top: 288px;
-	left: 425px;
-	padding-left: 25px; 
-	border: 3px solid #CFCECE;
-	width: 150px;
-	height: 55px;
-	font-size: 25px;
-	text-align: center;
-	border-radius: 50px;
-	/*transition: color, background-color;*/
+	top: 1px; /* Centrage vertical du bouton */
+	width: 35px; /* Design du ........ */
+	height: 35px; /* ........ */
+	background: #D2E3FE; /* ........ */
+	border-radius: 50%; /* ........ bouton */
+	z-index: 2; 
+	color: #0065FC; /* Design et ........ */
+	display: flex; /* .... alignement ........ */
+	align-items: center; /* ........ */
+	justify-content: center; /* ........ */
+	font-weight: 900; /* ........ du texte ou icône */
+	transform: scale(1.2); /* Mise à l'échelle du bouton */
 }
 
-#btn-famille {
-	position: relative;
-	top: 11px; 
-	left: 236px;
-	width: 60px;
-	height: 38px;
-	color: #0065FC;
-	background-color: #D2E3FE;
-	font-size: 20px;
-	border-radius: 50px;
-	padding: 13px 0 10px 0;
-	text-align: center;
-	transition: left 2s, color 2s, background-color 2s;
+/* Modif du btn */
+input:checked[type="checkbox"]::before {
+	background: white; /* Modif du bouton au ..... */
+	color: #0065FC; /* ..... moment du clic */
 }
 
-.filtres-love {
+input:checked[type="checkbox"][id="box-eco"]::before {
+	left: 88%; /* Déplacement du bouton vers la droite */
+	outline: none;
+}
+
+input:checked[type="checkbox"][id="box-fam"]::before {
+	left: 70%; 
+}
+
+input:checked[type="checkbox"][id="box-love"]::before {
+	left: 85%; 
+}
+
+input:checked[type="checkbox"][id="box-dog"]::before {
+	left: 85%; 
+}
+
+input[type="checkbox"]:hover::before {
+	background: #0065FC; /* Modif du bouton au ..... */
+	color: white; /* ..... moment du clic */
+}
+
+/*.toggleBox { /****** A revoir avec le code Reservia ******/
+	/*display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;*/
+	/*max-width: 60%;
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	top: 288px;
-	left: 650px;
-	padding-left: 35px; 
-	border: 3px solid #CFCECE;
-	width: 200px;
-	height: 55px;
-	font-size: 25px;
-	text-align: center;
-	border-radius: 50px;
-	/*transition: color, background-color;*/
-}
+	justify-content: space-between;
+	padding-left: 125px;
+	border: 3px solid yellow;
+}*/
 
-#btn-love {
-	position: relative;
-	top: 11px; 
-	left: 408px;
-	width: 60px;/**/
-	height: 38px;/**/
-	color: #0065FC;
-	background-color: #D2E3FE;
-	font-size: 20px;
-	border-radius: 50px;
-	padding: 13px 0 10px 0;
-	text-align: center;
-	transition: left 2s, color 2s, background-color 2s;
-}
-
-.filtres-dog {
+/* Design du texte de la checkbox */
+label { 
+	position: absolute; /* Permet la superposition */
+	top: 442px;
+	/*padding-left: 125px;*/
 	display: flex;
+	justify-content: flex-end;
 	align-items: center;
-	justify-content: center;
-	position: absolute;
-	top: 288px;
-	left: 925px;
-	padding-left: 35px;/**/
-	padding-right: -5px; /**/
-	border: 3px solid #CFCECE;
-	width: 290px;
-	height: 55px;
-	font-size: 25px;
-	text-align: center;
-	border-radius: 50px;
-	/*transition: color, background-color;*/
+	/*align-content: center;*/
+	/*text-align: left;*/
+	color: black;
+	font-weight: 900;
+	font-size: 16px;
+	background-color: white; /**** A MODIFIER *****/
+	width: 148px;
+	height: 41px;
+	border-radius: 20px;
+	box-sizing: border-box; /* Permet de mettre un padding-right sur le texte sans modifier la width */
+	/*padding-right: 5px;*/
+	/*outline: none;*/
+	border: 1px solid #CFCECE;
+	transition: 2s;
 }
 
-#btn-dog {
-	position: relative;
-	top: 11px; 
-	left: 633px;/**/
-	width: 60px;
-	height: 38px;
-	color: #0065FC;
-	background-color: #D2E3FE;
-	font-size: 20px;
-	border-radius: 50px;
-	padding: 13px 0 10px 0;
-	text-align: center;
-	transition: left 2s, color 2s, background-color 2s;
+#eco-btn {
+	left: 175px;
+	width: 160px;
+	padding: 9px;
 }
 
-#btn-eco:hover {
-	cursor: pointer;
-	left: 210px;
+#fam-btn { 
+	left: 385px;
+	width: 120px;
+	padding: 10px;
+}
+
+#love-btn { 
+	left: 578px;
+	width: 148px;
+	padding: 10px;
+}
+
+#dog-btn { 
+	left: 785px;
+	width: 210px;
+	padding: 12px;
+}
+
+#box-eco:checked ~ #eco-btn, #box-fam:checked ~ #fam-btn, 
+#box-love:checked ~ #love-btn, #box-dog:checked ~ #dog-btn {
+	background: #0065FC;
+	border: none;
 	color: white;
-	background-color: #0065FC;
+	box-sizing: border-box;
+	/*padding-right: 55px;*/
+	transition: 2s;
+}
+#box-eco:checked ~ #eco-btn {
+	padding-right: 51px;
 }
 
-#btn-famille:hover {
-	cursor: pointer;
-	left: 380px;
-	color: white;
-	background-color: #0065FC;
+#box-fam:checked ~ #fam-btn {
+	padding-right: 48px;
 }
 
-#btn-love:hover {
-	cursor: pointer;
-	left: 600px;
-	color: white;
-	background-color: #0065FC;
+#box-love:checked ~ #love-btn {
+	padding-right: 46px;
 }
 
-#btn-dog:hover {
-	cursor: pointer;
-	left: 905px;
-	color: white;
-	background-color: #0065FC;
+#box-dog:checked ~ #dog-btn {
+	padding-right: 51px;
 }
- 
+
 #info {
 	width: 15px;
 	height: 15px;
