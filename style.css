@@ -1,16 +1,16 @@
-content {
-	width: 100%;
+#conteneur, #footer-infos {
+	width: 90%;
+	margin: 0 auto; 
 }
 
+/******************************************** REGLER LE PB STAR CARTE AMINA ET PORT ****************************************/
 body {
-
-	margin: 0; 
-	padding: 0 35px;
+	padding: 0;
 	font-family: 'Raleway', sans-serif;
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 24px;
 }
 
 p {
@@ -26,12 +26,13 @@ header {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	padding: 30px 0;
+	padding: 20px 0;
 }
 
 header nav {
-	width: 33%;
+	width: 46%;
 	text-align: right;
+	/*border: 3px solid yellow;*/
 }
 header nav ul {
 	text-decoration: none;
@@ -43,7 +44,8 @@ header nav ul li {
 
 header nav ul li a {
 	display: inline-block;
-	padding: 25px;
+	position: relative;
+	/*padding: 25px;*/
 	color: black;
 	text-decoration: none;
 	font-size: 20px;
@@ -54,17 +56,11 @@ header nav ul li a:hover {
 	color: #0065FC;
 }
 
-header nav ul li a {
-	position: relative;
-}
-
 header nav ul li a:after {
 	position: absolute;
-	bottom: 117px;
+	bottom: 64px;
 	left: 0;
-	/*right: 500px;*/
-	margin: auto;
-	width: 0%;
+	/*margin: auto;*/
 	content: "";
 	background: blue;
 	height: 4px;
@@ -81,7 +77,7 @@ h2 {
 	padding-left: 20px;
 }
 
-#inscription a {
+#navins a {
 	color: #0065FC;
 	font-weight: bold;
 }
@@ -90,14 +86,21 @@ h2 {
 section {
 	width: 100%;
 }
+
+h1 {
+	margin: 0;
+}
+
 #recherche #lieu {
-	padding: 0;
+	margin: 10px 0;
 	letter-spacing: 1px;
 }
 
 #search-bar {
-	width: 35%;
+	margin-top: 20px;
+	width: 33%;
 	display: flex;
+	box-sizing: border-box;
 }
 
 #location {
@@ -106,34 +109,42 @@ section {
 	font-size: 24px;
 	border-radius: 14px 0 0 14px;
 	padding: 14px;
-	width: 30px;
+	width: 10%;
 	height: 32px;
 }
 
 input {
 	border: 1px solid #F2F2F2;
-	width: 273px;
+	width: 70%;
 	font-family: "Raleway", sans-serif;
 	font-weight: 600;
 	font-size: 20px;
+	outline-color: #0065FC;
 }
+
+
 
 ::placeholder {
 	color: black;
 	font-weight: 800;
 	font-size: 20px;
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
 button {
 	font-size: 20px;
 	color: white;
+	font-weight: 600;
 	background-color: #0065FC;
 	border: none;
 	border-radius: 0 14px 14px 0;
 	padding: 13px;
-	width: 180px;
+	width: 47%;
 	height: 60px;
+}
+
+button::before {
+	content: "Rechercher";
 }
 
 /* Filtres */
@@ -142,29 +153,36 @@ button {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border: 3px solid blue;
+	margin: 10px 0 0 0;
 }
 
 .toggleBox p {
 	font-size: 20px;
 	color: black;
 	font-weight: 900;
-	border: 3px solid yellow;
+}
+
+.toggle {
+	/*background: blue;*/
+	box-sizing: border-box;
+	/*display: flex;
+	flex-wrap: wrap;*/
+
 }
 
 input[type="checkbox"] {
 	position: relative;
-	top: 3px;
+	top: 24px;
 	 /* Taille de ....... */
 	height: 40px; /* ...... la checkbox */
-	background: pink; /* Couleur de fond de la checkbox */
+	background: white; /* Couleur de fond de la checkbox */
 	-webkit-appearance: none; /* Annule la forme de base de la checkbox */
 	border-radius: 20px; /* Arrondi la forme de la checkbox */
 	cursor: pointer; /* Modifie la forme du curseur de la souris flèche en main */
 }
 
 input[id="box-eco"] {
-	width: 140px;
+	width: 155px;/*****************************/
 	outline: none;
 }
 
@@ -185,9 +203,9 @@ input[id="box-dog"] {
 
 input[type="checkbox"]::before {
 	position: absolute;
-	top: 1px; /* Centrage vertical du bouton */
-	width: 35px; /* Design du ........ */
-	height: 35px; /* ........ */
+	top: 2%; /* Centrage vertical du bouton */
+	width: 50px; /* Design du ........ */
+	height: 50px; /* ........ */
 	background: #D2E3FE; /* ........ */
 	border-radius: 50%; /* ........ bouton */
 	z-index: 2; 
@@ -203,23 +221,24 @@ input[type="checkbox"]::before {
 input:checked[type="checkbox"]::before {
 	background: white; /* Modif du bouton au ..... */
 	color: #0065FC; /* ..... moment du clic */
+	opacity: 0.5;/**************/
 }
 
 input:checked[type="checkbox"][id="box-eco"]::before {
-	left: 88%; /* Déplacement du bouton vers la droite */
+	left: 108%; /* Déplacement du bouton vers la droite */
 	outline: none;
 }
 
 input:checked[type="checkbox"][id="box-fam"]::before {
-	left: 70%; 
+	left: 106%; 
 }
 
 input:checked[type="checkbox"][id="box-love"]::before {
-	left: 85%; 
+	left: 125%; 
 }
 
 input:checked[type="checkbox"][id="box-dog"]::before {
-	left: 85%; 
+	left: 111%; 
 }
 
 input[type="checkbox"]:hover::before {
@@ -240,50 +259,51 @@ input[type="checkbox"]:hover::before {
 
 /* Design du texte de la checkbox */
 label { 
-	position: absolute; /* Permet la superposition */
-	top: 442px;
+	position: relative; /* Permet la superposition *//******************/
+	bottom: 25px;
 	/*padding-left: 125px;*/
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	/*align-content: center;*/
+	/*align-content: center;
 	/*text-align: left;*/
 	color: black;
 	font-weight: 900;
-	font-size: 16px;
+	font-size: 20px;
 	background-color: white; /**** A MODIFIER *****/
 	width: 148px;
-	height: 41px;
-	border-radius: 20px;
+	height: 60px;
+	border-radius: 50px;
 	box-sizing: border-box; /* Permet de mettre un padding-right sur le texte sans modifier la width */
 	/*padding-right: 5px;*/
 	/*outline: none;*/
-	border: 1px solid #CFCECE;
+	border: 3px solid #CFCECE;
 	transition: 2s;
 }
 
 #eco-btn {
-	left: 175px;
-	width: 160px;
-	padding: 9px;
+	/*left: 175px;*/
+	width: 225px;/***************/
+	padding: 22px;
+	/*opacity: 0.5;/*********************/
 }
 
 #fam-btn { 
-	left: 385px;
-	width: 120px;
-	padding: 10px;
+	/*left: 385px;*/
+	width: 180px;
+	padding: 20px;
 }
 
 #love-btn { 
-	left: 578px;
-	width: 148px;
-	padding: 10px;
+	/*left: 578px;*/
+	width: 225px;
+	padding: 23px;
 }
 
 #dog-btn { 
-	left: 785px;
-	width: 210px;
-	padding: 12px;
+	/*left: 785px;*/
+	width: 290px;
+	padding: 25px;
 }
 
 #box-eco:checked ~ #eco-btn, #box-fam:checked ~ #fam-btn, 
@@ -296,19 +316,23 @@ label {
 	transition: 2s;
 }
 #box-eco:checked ~ #eco-btn {
-	padding-right: 51px;
+	padding-right: 82px;
 }
 
 #box-fam:checked ~ #fam-btn {
-	padding-right: 48px;
+	padding-right: 80px;
 }
 
 #box-love:checked ~ #love-btn {
-	padding-right: 46px;
+	padding-right: 82px;
 }
 
-#box-dog:checked ~ #dog-btn {
-	padding-right: 51px;
+#box-dog:checked ~ #dog-btn { 
+	padding-right: 82px;
+}
+
+#toggle-p {
+	margin: 0; 
 }
 
 #info {
@@ -319,14 +343,20 @@ label {
 	border: 1px solid #dfdede;
 	padding: 5px;
 	text-align: center;
-	margin-right: 15px;
+	/*margin-right: 15px;
+	margin-bottom: 25px;*/
 }
 
 /* Container cartes hébergements */
+main {
+	width: 100%;
+}
 #heb-pop {
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	margin-top: 30px;
 }
 
 #hebergements {
@@ -337,25 +367,25 @@ label {
 	background-color: #F2F2F2;
 	border-radius: 25px;
 	width: 65%;
-	height: 670px;
+	height: 570px;
 	padding: 25px;
 }
 
 #hebergements h2 {
 	margin: 0;
 	position: relative;
-	top: 15px;
+	top: 5px;
 }
 
 /* Container heb1 */
 .card-heb1 {
 	display: block;
-	width: 310px;
-	height: 220px;
-	margin: 20px; /* Centrage au centre de la page, ne pas oublier display block */
+	width: 28%;
+	height: 190px;
+	margin: 15px; /* Centrage au centre de la page, ne pas oublier display block */
 	padding: 4px; /* Contour autour de l'image */
 	background-color: white;
-	box-shadow: 0px 5px 20px #997; /* Ombrage */
+	box-shadow: 0px 5px 18px #D8D7D7; /* Ombrage */
 	border-radius: 25px;
 }
 
@@ -390,35 +420,42 @@ label {
 
 /* Card-body heb1 */
 .card-body-heb1 {
-	width: 300px;
-	line-height: 28px;
+	width: 100%;
+	line-height: 20px;
 	/*height: 100px;*/
 	text-align: left; /* Alignement de ts les éléments à l'intérieur de .card-body */
-	padding: 15px 20px; /* Evite que les éléments soient collés, et ils sont décalés du rebord */
+	padding: 5px 10px; /* Evite que les éléments soient collés, et ils sont décalés du rebord */
 	box-sizing: border-box; /* Permet que le padding soit inclus dans notre bloc et non en plus du bloc */
 }
 
 .card-body-heb1 h4, .card-body-heb1 p {
 	margin: 0;
-	font-size: 20px;
+	font-size: 16px;
+}
+
+.card-body-heb1 p {
+	margin: 0;
+	font-size: 14px;
 }
 
 .card-except-heb1 {
 	color: #0065FC;
+	font-size: 1px;
 }
 
 .card-except-heb1 i {
 	color: #dad6d6;
-	top: 50%;
-	font-size: 14px;
+	line-height: 25px;
+	font-size: 12px;
 }
 
 .card-except-heb1 span {
-	font-size: 14px;
+	line-height: 25px;
+	font-size: 12px;
 }
 
 #more {
-	top: 10px;
+	/*top: 5px;*/
 	width: 100%;
 	height: 40px;
 	padding-left: 20px;
@@ -436,37 +473,42 @@ aside {
 	background-color: #F2F2F2;
 	border-radius: 25px;
 	width: 25%;
-	height: 670px;
+	height: 570px;
 	padding: 25px;
 }
+
 #stats h2 {
 	margin: 0;
 	position: relative;
 	float: left;
-	top: 15px;
-	left: -15px;
+	top: 9px;
 	width: 350px;
 	font-size: 24px;
 }
+
 #stats i {
 	position: relative;
 	float: right;
-	top: 15px;
+	right: 25px;
+	bottom: 23px;
 	font-size: 30px;
 }
 
 .card-pop {
-	position: relative;
-	top: 30px;
+	right: 4px;
+	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
 }
 
 .card-pop1, .card-pop2, .card-pop3 {
-	width: 380px;
-	height: 160px;
-	margin-bottom: 40px; /* Centrage au centre de la page, ne pas oublier display block */
-	padding: 2px; /* Contour autour de l'image */
+	width: 100%;
+	height: 140px;
+	padding: 4px; /* Contour autour de l'image */
 	background-color: white;
-	box-shadow: 0px 5px 20px #997; /* Ombrage */
+	box-shadow: 0px 5px 18px #D8D7D7; /* Ombrage */
 	border-radius: 25px;
 }
 
@@ -490,11 +532,9 @@ aside {
 .card-image-pop1 {
 	float: left;
 	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	width: 150px;
-	height: 150px;
+	width: 140px;
+	height: 140px;
 	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
-	top: 4px;
-	left: 4px;
 	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
 	border-radius: 25px 0px 0px 25px;
 }
@@ -514,11 +554,9 @@ aside {
 .card-image-pop2 {
 	float: left;
 	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	width: 150px;
-	height: 150px;
+	width: 140px;
+	height: 140px;
 	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
-	top: 4px;
-	left: 4px;
 	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
 	border-radius: 25px 0px 0px 25px;
 }
@@ -538,11 +576,9 @@ aside {
 .card-image-pop3 {
 	float: left;
 	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	width: 150px;
-	height: 150px;
+	width: 140px;
+	height: 140px;
 	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
-	top: 4px;
-	left: 4px;
 	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
 	border-radius: 25px 0px 0px 25px;
 }
@@ -561,10 +597,10 @@ aside {
 
 /* Card-body pop1 */
 .card-body-pop1 {
+	width: 50%;
 	display: flex;
 	flex-wrap: wrap;
-	width: 220px;
-	height: 160px;
+	height: 150px;
 	letter-spacing: 0.1px;
 	/*text-align: right; /* Alignement de ts les éléments à l'intérieur de .card-body */
 	padding: 0px 5px; /* Evite que les éléments soient collés, et ils sont décalés du rebord */
@@ -573,62 +609,45 @@ aside {
 
 .card-body-pop1 h4 {
 	position: relative;
-	top: -2px;
-	margin: 10px;
-	font-size: 20px;
+	margin: 10px 0 0 10px;
+	font-size: 14px;
 }
 
 .card-body-pop1 p {
 	position: relative;
-	top: -20px;
-	margin: 10px;
-	font-size: 16px;
+	margin: 0 10px;
+	font-size: 12px;
 }
 .card-except-pop1 {
 	margin: 10px;
 	color: #0065fc;
+	font-size: 5px;
+	padding-top: 30px;
 }
 
 .card-except-pop1 i {
 	padding: 0;
 	color: #dad6d6;
 	position: relative;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .card-except-pop1 span {
 	padding: 0;
 	position: relative;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 /* Container activités1 */
-.activites-p1 {
-	display: flex;
-	flex-flow: wrap column;
-	justify-content: space-between;
-	align-content: space-between;
-	height: 600px;
-	width: 48%;
-	padding-right: 10px;
-}
-
-.activites-p2 {
-	display: flex;
-	flex-flow: wrap column;
-	justify-content: space-between;
-	align-content: space-between;
-	height: 600px;
-	width: 48%;
-	padding-left: 10px;
-}
 #activites {
 	display: flex;
 	justify-content: space-between;
+	align-content: space-between;
 	flex-wrap: wrap;
 	width: 100%;
-	height: 750px;
-	margin-top: 30px;
+	height: 620px;
+	/*margin-top: 30px;*/
+	/*border: 3px solid blue;*/
 }
 
 #activites h2 {
@@ -636,16 +655,68 @@ aside {
 	padding: 0; 
 	position: relative;
 	width: 100%;
-	top: 40px;
+	top: 60px;
 }
 
+.activites-p1 {
+	display: flex;
+	flex-wrap: wrap;
+	/*flex-flow: wrap column;*/
+	justify-content: space-between;
+	align-content: space-between;
+	height: 500px;
+	/*width: 48%;*/
+	width: 50%;
+	/*padding-right: 10px;*/
+	box-sizing: border-box;
+	/*border: 3px solid purple;*/
+}
+
+.activites-p2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	height: 500px;
+	/*width: 48%;*/
+	width: 47%;
+	/*padding-left: 10px;*/
+	box-sizing: border-box;
+	/*border: 3px solid yellow;*/
+}
+
+#cd-a2-a3 {
+	width: 45%;
+	/*height: 620px;*/
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+	box-sizing: border-box;
+	/*border: 3px solid green;*/
+}
+
+#cd-a3-a2 {
+	width: 45%;
+	/*height: 620px;*/
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+	box-sizing: border-box;
+	/*border: 3px solid green;*/
+}
+
+/* Container activités1 */
 .card-activites1 {
-	width: 380px;
-	height: 620px;
+	/*width: 380px;*/
+	width: 45%;
+	height: 500px;
 	display: block;
 	background-color: white;
-	box-shadow: 0px 5px 20px #997; /* Ombrage */
+	box-shadow: 0px 5px 18px #E7E7E7; /* Ombrage */
 	border-radius: 25px;
+	/*border: 3px solid red;*/
 }
 
 .card-activites1 a {
@@ -659,7 +730,7 @@ aside {
 
 /* Card-image activités1*/
 .card-image-activites1 {
-	height: 528px;
+	height: 440px;
 	position: relative; 
 	overflow: hidden; 
 	border-radius: 25px 25px 0px 0px ;
@@ -697,11 +768,12 @@ aside {
 
 /* Container activités2 */
 .card-activites2 {
-	width: 380px;
-	height: 310px;
+	/*width: 380px;*/
+	width: 100%;
+	height: 260px;
 	display: block;
 	background-color: white;
-	box-shadow: 0px 5px 20px #997; 
+	box-shadow: 0px 5px 18px #E7E7E7; 
 	border-radius: 25px;
 }
 
@@ -716,7 +788,7 @@ aside {
 
 /* Card-image activités2*/
 .card-image-activites2 {
-	height: 230px;
+	height: 190px;
 	position: relative; 
 	overflow: hidden; 
 	border-radius: 25px 25px 0px 0px ;
@@ -755,11 +827,12 @@ aside {
 
 /* Container activités3 */
 .card-activites3 {
-	width: 380px;
-	height: 210px;
+	/*width: 380px;*/
+	width: 100%;
+	height: 180px;
 	display: block;
 	background-color: white;
-	box-shadow: 0px 5px 20px #997; 
+	box-shadow: 0px 5px 18px #E7E7E7; 
 	border-radius: 25px;
 }
 
@@ -774,7 +847,7 @@ aside {
 
 /* Card-image activités3 */
 .card-image-activites3 {
-	height: 140px;
+	height: 117px;
 	position: relative; 
 	overflow: hidden; 
 	border-radius: 25px 25px 0px 0px ;
@@ -813,11 +886,26 @@ aside {
 
 /* Footer */
 footer {
-	width: 100%;
-	padding: 30px 0;
-	display: flex;
+	/*width: 100%;
+	/*margin: 0;
+	/*padding: 30px 0;*/
+	/*display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;*/
+	margin-top: 40px;
+	height: 200px;
 	background-color: #F2F2F2;
-	border: 5px solid blue;
+}
+
+#footer-infos {
+
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 15px;
+	/*align-content: center;*/
+	justify-content: space-around;
+	/*width: 100%;
+	background-color: #F2F2F2;*/
 }
 
 footer ul {
@@ -826,7 +914,7 @@ footer ul {
 
 footer li {
 	line-height: 30px;
-	font-size: 20px;
+	font-size: 16px;
 }
 
 footer li a {
@@ -849,25 +937,369 @@ footer h3 {
 	width: 33%;
 }
 
-@media all and (max-width: 375px)
+/***************** Responsive **********************/
+@media screen and (max-device-width: 480px)
 {
+	/*
+	#heb-pop, #activites {
+		width: 100%;
+	}*/
+/*
+	header, #recherche {
+		width: 50%;
+		margin: 0 auto;
+	}*/
+
+	#conteneur {
+		width: 100%;
+	}
+
+	body 
+	{
+		margin: 0;
+		/*width: auto;*/
+	}
+/******************* En attente *********************/
+	/*nav ul li {
+		width: 250px;
+		border: 3px solid yellow;
+	}
+
+	nav ul li a {
+	/*display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+	content: "";
+	background: grey;
+	/*width: 100%;
+	/*height: 4px;
+	font-size: 20px;
+	/*margin: 0 15px;
+	}
+
+	header nav ul li a:hover {
+		color: #0065FC;
+	}
+
+	header nav ul li a:after {
+		/*position: absolute;
+		bottom: 64px;
+		left: 0;
+		content: "";
+		background: blue;
+		height: 4px;
+	}
+
+	header nav ul li a:hover:after {
+		/*width: 100%;
+	}*/
+/************************************************************************/
+	header img {
+		padding-left: 25px;
+	}
+
+	header nav ul {
+		width: 480px;
+		height: 70px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap-reverse;
+		justify-content: flex-end;
+		position: relative;
+		top: 95px; /***************a modif si besoin *****************/
+		right: 260px;
+		box-sizing: content-box;
+		padding: 0;
+		/*position: relative;*/
+	}
+
+	header nav ul li {
+		width: 240px;
+		/*height: 4px;*/
+		text-align: center;
+	}
+
+	.navheb, .navact {
+		padding: 10% 0;
+	}
+
+	#navins {
+		text-align: right;
+		padding-right: 10px;
+	}
+
+	.navheb:before {
+	position: absolute;
+	content: "";
+	background: lightgrey;
+	width: 480px;
+	height: 4px;
+	top: 35px;
+	}
+
+	header nav ul li a {
+	
+	}
+
+	header nav ul li a:before {
+	/*display: inline-block;*/
+	/*padding: 25px;
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	margin: 0 15px;*/
+	}
+
+	header nav ul li a:hover {
+	color: #0065FC;
+	width: 100%;
+	}
+
+	header nav ul li a:after {
+	position: absolute;
+	top: 37px;
+	left: 0;
+	/*margin: auto;
+	content: "";
+	background: blue;*/
+	height: 4px;
+	/*width: 500px;*/
+	}
+/*
+	header img {
+		/*position: absolute;
+	}
+	
+	header nav {
+		width: 100%;
+		/*display: inline-flex;
+		flex-wrap: wrap-reverse;
+	}
+
+	header nav ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap-reverse;
+		align-content: space-around;
+		align-items: stretch;
+		/*align-items: space-between;*/
+		/*position: relative;
+		top: 20px;
+	}
+/*
+	header nav ul li a {
+		box-sizing: border-box;
+		width: 150px;
+	}
+/*
+	#inscription {
+		flex-basis: 3;
+	}
+	.navheb-act {
+		flex-basis: 1;
+	}
+*/
+	/*
+	header nav ul li {
+		/*display: inline-flex;*/
+		/*flex-direction: row-reverse;*/
+		/*flex-wrap: wrap-reverse;*/
+		/*background: yellow;
+
+
+	}
+
+	header nav ul li a {
+		/*font-size: 20px;
+		/*display: inline-flex;
+		/*flex-direction: row-reverse;*/
+		/*flex-wrap: wrap-reverse;*/
+		/*width: 100%;
+	}
+
+	header nav ul li a:hover {
+
+	}
+
+	header nav ul li a:after {
+
+	}
+
+	header nav ul li a:hover:after {
+
+	}
+
 	header 
 	{
-		width: auto;	
+		width: 90%;
+		margin: 0 auto;
+		box-sizing: border-box;
+		/*display: flex;
+		flex-wrap: wrap-reverse;
+	}*/
+
+	#recherche {
+		margin: 0 auto;
+		padding-top: 50px;
+		width: 90%;
 	}
 
-	header nav ul li 
-	{
-		border: 5px solid #F2F2F2;
+	#search-bar {
+		width: 100%;
 	}
 
-	header nav ul li:hover 
-	{
-		display: none;
+	input {
+		position: relative;
+		width: 75%;
 	}
 
-	footer
-	{
+	button { /******************** Icône à rajouter et ôter le texte *************************/
+		position: absolute;
+		width: 14%;
+		border-radius: 30%;
+		left: 78%;
+	}
+
+	button::before {
+		font-family: "Font Awesome 5 Free"; 
+    	font-weight: 900; 
+    	color: white;
+    	content: "\f002"; 
+	}
+
+	.toggleBox {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		/*flex-wrap: wrap;*/
+		/*justify-content: space-between;*/
+		/*align-items: stretch;
+		/*position: relative;
+		top: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		/*flex-direction: column;*/
+		border: 1px solid red;
+		height: 40%;
+		width: 100%;
+	}
+
+	.toggleBox p {
+		width: 100%;
+		margin: 0;
+	}
+
+	.toggle {
+		margin: 0;
+		padding: 0;
+	}
+/*
+	main {
+		display: flex;
+		flex-wrap: wrap;
+	}*/
+	#heb-pop {
+		display: flex;
+		flex-wrap: wrap-reverse;
+	}
+
+	#hebergements {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		/*flex-direction: column;*/
+		background: none;
+		border-radius: 0;
+	}
+
+	.card-heb1 {
+		width: 90%;
+	}
+
+	aside {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 5% 0;
+		border-radius: 0;
+	}
+
+	#stats i {
+		top: 0;
+	}
+
+	#stats h2 {
+		top: 0;
+		padding-right: 63px;
+	}
+
+	.card-pop {
+		width: 90%;
+	}
+
+	#activites {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		/*justify-content: space-between;*/
+		width: 100%;
+		height: 5%;
+	}
+
+	.activites-p1/*, .activites-p2 */{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		height: 100%;
+		border: 1px solid red;
+		box-sizing: border-box;
+		margin: 0 auto;
+	}
+/*
+	.card-activites1, .card-activites2, .card-activites3 {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		width: 90%;
+	}*/
+
+	.card-activites1 {
+		width: 90%;
+		height: 150px;
+		margin: 0;
+	}
+
+	.card-body-activites1 {
+		width: 90%;
+		height: 150px;
+	}
+
+	#cd-a2-a3 {
+		display: flex;
+	}
+	.card-activites2 {
+		height: 80%;
+		width: 90%;
+		border: 1px solid green;
+	}
+/*
+	.card-activites3 {
+		height: 10%;
+	}*/
+
+	footer {
+		width: 100%;
+		height: 100%;
+	}
+
+	#footer-infos {
 		flex-direction: column;
 	}
 }
