@@ -62,7 +62,7 @@ header nav ul li a:after {
 	left: 0;
 	/*margin: auto;*/
 	content: "";
-	background: blue;
+	background: #0065FC;
 	height: 4px;
 }
 
@@ -147,6 +147,11 @@ button::before {
 	content: "Rechercher";
 }
 
+button:hover {
+	color: #0065FC;
+	background: lightblue;
+}
+
 /* Filtres */
 .toggleBox {
 	width: 75%;
@@ -154,6 +159,8 @@ button::before {
 	justify-content: space-between;
 	align-items: center;
 	margin: 10px 0 0 0;
+	box-sizing: border-box;
+	/*border: 1px solid purple;*/
 }
 
 .toggleBox p {
@@ -164,7 +171,7 @@ button::before {
 
 .toggle {
 	/*background: blue;*/
-	box-sizing: border-box;
+	/*box-sizing: border-box;
 	/*display: flex;
 	flex-wrap: wrap;*/
 
@@ -225,20 +232,20 @@ input:checked[type="checkbox"]::before {
 }
 
 input:checked[type="checkbox"][id="box-eco"]::before {
-	left: 108%; /* Déplacement du bouton vers la droite */
+	left: 95%; /* Déplacement du bouton vers la droite */
 	outline: none;
 }
 
 input:checked[type="checkbox"][id="box-fam"]::before {
-	left: 106%; 
+	left: 89%; 
 }
 
 input:checked[type="checkbox"][id="box-love"]::before {
-	left: 125%; 
+	left: 102%; 
 }
 
 input:checked[type="checkbox"][id="box-dog"]::before {
-	left: 111%; 
+	left: 96%; 
 }
 
 input[type="checkbox"]:hover::before {
@@ -283,27 +290,27 @@ label {
 
 #eco-btn {
 	/*left: 175px;*/
-	width: 225px;/***************/
-	padding: 22px;
+	width: 205px;/***************/
+	padding: 13px;
 	/*opacity: 0.5;/*********************/
 }
 
 #fam-btn { 
 	/*left: 385px;*/
-	width: 180px;
-	padding: 20px;
+	width: 160px;
+	padding: 12px;
 }
 
 #love-btn { 
 	/*left: 578px;*/
-	width: 225px;
-	padding: 23px;
+	width: 195px;
+	padding: 12px;
 }
 
 #dog-btn { 
 	/*left: 785px;*/
-	width: 290px;
-	padding: 25px;
+	width: 260px;
+	padding: 12px;
 }
 
 #box-eco:checked ~ #eco-btn, #box-fam:checked ~ #fam-btn, 
@@ -316,19 +323,19 @@ label {
 	transition: 2s;
 }
 #box-eco:checked ~ #eco-btn {
-	padding-right: 82px;
+	padding-right: 70px;
 }
 
 #box-fam:checked ~ #fam-btn {
-	padding-right: 80px;
+	padding-right: 70px;
 }
 
 #box-love:checked ~ #love-btn {
-	padding-right: 82px;
+	padding-right: 68px;
 }
 
 #box-dog:checked ~ #dog-btn { 
-	padding-right: 82px;
+	padding-right: 68px;
 }
 
 #toggle-p {
@@ -351,6 +358,7 @@ label {
 main {
 	width: 100%;
 }
+
 #heb-pop {
 	width: 100%;
 	display: flex;
@@ -462,6 +470,10 @@ main {
 	color: black;
 	font-weight: bold;
 	text-decoration: none;
+}
+
+#more:hover {
+	color: #0065FC;
 }
 
 /* Container populaires 1 */
@@ -638,14 +650,18 @@ aside {
 	font-size: 12px;
 }
 
+/**************************************************************************************************************************************/
+/**************************************************************************************************************************************/
 /* Container activités1 */
 #activites {
 	display: flex;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 	align-content: space-between;
 	flex-wrap: wrap;
+	/*flex-direction: column;*/
 	width: 100%;
 	height: 620px;
+	box-sizing: border-box;
 	/*margin-top: 30px;*/
 	/*border: 3px solid blue;*/
 }
@@ -658,20 +674,21 @@ aside {
 	top: 60px;
 }
 
-.activites-p1 {
+.activites-p1p2 {
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	/*flex-flow: wrap column;*/
 	justify-content: space-between;
 	align-content: space-between;
 	height: 500px;
-	/*width: 48%;*/
-	width: 50%;
+	width: 100%;
+	/*width: 100%;
 	/*padding-right: 10px;*/
 	box-sizing: border-box;
 	/*border: 3px solid purple;*/
 }
-
+/*
 .activites-p2 {
 	display: flex;
 	flex-wrap: wrap;
@@ -679,44 +696,45 @@ aside {
 	align-content: space-between;
 	height: 500px;
 	/*width: 48%;*/
-	width: 47%;
+	/*width: 47%;
 	/*padding-left: 10px;*/
-	box-sizing: border-box;
-	/*border: 3px solid yellow;*/
+	/*box-sizing: border-box;
+	/*border: 3px solid yellow;
 }
 
 #cd-a2-a3 {
 	width: 45%;
 	/*height: 620px;*/
-	display: flex;
+	/*display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-between;
 	box-sizing: border-box;
-	/*border: 3px solid green;*/
+	/*border: 3px solid green;
 }
 
 #cd-a3-a2 {
 	width: 45%;
-	/*height: 620px;*/
+	/*height: 620px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-between;
 	box-sizing: border-box;
-	/*border: 3px solid green;*/
-}
+	/*border: 3px solid green;
+}*/
 
 /* Container activités1 */
 .card-activites1 {
 	/*width: 380px;*/
-	width: 45%;
+	width: 23%;
 	height: 500px;
 	display: block;
 	background-color: white;
 	box-shadow: 0px 5px 18px #E7E7E7; /* Ombrage */
 	border-radius: 25px;
-	/*border: 3px solid red;*/
+	/*border: 1px solid red;*/
+	box-sizing: border-box;
 }
 
 .card-activites1 a {
@@ -725,31 +743,33 @@ aside {
 }
 
 .card-activites1:hover .card-image-activites1 img {
-	width: 250%; 
+	width: 300%; 
 }
 
 /* Card-image activités1*/
 .card-image-activites1 {
-	height: 440px;
+	height: 450px;
 	position: relative; 
 	overflow: hidden; 
-	border-radius: 25px 25px 0px 0px ;
+	border-radius: 25px 25px 0px 0px;
+	/*box-sizing: border-box;*/
 }
 
 .card-image-activites1 img {
-	width: 220%; /* Taille de l'image */
+	width: 277%; /* Taille de l'image */
 	position: absolute;
 	top: 10%; 
-	left: 50%; 
-	transform: translate(-50%, -10%); 
+	left: 63%; 
+	transform: translate(-57%, -10%); 
 	transition-duration: .3s;
 	transition-timing-function: ease;
+	box-sizing: border-box;
 }
 
 /* Card-body activités1 */
 .card-body-activites1 {
 	text-align: left; 
-	padding: 2px 30px; 
+	padding: 2px 20px; 
 	box-sizing: border-box; 
 }
 
@@ -759,7 +779,7 @@ aside {
 
 .card-title-activites1 {
 	position: relative;
-	top: 10px;
+	/*top: 0px;*/
 	font-size: 16px;
 }
 .card-except-activites1 {
@@ -769,12 +789,14 @@ aside {
 /* Container activités2 */
 .card-activites2 {
 	/*width: 380px;*/
-	width: 100%;
+	width: 22%;
 	height: 260px;
 	display: block;
 	background-color: white;
 	box-shadow: 0px 5px 18px #E7E7E7; 
 	border-radius: 25px;
+	box-sizing: border-box;
+	/*border: 1px solid orange;*/
 }
 
 .card-activites2 a {
@@ -783,23 +805,24 @@ aside {
 }
 
 .card-activites2:hover .card-image-activites2 img {
-	width: 120%; 
+	width: 150%; 
 }
 
 /* Card-image activités2*/
 .card-image-activites2 {
-	height: 190px;
+	height: 210px;
 	position: relative; 
 	overflow: hidden; 
-	border-radius: 25px 25px 0px 0px ;
+	border-radius: 25px 25px 0px 0px;
+	box-sizing: border-box;
 }
 
 .card-image-activites2 img {
-	width: 100%; 
+	width: 120%; 
 	position: absolute;
 	top: 43%; 
 	left: 50%; 
-	transform: translate(-50%, -41%); 
+	transform: translate(-50%, -38%); 
 	transition-duration: .3s;
 	transition-timing-function: ease;
 }
@@ -807,7 +830,7 @@ aside {
 /* Card-body activités2 */
 .card-body-activites2 {
 	text-align: left; 
-	padding: 2px 30px; 
+	padding: 2px 20px; 
 	box-sizing: border-box; 
 }
 
@@ -818,7 +841,7 @@ aside {
 
 .card-title-activites2 {
 	position: relative;
-	top: 15px;
+	/*top: 0px;*/
 	font-size: 16px;
 }
 .card-except-activites2 {
@@ -828,12 +851,14 @@ aside {
 /* Container activités3 */
 .card-activites3 {
 	/*width: 380px;*/
-	width: 100%;
+	width: 22%;
 	height: 180px;
 	display: block;
 	background-color: white;
 	box-shadow: 0px 5px 18px #E7E7E7; 
 	border-radius: 25px;
+	box-sizing: border-box;
+	/*border: 1px solid purple;*/
 }
 
 .card-activites3 a {
@@ -842,23 +867,24 @@ aside {
 }
 
 .card-activites3:hover .card-image-activites3 img {
-	width: 120%; 
+	width: 150%; 
 }
 
 /* Card-image activités3 */
 .card-image-activites3 {
-	height: 117px;
+	height: 129px;
 	position: relative; 
 	overflow: hidden; 
-	border-radius: 25px 25px 0px 0px ;
+	border-radius: 25px 25px 0px 0px;
+	box-sizing: border-box;
 }
 
 .card-image-activites3 img {
-	width: 100%; 
+	width: 120%; 
 	position: absolute;
 	top: 43%; 
 	left: 50%; 
-	transform: translate(-50%, -31%); 
+	transform: translate(-50%, -28%); 
 	transition-duration: .3s;
 	transition-timing-function: ease;
 }
@@ -866,7 +892,7 @@ aside {
 /* Card-body activités3 */
 .card-body-activites3 {
 	text-align: left; 
-	padding: 2px 30px; 
+	padding: 2px 20px; 
 	box-sizing: border-box; 
 }
 
@@ -877,12 +903,16 @@ aside {
 
 .card-title-activites3 {
 	position: relative;
-	top: 10px;
+	/*top: 1px;*/
 	font-size: 16px;
 }
 .card-except-activites3 {
 	font-size: 15px;
 }
+
+/**************************************************************************************************************************************/
+/**************************************************************************************************************************************/
+
 
 /* Footer */
 footer {
@@ -921,6 +951,11 @@ footer li a {
 	text-decoration: none;
 	color: black;
 }
+
+footer li a:hover {
+	color: #0065FC;
+}
+
 footer h3 {
 	margin-bottom: 0;
 }
@@ -936,9 +971,10 @@ footer h3 {
 #fassistance {
 	width: 33%;
 }
-
+/*************************************************/
+/*****************************************************/
 /***************** Responsive **********************/
-@media screen and (max-device-width: 480px)
+@media only screen and (max-width: 480px)
 {
 	/*
 	#heb-pop, #activites {
@@ -1207,7 +1243,7 @@ footer h3 {
 
 	#hebergements {
 		display: flex;
-		flex-wrap: wrap;
+		/*flex-wrap: wrap;*/
 		width: 100%;
 		height: 100%;
 		padding: 0;
@@ -1243,59 +1279,55 @@ footer h3 {
 	}
 
 	#activites {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		/*justify-content: space-between;*/
-		width: 100%;
-		height: 5%;
+	display: flex;
+	/*justify-content: space-between;
+	/*align-content: space-between;
+	flex-wrap: wrap;
+	/*flex-direction: column;*/
+	/*width: 100%;*/
+	height: 1080px;
+	/*box-sizing: border-box;
+	/*margin-top: 30px;*/
+	/*margin: 0 auto;
+	padding: 0 auto;*/
+	border: 3px solid blue;
 	}
 
-	.activites-p1/*, .activites-p2 */{
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		justify-content: space-between;
-		width: 100%;
-		height: 100%;
-		border: 1px solid red;
-		box-sizing: border-box;
-		margin: 0 auto;
+	.activites-p1p2 {
+	display: flex;
+	/*flex-direction: row;
+	flex-wrap: wrap;
+	/*flex-flow: wrap column;*/
+	/*justify-content: space-between;
+	align-content: space-between;*/
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	/*width: 100%;
+	/*padding-right: 10px;*/
+	/*box-sizing: border-box;
+	/*border: 3px solid purple;*/
 	}
-/*
-	.card-activites1, .card-activites2, .card-activites3 {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		width: 90%;
-	}*/
 
 	.card-activites1 {
 		width: 90%;
-		height: 150px;
-		margin: 0;
+		height: 180px;
+		background: yellow;
 	}
 
-	.card-body-activites1 {
-		width: 90%;
-		height: 150px;
-	}
-
-	#cd-a2-a3 {
-		display: flex;
-	}
 	.card-activites2 {
-		height: 80%;
 		width: 90%;
-		border: 1px solid green;
+		height: 180px;
+		border: 3px solid green;
 	}
-/*
+
 	.card-activites3 {
-		height: 10%;
-	}*/
+		width: 90%;
+		height: 180px;
+	}
 
 	footer {
-		width: 100%;
+		width: 90%;
 		height: 100%;
 	}
 
@@ -1303,6 +1335,87 @@ footer h3 {
 		flex-direction: column;
 	}
 }
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+	
+	header nav ul {
+		width: 50%;
+		height: 90px;
+		display: flex;
+		flex-direction: column;
+		background: lightblue;
+		/*flex-wrap: wrap-reverse;*/
+		justify-content: space-around;
+		position: relative;
+		/***************a modif si besoin *****************/
+		left: 255px;
+		box-sizing: content-box;
+		padding: 15px 0;
+		margin: 0;
+		/*position: relative;*/
+	}
+
+	header nav ul li {
+		padding: 5px 0;
+	}
+
+	header nav ul li a:after {
+		display: none;
+	}
+
+	header nav ul li a:hover, #navins a:hover {
+		color: white;
+	}
+
+	#search-bar {
+		width: 45%;
+	}
+
+	#heb-pop {
+	width: 50%;
+	display: flex;
+	/*flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 30px;*/
+	}
+
+	#card-heb1 {
+		width: 100%;
+	}
+
+	#hebergements {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		/*justify-content: space-between;
+		align-items: center;
+		background-color: #F2F2F2;
+		border-radius: 25px;
+		width: 65%;
+		height: 570px;
+		padding: 25px;*/
+	}
+
+	#hebergements h2 {
+		margin: 0;
+		position: relative;
+		top: 5px;
+	}
+
+	/* Container heb1 */
+	.card-heb1 {
+		display: block;
+		width: 28%;
+		height: 190px;
+		margin: 15px; /* Centrage au centre de la page, ne pas oublier display block */
+		padding: 4px; /* Contour autour de l'image */
+		background-color: white;
+		box-shadow: 0px 5px 18px #D8D7D7; /* Ombrage */
+		border-radius: 25px;
+	}
+
+	}
 
 
 
