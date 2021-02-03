@@ -33,28 +33,28 @@
 					<p id="lieu">En plein centre ville ou en pleine nature</p>
 
 					<div id="search-bar">
-					<span id="location" class="fa fa-map-marker" aria-hidden="true"></span><input type="text" placeholder="Marseille, France"><button></button>
+					<span id="location" class="fa fa-map-marker" aria-hidden="true"></span><input id="search" type="text" placeholder="Marseille, France"><button></button>
 					</div>
 
 					<div class="toggleBox">
 						<p>Filtres</p>
 
-						<div class="toggle">
+						<div class="toggle" id="grid-eco">
 							<input type="checkbox" id="box-eco" class="fas fa-money-bill-wave">
 							<label for="" id="eco-btn">Economique</label>
 						</div>
 
-						<div class="toggle">
+						<div class="toggle" id="grid-fam">
 							<input type="checkbox" class="fas fa-child" id="box-fam">
 							<label for="" id="fam-btn" >Familial</label>
 						</div>
 
-						<div class="toggle">
+						<div class="toggle" id="grid-love">
 							<input type="checkbox" class="fas fa-heart" id="box-love">
 							<label for="" id="love-btn" >Romantique</label>
 						</div>
 
-						<div class="toggle">
+						<div class="toggle" id="grid-dog">
 							<input type="checkbox" class="fas fa-dog" id="box-dog">
 							<label for="" id="dog-btn" >Animaux autorisés</label>
 						</div>
@@ -67,7 +67,7 @@
 				<section id="heb-pop">
 					<article id="hebergements">
 						<h2>Hébergements à Marseille</h2>
-						<div class="card-heb1">
+						<div class="card-heb1" id="grid-heb1">
 							<a href="#">
 								<!-- Image Cannebière -->
 								<div class="card-image-heb1">
@@ -100,7 +100,7 @@
 							</a>
 						</div>
 
-						<div class="card-heb1">
+						<div class="card-heb1" id="grid-heb2">
 							<a href="#">
 			
 								<div class="card-image-heb1">
@@ -129,7 +129,7 @@
 							</a>
 						</div>
 
-						<div class="card-heb1">
+						<div class="card-heb1" id="grid-heb3">
 							<a href="#">
 			
 								<div class="card-image-heb1">
@@ -158,7 +158,7 @@
 							</a>
 						</div>
 
-						<div class="card-heb1">
+						<div class="card-heb1" id="grid-heb4">
 							<a href="#">
 			
 								<div class="card-image-heb1">
@@ -187,7 +187,7 @@
 							</a>
 						</div>
 
-						<div class="card-heb1">
+						<div class="card-heb1" id="grid-heb5">
 							<a href="#">
 			
 								<div class="card-image-heb1">
@@ -216,7 +216,7 @@
 							</a>
 						</div>
 
-						<div class="card-heb1">
+						<div class="card-heb1" id="grid-heb6">
 							<a href="#">
 			
 								<div class="card-image-heb1">
@@ -250,12 +250,10 @@
 
 					<!-- Partie popularité ligne 464 -->
 					<aside>
-						<div id="stats">
+						
 						<h2>Les plus populaires</h2>
-						<i class="fa fa-line-chart" aria-hidden="true"></i>
-						</div>
-
-						<div class="card-pop">
+						<i class="fa fa-line-chart stats" aria-hidden="true"></i>
+						
 							<div class="card-pop1">
 								<a href="#">
 									<div class="card-image-pop1"><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Lit avec miroir au-dessus de la tête de lit"></div>
@@ -330,16 +328,15 @@
 									</div>
 								</a>						
 							</div>
-						</div>
+						
 					</aside>			
 				</section>
 
 				<!-- Partie activités ligne 638 -->
-				<section id="activites">
+				<article id="activites">
 
-					<h2>Activités à Marseille</h2>
-		            <article class="activites-p1p2"> 
-		                    <div class="card-activites1">
+					<h2>Activités à Marseille</h2> 
+		                    <div class="card-activites1" id="grid-act1">
 		                        <a href="#">
 		                            <div class="card-image-activites1">
 		                            	<img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Port, bateaux et immeubles">
@@ -354,84 +351,84 @@
 		                        </a>
 		                    </div>
 
-		                   
-			                <div class="card-activites2">
-			                    <a href="#">
-			                        <div class="card-image-activites2">
-			                           	<img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort">
-			                        </div>
+		                   	<div id="grid-act2">
+				                <div class="card-activites2">
+				                    <a href="#">
+				                        <div class="card-image-activites2">
+				                           	<img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort">
+				                        </div>
 
-			                        <div class="card-body-activites2">
+				                        <div class="card-body-activites2">
 
-			                            <div class="card-title-activites2">
-			                                <h4>Fort de Pomègues</h4>
-			                            </div>
-			                        </div>
-			                    </a>
+				                            <div class="card-title-activites2">
+				                                <h4>Fort de Pomègues</h4>
+				                            </div>
+				                        </div>
+				                    </a>
+				                </div>
+
+				                <div class="card-activites3">
+				                    <a href="#">
+				                        <div class="card-image-activites3">
+				                         <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Télescope donnant sur les Iles du Frioul">
+				                        </div>
+				 
+				                        <div class="card-body-activites3">
+
+				                            <div class="card-title-activites3">
+				                                <h4>Îles du Frioul</h4>
+				                            </div>
+				                        </div>
+				                    </a>
+				                </div>
 			                </div>
-
-			                <div class="card-activites3">
-			                    <a href="#">
-			                        <div class="card-image-activites3">
-			                         <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Télescope donnant sur les Iles du Frioul">
-			                        </div>
-			 
-			                        <div class="card-body-activites3">
-
-			                            <div class="card-title-activites3">
-			                                <h4>Îles du Frioul</h4>
-			                            </div>
-			                        </div>
-			                    </a>
-			                </div>
-			                
 		            
-		                	<div class="card-activites1">
-		                        <a href="#">
-		                            <div class="card-image-activites1">
-		                            	<img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques et la mer">
-		                            </div>
-
-		                            <div class="card-body-activites1">
-
-		                                <div class="card-title-activites1">
-		                                    <h4>Parc National des Calanques</h4>
-		                                </div>
-		                            </div>
-		                        </a>
-		                    </div>
-
-		                    
-			                <div class="card-activites3">
-			                    <a href="#">
-			                        <div class="card-image-activites3">
-			                         <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Basilique">
-			                        </div>
-
-			                        <div class="card-body-activites3">
-
-			                            <div class="card-title-activites3">
-			                                <h4>Notre-Dame-de-la-Garde</h4>
+			                	<div class="card-activites4" id="grid-act3">
+			                        <a href="#">
+			                            <div class="card-image-activites1">
+			                            	<img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques et la mer">
 			                            </div>
-			                        </div>
-			                    </a>
-			                </div>
 
-			                <div class="card-activites2">
-			                    <a href="#">
-			                        <div class="card-image-activites2">
-			                         <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Palais de Napoléon 3">
-			                        </div>
+			                            <div class="card-body-activites1">
 
-			                        <div class="card-body-activites2">
-			                            <div class="card-title-activites2">
-			                                <h4>Parc Longchamp</h4>
+			                                <div class="card-title-activites1">
+			                                    <h4>Parc National des Calanques</h4>
+			                                </div>
 			                            </div>
-			                        </div>
-			                    </a>
-			                </div>		                
-		            </article>
-		        </section>
+			                        </a>
+			                    </div>
+
+			                <div id="grid-act4">    
+				                <div class="card-activites5">
+				                    <a href="#">
+				                        <div class="card-image-activites3">
+				                         <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Basilique">
+				                        </div>
+
+				                        <div class="card-body-activites3">
+
+				                            <div class="card-title-activites3">
+				                                <h4>Notre-Dame-de-la-Garde</h4>
+				                            </div>
+				                        </div>
+				                    </a>
+				                </div>
+
+				                <div class="card-activites6">
+				                    <a href="#">
+				                        <div class="card-image-activites2">
+				                         <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Palais de Napoléon 3">
+				                        </div>
+
+				                        <div class="card-body-activites2">
+				                            <div class="card-title-activites2">
+				                                <h4>Parc Longchamp</h4>
+				                            </div>
+				                        </div>
+				                    </a>
+				                </div>	
+				            </div>	                
+		        </article>
 					
 			</main>
 		</div>
