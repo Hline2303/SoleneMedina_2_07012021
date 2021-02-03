@@ -1,9 +1,11 @@
+/**********************************************************************************************************************/
+														/* Global */
+/**********************************************************************************************************************/														
 #conteneur {
 	width: 100%;
 	margin: 0 auto; 
 }
 
-/******************************************** REGLER LE PB STAR CARTE AMINA ET PORT ****************************************/
 body {
 	padding: 0;
 	font-family: 'Raleway', sans-serif;
@@ -20,30 +22,32 @@ p {
 ul {
 	list-style: none;
 }
-
-/* Header */
+/**********************************************************************************************************************/
+														/* Header */
+/**********************************************************************************************************************/
+/*********************** Logo ********************/
 header {
 	width: 100%;
 	display: grid;
 	grid-template-columns: 2% 16% 80% 2%;
 	justify-items: end;
-	/*display: flex;*/
 	align-content: center;
 	padding: 20px 0;
-	/*border: 3px solid red;*/
 }
  header img {
  	grid-column: 2;
  	align-self: end;
  	justify-self: start;
- }
+}
+
+/*********************** Navigation ********************/
 header nav {
 	width: 55%;
 	text-align: right;
 	grid-column: 3;
 	align-self: end;
-	/*border: 3px solid yellow;*/
 }
+
 header nav ul {
 	text-decoration: none;
 }
@@ -55,7 +59,6 @@ header nav ul li {
 header nav ul li a {
 	display: inline-block;
 	position: relative;
-	/*padding: 25px;*/
 	color: black;
 	text-decoration: none;
 	font-size: 20px;
@@ -70,7 +73,6 @@ header nav ul li a:after {
 	position: absolute;
 	bottom: 68px;
 	left: 0;
-	/*margin: auto;*/
 	content: "";
 	background: #0065FC;
 	height: 4px;
@@ -91,8 +93,11 @@ h2 {
 	color: #0065FC;
 	font-weight: bold;
 }
+/**********************************************************************************************************************/
+														/* Main section zone de recherche */
+/**********************************************************************************************************************/
 
-/* Main section zone de recherche */
+/*********************** Recherche ********************/
 section {
 	width: 100%;
 }
@@ -145,13 +150,10 @@ input #search {
 	padding-left: 20px;
 }
 
-
-
 ::placeholder {
 	color: black;
 	font-weight: 800;
 	font-size: 20px;
-	/*padding-left: 20px;*/
 }
 
 button {
@@ -176,7 +178,7 @@ button:hover {
 	cursor: pointer;
 }
 
-/* Filtres */
+/*********************** Filtres ********************/
 .toggleBox {
 	width: 75%;
 	display: flex;
@@ -185,7 +187,6 @@ button:hover {
 	align-items: center;
 	margin: 10px 0 0 0;
 	box-sizing: border-box;
-	/*border: 1px solid purple;*/
 }
 
 .toggleBox p {
@@ -193,14 +194,6 @@ button:hover {
 	color: black;
 	font-weight: 900;
 	margin: 0;
-}
-
-.toggle {
-	/*background: blue;*/
-	/*box-sizing: border-box;
-	/*display: flex;
-	flex-wrap: wrap;*/
-
 }
 
 input[type="checkbox"] {
@@ -215,7 +208,7 @@ input[type="checkbox"] {
 }
 
 input[id="box-eco"] {
-	width: 155px;/*****************************/
+	width: 155px;
 	outline: none;
 }
 
@@ -279,62 +272,41 @@ input[type="checkbox"]:hover::before {
 	color: white; /* ..... moment du clic */
 }
 
-/*.toggleBox { /****** A revoir avec le code Reservia ******/
-	/*display: inline-flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;*/
-	/*max-width: 60%;
-	display: flex;
-	justify-content: space-between;
-	padding-left: 125px;
-	border: 3px solid yellow;
-}*/
-
 /* Design du texte de la checkbox */
 label { 
 	position: relative; /* Permet la superposition *//******************/
 	bottom: 25px;
-	/*padding-left: 125px;*/
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	/*align-content: center;
-	/*text-align: left;*/
 	color: black;
 	font-weight: 900;
 	font-size: 20px;
-	background-color: white; /**** A MODIFIER *****/
+	background-color: white; 
 	width: 148px;
 	height: 60px;
 	border-radius: 50px;
 	box-sizing: border-box; /* Permet de mettre un padding-right sur le texte sans modifier la width */
-	/*padding-right: 5px;*/
-	/*outline: none;*/
 	border: 3px solid #CFCECE;
 	transition: 2s;
 }
 
 #eco-btn {
-	/*left: 175px;*/
-	width: 205px;/***************/
+	width: 205px;
 	padding: 13px;
-	/*opacity: 0.5;/*********************/
 }
 
 #fam-btn { 
-	/*left: 385px;*/
 	width: 160px;
 	padding: 12px;
 }
 
 #love-btn { 
-	/*left: 578px;*/
 	width: 195px;
 	padding: 12px;
 }
 
 #dog-btn { 
-	/*left: 785px;*/
 	width: 260px;
 	padding: 12px;
 }
@@ -345,9 +317,9 @@ label {
 	border: none;
 	color: white;
 	box-sizing: border-box;
-	/*padding-right: 55px;*/
 	transition: 2s;
 }
+
 #box-eco:checked ~ #eco-btn {
 	padding-right: 70px;
 }
@@ -373,10 +345,10 @@ label {
 	padding: 5px;
 	text-align: center;
 	margin-right: 15px;
-	/*margin-bottom: 25px;*/
 }
-
-/* Container cartes hébergements */
+/**********************************************************************************************************************/
+														/* Container cartes hébergements */
+/**********************************************************************************************************************/
 main {
 	width: 100%;
 }
@@ -387,9 +359,6 @@ main {
 	grid-template-columns: 70% 30%;
 	grid-gap: 80px;
 	justify-content: center;
-	/*display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;*/
 	margin-top: 30px;
 	margin-left: 80px;
 }
@@ -402,7 +371,6 @@ main {
 	justify-content: start;
 	align-content: space-around;
 	justify-items: end;
-	/*grid-auto-flow: row;*/
 	background-color: #F2F2F2;
 	border-radius: 25px;
 	width: 100%;
@@ -413,8 +381,6 @@ main {
 #hebergements h2 {
 	margin: 0;
 	grid-column: span 3;
-	/*position: relative;
-	/*top: 1px;*/
 }
 
 /* Container heb1 */
@@ -540,8 +506,9 @@ main {
 #more:hover {
 	color: #0065FC;
 }
-
-/* Container populaires 1 */
+/**********************************************************************************************************************/
+														/* Container populaires */
+/**********************************************************************************************************************/
 aside {
 	display: grid;
 	grid-template-columns: 90% 5% 5%;
@@ -555,31 +522,16 @@ aside {
 	height: 570px;
 	padding: 25px;
 }
-/*
-#stats {
-	/*display: flex;
-	justify-content: flex-end;*/
-	/*grid-column: 1;
-	grid-row: 1;
-	border: 1px solid green;
-}*/
 
 aside h2 {
 	margin-top: 40px;
 	padding: 0;
-	/*display: flex;*/
 	grid-column: 1;
 	grid-row: 1;
 	justify-self: start;
 	align-self: center;
 	width: 85%;
 	font-size: 24px;
-	/*border: 1px solid orange;*/
-}
-
-span i {
-	/*margin-bottom: 1px;*/
-	
 }
 
 .stats {
@@ -587,26 +539,7 @@ span i {
 	grid-column: 2 / span 3;
 	grid-row: 1;
 	align-self: start;
-	/*border: 1px solid blue;*/
 }
-/*
-svg.fa-line-chart {
-	grid-column: 1;
-	grid-row: 2;
-	margin-top: 5px;
-
-}*/
-
-/*
-.card-pop {
-	right: 4px;
-	width: 100%;
-	height: 480px;
-	border: 1px solid red;
-	/*display: flex;
-	flex-wrap: wrap;
-	align-content: space-between;
-}*/
 
 .card-pop1 {
 	grid-column: 1 / span 3;
@@ -651,7 +584,8 @@ svg.fa-line-chart {
 .card-pop3:hover .card-image-pop3 img { 
 	width: 210%; /* Zoom de l'image */
 }
- /* Card-image pop1, pop2, pop3 */
+
+/* Card-image pop1, pop2, pop3 */
 .card-image-pop1 {
 	float: left;
 	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
@@ -760,49 +694,33 @@ svg.fa-line-chart {
 	position: relative;
 	font-size: 12px;
 }
-
-/**************************************************************************************************************************************/
-/**************************************************************************************************************************************/
-/* Container activités1 */
+/**********************************************************************************************************************/
+														/* Container activités */
+/**********************************************************************************************************************/
 #activites {
 	display: grid;
 	grid-template-columns: 24% 24% 24% 24%;
 	grid-template-rows: 8% 92%;
-	/*grid-auto-flow: row;*/
 	justify-content: center;
 	align-items: center;
 	column-gap: 40px;
-	/*display: flex;
-	/*justify-content: space-between;
-	align-content: space-between;
-	flex-wrap: wrap;*/
-	/*flex-direction: column;*/
 	width: 90%;
 	margin-left: 70px;
 	height: 620px;
 	box-sizing: border-box;
-	/*margin-top: 30px;*/
-	/*border: 3px solid green;*/
 }
 
 #grid-act2, #grid-act4 {
 	display: grid;
 	grid-template-columns: 1;
 	grid-template-rows: 2;
-	/*grid-gap: 30px;*/
 }
-/*
-#grid-act1 {
-	grid-column: 1;
-	grid-row: 2;
-}*/
 
 #grid-act2 {
 	grid-column: 2;
 	grid-row: 2;
 	align-content: space-between;
 	grid-row-gap: 70px;
-	/*border: 3px solid red;*/
 }
 
 #grid-act3 {
@@ -815,7 +733,6 @@ svg.fa-line-chart {
 	grid-row: 2;
 	align-content: space-between;
 	grid-row-gap: 70px;
-	/*border: 3px solid blue;*/
 }
 
 #activites h2 {
@@ -827,69 +744,16 @@ svg.fa-line-chart {
 	width: 100%;
 	top: 20px;
 }
-/*
-.activites-p1p2 {
-	/*display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	/*flex-flow: wrap column;
-	justify-content: space-between;
-	align-content: space-between;*/
-	/*height: 500px;
-	width: 100%;*/
-	/*width: 100%;
-	/*padding-right: 10px;*/
-	/*box-sizing: border-box;
-	/*border: 3px solid purple;
-}*/
-/*
-.activites-p2 {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-content: space-between;
-	height: 500px;
-	/*width: 48%;*/
-	/*width: 47%;
-	/*padding-left: 10px;*/
-	/*box-sizing: border-box;
-	/*border: 3px solid yellow;
-}
-
-#cd-a2-a3 {
-	width: 45%;
-	/*height: 620px;*/
-	/*display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: space-between;
-	box-sizing: border-box;
-	/*border: 3px solid green;
-}
-
-#cd-a3-a2 {
-	width: 45%;
-	/*height: 620px;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: space-between;
-	box-sizing: border-box;
-	/*border: 3px solid green;
-}*/
 
 /* Container activités1 */
 .card-activites1, .card-activites4 {
-	/*width: 380px;*/
 	grid-column: 1;
 	grid-row: 2;
 	width: 100%;
 	height: 510px;
-	/*display: block;*/
 	background-color: white;
 	box-shadow: 0px 5px 18px #E7E7E7; /* Ombrage */
 	border-radius: 25px;
-	/*border: 1px solid red;*/
 	box-sizing: border-box;
 }
 
@@ -909,7 +773,6 @@ svg.fa-line-chart {
 	position: relative; 
 	overflow: hidden; 
 	border-radius: 25px 25px 0px 0px;
-	/*box-sizing: border-box;*/
 }
 
 .card-image-activites1 img {
@@ -936,7 +799,6 @@ svg.fa-line-chart {
 
 .card-title-activites1 {
 	position: relative;
-	/*top: 0px;*/
 	font-size: 16px;
 }
 .card-except-activites1 {
@@ -945,15 +807,12 @@ svg.fa-line-chart {
 
 /* Container activités2 */
 .card-activites2, .card-activites6  {
-	/*width: 380px;*/
 	width: 100%;
 	height: 260px;
-	/*display: block;*/
 	background-color: white;
 	box-shadow: 0px 5px 18px #E7E7E7; 
 	border-radius: 25px;
 	box-sizing: border-box;
-	/*border: 1px solid orange;*/
 }
 
 .card-activites2 a, .card-activites6 a {
@@ -999,7 +858,6 @@ svg.fa-line-chart {
 
 .card-title-activites2 {
 	position: relative;
-	/*top: 0px;*/
 	font-size: 16px;
 }
 .card-except-activites2 {
@@ -1008,15 +866,12 @@ svg.fa-line-chart {
 
 /* Container activités3 */
 .card-activites3, .card-activites5  {
-	/*width: 380px;*/
 	width: 100%;
 	height: 180px;
-	/*display: block;*/
 	background-color: white;
 	box-shadow: 0px 5px 18px #E7E7E7; 
 	border-radius: 25px;
 	box-sizing: border-box;
-	/*border: 1px solid purple;*/
 }
 
 .card-activites3 a, .card-activites5 a {
@@ -1062,24 +917,19 @@ svg.fa-line-chart {
 
 .card-title-activites3 {
 	position: relative;
-	/*top: 1px;*/
 	font-size: 16px;
 }
 .card-except-activites3 {
 	font-size: 15px;
 }
 
-/**************************************************************************************************************************************/
-/**************************************************************************************************************************************/
-
-
-/* Footer */
+/**********************************************************************************************************************/
+														/* Footer */
+/**********************************************************************************************************************/
 footer {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	/*flex-wrap: wrap;
-	align-content: space-between;*/
 	margin-top: 40px;
 	height: 100%;
 	background-color: #F2F2F2;
@@ -1090,12 +940,6 @@ footer {
 	display: grid;
 	grid-template-columns: 30% 30% 30%;
 	margin-left: 30px;
-	/*flex-wrap: wrap;
-	padding-top: 15px;
-	/*align-content: center;*/
-	/*justify-content: space-around;*/
-	/*width: 100%;
-	background-color: #F2F2F2;*/
 }
 
 footer ul {
@@ -1118,24 +962,13 @@ footer li a:hover {
 
 footer h3 {
 	margin-bottom: 0;
-}/*
-#fpropos {
-	/*width: 33%;
-	text-align: left;
 }
-
-#fhebergements {
-	/*width: 33%;
-}
-
-#fassistance {
-	/*width: 33%;
-}
-/*************************************************/
-/*****************************************************/
-/***************** Responsive **********************/
+/*****************************************************************************************************************************/
+/*****************************************************************************************************************************/
+/******************************************************Responsive*************************************************************/
+/* Mobile */
 @media only screen and (max-width: 480px)
-{
+{	/* Global */
 	#conteneur {
 		width: 100%;
 	}
@@ -1143,9 +976,8 @@ footer h3 {
 	body 
 	{
 		margin: 0;
-		/*width: auto;*/
 	}
-
+	/************ Header ****************/
 	header {
 		width: 100%;
 	}
@@ -1162,26 +994,23 @@ footer h3 {
 		flex-wrap: wrap-reverse;
 		justify-content: flex-end;
 		position: relative;
-		top: 95px; /***************a modif si besoin *****************/
+		top: 95px; 
 		right: 285px;
 		box-sizing: content-box;
 		padding: 0;
-		/*position: relative;*/
 	}
 
 	header nav ul li {
 		width: 240px;
-		/*height: 4px;*/
 		text-align: center;
 	}
-
+	/* Navigation */
 	.navheb, .navact {
 		padding: 10% 0;
 	}
 
 	#navins {
 		text-align: right;
-		/*padding-right: 10px;*/
 	}
 
 	.navheb:before {
@@ -1211,8 +1040,7 @@ footer h3 {
 	left: 0;
 	height: 4px;
 	}
-
-
+	/************ Recherche ****************/
 	#recherche {
 		width: 100%;
 		margin-top: 50px;
@@ -1230,7 +1058,7 @@ footer h3 {
 		width: 80%;
 	}
 
-	button { /******************** Icône à rajouter et ôter le texte *************************/
+	button {
 		position: absolute;
 		width: 14%;
 		border-radius: 30%;
@@ -1250,15 +1078,6 @@ footer h3 {
 		grid-template-rows: 50px 50px 50px 50px;
 		box-sizing: border-box;
 		grid-gap: 25px 100px;
-		/*flex-wrap: wrap;*/
-		/*justify-content: space-between;*/
-		/*align-items: stretch;
-		/*position: relative;
-		top: 20px;
-		display: flex;
-		flex-wrap: wrap;
-		/*flex-direction: column;*/
-		/*border: 1px solid red;*/
 		height: 40%;
 		width: 100%;
 	}
@@ -1266,8 +1085,6 @@ footer h3 {
 	.toggleBox p {
 		grid-column: 1;
 		grid-row: 1;
-		/*width: 100%;
-		margin: 0;*/
 	}
 
 	#grid-eco {
@@ -1294,7 +1111,7 @@ footer h3 {
 		width: 100%;
 		margin-left: 5px;
 	}
-
+	/************ Hébergements ****************/
 	#heb-pop {
 		width: 100%;
 		margin: 0;
@@ -1306,16 +1123,12 @@ footer h3 {
 
 	#hebergements {
 		grid-row: 2;
-		/*grid-template-columns: 33% 33% 33%;*/
 		grid-template-rows: 2% repeat(6, 1fr) 2%;
 		grid-row-gap: 15px;
 		justify-items: center;
-		/*flex-wrap: wrap;*/
 		padding-top: 0;
 		width: 88%;
 		height: 100%;
-		/*padding: 20px;
-		/*flex-direction: column;*/
 		background: none;
 		border-radius: 0;
 	}
@@ -1374,7 +1187,7 @@ footer h3 {
 		margin-left: 12px;
 		width: 30%;
 	}
-
+	/************ Populaires ****************/
 	aside {
 		grid-row-gap: 1px;
 		border-radius: 0;
@@ -1398,33 +1211,18 @@ footer h3 {
 		width: 88%;
 		margin-bottom: 0;
 	}
-
+	/************ Activités ****************/
 	#activites {
-	grid-template-columns: 1fr;
-	grid-template-rows: 0.2fr 0.5fr 1fr 0.5fr;
-	justify-items: center;
-	grid-row-gap: 15px;
-	/*justify-content: space-between;
-	/*align-content: space-between;
-	flex-wrap: wrap;
-	/*flex-direction: column;*/
-	margin: 0;
-	width: 100%;
-	height: 100%;
-	/*box-sizing: border-box;
-	/*margin-top: 30px;*/
-	/*margin: 0 auto;
-	padding: 0 auto;*/
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.2fr 0.5fr 1fr 0.5fr;
+		justify-items: center;
+		grid-row-gap: 15px;
+		margin: 0;
+		width: 100%;
+		height: 100%;
 	}
-/*
-	#grid-act2 {
-	display: initial;
-	grid-template-columns: 50% 50%;
-	grid-row: 1;
-	}*/
 
 	#activites h2 {
-		/*width: 100%;*/
 		height: 20px;
 		margin-left: 75px;
 		grid-column: 1;
@@ -1433,12 +1231,8 @@ footer h3 {
 
 	.card-activites1, .card-activites2, .card-activites3,
 	.card-activites4, .card-activites5, .card-activites6 {
-	/*width: 380px;*/
-		/*grid-column: 1;
-		grid-row: 2;*/
 		width: 400px;
 		height: 185px;
-		/*margin-left: 55px;*/
 	}
 
 	.card-image-activites1, .card-image-activites2, .card-image-activites3,
@@ -1446,14 +1240,9 @@ footer h3 {
 		height: 135px;
 	}
 
-	
-
 	.card-activites1 {
 		grid-column: 1;
 		grid-row: 2;
-		/*margin-left: 520px;
-		/*align-content: space-between;*
-		grid-row-gap: 70px;*/
 	}
 
 	#grid-act2 {
@@ -1461,19 +1250,6 @@ footer h3 {
 		grid-row: 3;
 		grid-row-gap: 15px;
 	}
-/*
-	.card-activites3 {
-		grid-column: 1;
-		grid-row: 4;
-		height: 100%;
-		border: 1px solid blue;
-	}*/
-/*
-	.card-activites4 {
-		grid-column: 1;
-		grid-row: 2;
-		border: 3px solid purple;
-	}*/
 
 	#grid-act3 {
 		grid-column: 1;
@@ -1485,14 +1261,6 @@ footer h3 {
 		grid-row: 5;
 		grid-row-gap: 15px;
 	}
-/*
-	.card-image-activites1,  {
-		height: 129px;
-		position: relative; 
-		overflow: hidden; 
-		border-radius: 25px 25px 0px 0px;
-		box-sizing: border-box;
-	}*/
 
 	.card-image-activites1 img  {
 		width: 100%; 
@@ -1523,20 +1291,7 @@ footer h3 {
 		transition-duration: .3s;
 		transition-timing-function: ease;
 	}
-/*
-	.card-activites5 {
-		grid-column: 1;
-		grid-row: 6;
-		margin-right: 1200px;
-		border: 1px solid yellow;
-	}
-
-	.card-activites6 {
-		grid-column: 1;
-		grid-row: 7;
-		border: 1px solid orange;
-	}*/
-
+	/************ Footer ****************/
 	footer {
 		width: 100%;
 		height: 100%;
@@ -1549,8 +1304,10 @@ footer h3 {
 	}
 }
 
+/* Responsive */
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
-	conteneur {
+	/************ Global ****************/
+	.conteneur {
 		width: 100%;
 	}
 
@@ -1559,38 +1316,16 @@ footer h3 {
 		margin: 0;
 		width: auto;
 	}
-/*
-	header {
-		width: 100%;
-	}*/
-
+	/************ Header ****************/
 	header img {
 		margin-bottom: 45px;
 	}
 
-	header nav {
-		
-		/*align-content: flex-end;*/
-	}
 	header nav ul {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(3, 1fr);
 		justify-items: flex-end;
-		/*padding: 0;
-		width: 170px;
-		/*height: 70px;*/
-		/*display: flex;
-		flex-direction: column;
-		/*flex-wrap: wrap;*/
-		/*text-align: center;
-		/*align-items: flex-end;
-		/*=position: relative;
-		/*top: 95px; /***************a modif si besoin *****************/
-		/*right: 285px;*/
-		/*box-sizing: content-box;
-		/*padding: 0;
-		/*position: relative;*/
 	}
 
 	header nav ul li {
@@ -1604,54 +1339,28 @@ footer h3 {
 		padding: 2% 0;
 	}
 
-	#navins {
-		/*text-align: right;*/
-		/*padding-right: 0px;*/
-	}
-
-	.navheb:before {
-	/*position: absolute;
-	content: display;
-	background: purple;
-	width: 96%;
-	height: 4px;
-	color: white;*/
-	}
-
 	header nav ul li {
 		background: lightblue;
 	}
-/*
-	header nav ul li a:before {
-	}*/
 
 	header nav ul li a:hover {
-	color: #ffffff;
-	font-weight: 900;
-	/*width: 100%;*/
+		color: #ffffff;
+		font-weight: 900;
 	}
-	header nav ul li a:after {
-	position: relative;
-	bottom: 0;
-	left: 0;
-	/*margin: auto;*/
-	content: "";
-	height: 0;
-	}
-/*
-	header nav ul li a:after {
-	position: absolute;
-	top: 37px;
-	left: 0;
-	height: 4px;
-	}*/
 
+	header nav ul li a:after {
+		position: relative;
+		bottom: 0;
+		left: 0;
+		content: "";
+		height: 0;
+	}
+	/************ Recherche ****************/
 	#recherche {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 0.1fr 0.3fr 1fr 1fr 0.5fr;
 		width: 95%;
-		/*margin-top: 20px;*/
 		margin-left: 0;
 		padding: 0 0 0 25px;
 	}
@@ -1676,12 +1385,9 @@ footer h3 {
 		grid-row: 3 / span 2;
 	}
 
-
-
 	button { /******************** Icône à rajouter et ôter le texte *************************/
 		position: absolute;
 		width: 8%;
-		/*border-radius: 50%;*/
 		left: 30%;
 	}
 
@@ -1697,18 +1403,8 @@ footer h3 {
 		grid-template-columns: 0.1fr 0.2fr 0.1fr;
 		grid-template-rows: 0.5fr 0.5fr;
 		box-sizing: border-box;
-		/*grid-gap: 20px 8px;*/
 		grid-column: 2;
 		grid-row: 3 / span 2;
-		/*flex-wrap: wrap;*/
-		/*align-content: center;
-		/*align-items: stretch;
-		/*position: relative;
-		top: 20px;
-		display: flex;
-		flex-wrap: wrap;
-		/*flex-direction: column;*/
-		/*border: 1px solid red;*/
 		height: 100%;
 		width: 100%;
 	}
@@ -1720,9 +1416,6 @@ footer h3 {
 		text-orientation: upright;
 		font-size: 14px;
 		height: 60px;
-
-		/*width: 100%;
-		margin: 0;*/
 	}
 
 	.toggle {
@@ -1732,8 +1425,6 @@ footer h3 {
 	#box-eco {
 		grid-column: 2;
 		grid-row: 1;
-		/*height: 50px;
-		/*margin: 0;*/
 	}
 
 	#box-fam {
@@ -1767,7 +1458,7 @@ footer h3 {
 		align-items: center;
 		margin-left: 60px;
 	}
-
+	/************ Populaires ****************/
 	aside {
 		width: 100%;
 		height: 100%;
@@ -1793,23 +1484,20 @@ footer h3 {
 	}
 
 	.card-pop1 {
-		/*width: 90%;*/
 		grid-column: 1;
 		grid-row: 2;
 	}
 
 	.card-pop2 {
-		/*width: 90%;*/
 		grid-column: 2;
 		grid-row: 2;
 	}
 
 	.card-pop3 {
-		/*width: 90%;*/
 		grid-column: 3;
 		grid-row: 2;
 	}
-
+	/************ Activités ****************/
 	#activites {
 		width: 95%;
 		height: 500px;
@@ -1824,7 +1512,6 @@ footer h3 {
 	}
 
 	#activites h2 {
-		/*width: 100%;*/
 		height: 20px;
 		margin-left: 5px;
 		grid-column: 1;
@@ -1834,12 +1521,8 @@ footer h3 {
 
 	.card-activites1, .card-activites2, .card-activites3,
 	.card-activites4, .card-activites5, .card-activites6 {
-	/*width: 380px;*/
-		/*grid-column: 1;
-		grid-row: 2;*/
 		width: 300px;
 		height: 185px;
-		/*margin-left: 55px;*/
 	}
 
 	.card-image-activites1, .card-image-activites2, .card-image-activites3,
@@ -1847,14 +1530,10 @@ footer h3 {
 		height: 135px;
 	}
 
-	
-
 	.card-activites1 {
 		grid-column: 1;
 		grid-row: 2;
 		margin-top: 52px;
-		/*align-content: space-between;*
-		grid-row-gap: 70px;*/
 	}
 
 	#grid-act2 {
@@ -1862,19 +1541,6 @@ footer h3 {
 		grid-row: 2 / span 2;
 		grid-row-gap: 15px;
 	}
-/*
-	.card-activites3 {
-		grid-column: 1;
-		grid-row: 4;
-		height: 100%;
-		border: 1px solid blue;
-	}*/
-/*
-	.card-activites4 {
-		grid-column: 1;
-		grid-row: 2;
-		border: 3px solid purple;
-	}*/
 
 	#grid-act3 {
 		grid-column: 1;
@@ -1887,14 +1553,6 @@ footer h3 {
 		grid-row: 2 / span 2;
 		grid-row-gap: 15px;
 	}
-/*
-	.card-image-activites1,  {
-		height: 129px;
-		position: relative; 
-		overflow: hidden; 
-		border-radius: 25px 25px 0px 0px;
-		box-sizing: border-box;
-	}*/
 
 	.card-image-activites1 img  {
 		width: 100%; 
@@ -1925,8 +1583,7 @@ footer h3 {
 		transition-duration: .3s;
 		transition-timing-function: ease;
 	}
-
-
+	/************ Footer ****************/
 	footer {
 		width: 100%;
 	}
