@@ -367,7 +367,7 @@ main {
 	display: grid;
 	grid-template-columns: 33% 33% 33%;
 	grid-template-rows: 2% auto auto 3%; 
-	grid-gap: auto;
+	/*grid-gap: auto;*/
 	justify-content: start;
 	align-content: space-around;
 	justify-items: end;
@@ -496,7 +496,7 @@ main {
 	align-self: end;
 	width: 50%;
 	height: 40px;
-	padding-left: 0 0 0 20px ;
+	padding-left: 20px ;
 	margin: 0;
 	color: black;
 	font-weight: bold;
@@ -712,8 +712,8 @@ aside h2 {
 
 #grid-act2, #grid-act4 {
 	display: grid;
-	grid-template-columns: 1;
-	grid-template-rows: 2;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
 }
 
 #grid-act2 {
@@ -1300,7 +1300,7 @@ footer h3 {
 	#footer-infos {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1/2fr 1/2fr;
+		grid-template-rows: 1fr 0.5fr 0.5fr;
 	}
 }
 
