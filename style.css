@@ -1550,7 +1550,386 @@ footer h3 {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
+	conteneur {
+		width: 100%;
+	}
+
+	body 
+	{
+		margin: 0;
+		width: auto;
+	}
+/*
+	header {
+		width: 100%;
+	}*/
+
+	header img {
+		margin-bottom: 45px;
+	}
+
+	header nav {
+		
+		/*align-content: flex-end;*/
+	}
+	header nav ul {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, 1fr);
+		justify-items: flex-end;
+		/*padding: 0;
+		width: 170px;
+		/*height: 70px;*/
+		/*display: flex;
+		flex-direction: column;
+		/*flex-wrap: wrap;*/
+		/*text-align: center;
+		/*align-items: flex-end;
+		/*=position: relative;
+		/*top: 95px; /***************a modif si besoin *****************/
+		/*right: 285px;*/
+		/*box-sizing: content-box;
+		/*padding: 0;
+		/*position: relative;*/
+	}
+
+	header nav ul li {
+		width: 160px;
+		text-align: center;
+		background: #0065FC;
+		border: 1px solid white;
+	}
+
+	.navheb, .navact, #navins {
+		padding: 2% 0;
+	}
+
+	#navins {
+		/*text-align: right;*/
+		/*padding-right: 0px;*/
+	}
+
+	.navheb:before {
+	/*position: absolute;
+	content: display;
+	background: purple;
+	width: 96%;
+	height: 4px;
+	color: white;*/
+	}
+
+	header nav ul li {
+		background: lightblue;
+	}
+/*
+	header nav ul li a:before {
+	}*/
+
+	header nav ul li a:hover {
+	color: #ffffff;
+	font-weight: 900;
+	/*width: 100%;*/
+	}
+	header nav ul li a:after {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	/*margin: auto;*/
+	content: "";
+	height: 0;
+	}
+/*
+	header nav ul li a:after {
+	position: absolute;
+	top: 37px;
+	left: 0;
+	height: 4px;
+	}*/
+
+	#recherche {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 0.1fr 0.3fr 1fr 1fr 0.5fr;
+		width: 95%;
+		/*margin-top: 20px;*/
+		margin-left: 0;
+		padding: 0 0 0 25px;
+	}
+
+	#recherche h1 {
+		width: 100%;
+		margin: 0;
+		grid-column: span 2;
+		grid-row: 1;
+	}
+
+	#lieu {
+		grid-column: span 2;
+		grid-row: 2;
+	}
+
+	#search-bar {
+		margin-top: 70px;
+		width: 70%;
+		height: 40%;
+		grid-column: 1;
+		grid-row: 3 / span 2;
+	}
+
+
+
+	button { /******************** Icône à rajouter et ôter le texte *************************/
+		position: absolute;
+		width: 8%;
+		/*border-radius: 50%;*/
+		left: 30%;
+	}
+
+	button::before {
+		font-family: "Font Awesome 5 Free"; 
+    	font-weight: 900; 
+    	color: white;
+    	content: "\f002"; 
+	}
+
+	.toggleBox {
+		display: grid;
+		grid-template-columns: 0.1fr 0.2fr 0.1fr;
+		grid-template-rows: 0.5fr 0.5fr;
+		box-sizing: border-box;
+		/*grid-gap: 20px 8px;*/
+		grid-column: 2;
+		grid-row: 3 / span 2;
+		/*flex-wrap: wrap;*/
+		/*align-content: center;
+		/*align-items: stretch;
+		/*position: relative;
+		top: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		/*flex-direction: column;*/
+		/*border: 1px solid red;*/
+		height: 100%;
+		width: 100%;
+	}
+
+	.toggleBox p {
+		grid-column: 1;
+		grid-row: span 2;
+		writing-mode: vertical-lr;
+		text-orientation: upright;
+		font-size: 14px;
+		height: 60px;
+
+		/*width: 100%;
+		margin: 0;*/
+	}
+
+	.toggle {
+		height: 60px;
+	}
+
+	#box-eco {
+		grid-column: 2;
+		grid-row: 1;
+		/*height: 50px;
+		/*margin: 0;*/
+	}
+
+	#box-fam {
+		grid-column: 2;
+		grid-row: 2;
+	}
+
+	#box-love {
+		grid-column: 3;
+		grid-row: 1;
+	}
+
+	#box-dog {
+		grid-column: 3;
+		grid-row: 2;
+	}
+
+	#toggle-p {
+		width: 100%;
+		margin-left: 5px;
+		grid-column: span 2;
+		grid-row: 6;
+	}
+
+	#heb-pop {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 200px 1fr;
+		grid-gap: 75px;
+		justify-items: center;
+		align-items: center;
+		margin-left: 60px;
+	}
+
+	aside {
+		width: 100%;
+		height: 100%;
+		grid-row: 1;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 0.1fr 0.5fr;
+		grid-gap: 15px;
+	}
+
+	aside h2 {
+		margin-top: 10px;
+		margin-bottom: 5px;
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.stats {
+		align-self: flex-end;
+		justify-self: flex-end;
+		grid-column: 3;
+		grid-row: 1;
+	}
+
+	.card-pop1 {
+		/*width: 90%;*/
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	.card-pop2 {
+		/*width: 90%;*/
+		grid-column: 2;
+		grid-row: 2;
+	}
+
+	.card-pop3 {
+		/*width: 90%;*/
+		grid-column: 3;
+		grid-row: 2;
+	}
+
+	#activites {
+		width: 95%;
+		height: 500px;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 0.5fr 1fr 1fr;
+		margin: 25px;
+		grid-gap: 15px;
+		justify-items: center;
+		align-items: center;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
+	#activites h2 {
+		/*width: 100%;*/
+		height: 20px;
+		margin-left: 5px;
+		grid-column: 1;
+		grid-row: 1;
+		top: 40px;
+	}
+
+	.card-activites1, .card-activites2, .card-activites3,
+	.card-activites4, .card-activites5, .card-activites6 {
+	/*width: 380px;*/
+		/*grid-column: 1;
+		grid-row: 2;*/
+		width: 300px;
+		height: 185px;
+		/*margin-left: 55px;*/
+	}
+
+	.card-image-activites1, .card-image-activites2, .card-image-activites3,
+	.card-image-activites4, .card-image-activites5, .card-image-activites6 {
+		height: 135px;
+	}
+
 	
+
+	.card-activites1 {
+		grid-column: 1;
+		grid-row: 2;
+		margin-top: 52px;
+		/*align-content: space-between;*
+		grid-row-gap: 70px;*/
+	}
+
+	#grid-act2 {
+		grid-column: 2;
+		grid-row: 2 / span 2;
+		grid-row-gap: 15px;
+	}
+/*
+	.card-activites3 {
+		grid-column: 1;
+		grid-row: 4;
+		height: 100%;
+		border: 1px solid blue;
+	}*/
+/*
+	.card-activites4 {
+		grid-column: 1;
+		grid-row: 2;
+		border: 3px solid purple;
+	}*/
+
+	#grid-act3 {
+		grid-column: 1;
+		grid-row: 3;
+		margin-bottom: 52px;
+	}
+
+	#grid-act4 {
+		grid-column: 3;
+		grid-row: 2 / span 2;
+		grid-row-gap: 15px;
+	}
+/*
+	.card-image-activites1,  {
+		height: 129px;
+		position: relative; 
+		overflow: hidden; 
+		border-radius: 25px 25px 0px 0px;
+		box-sizing: border-box;
+	}*/
+
+	.card-image-activites1 img  {
+		width: 100%; 
+		position: absolute;
+		top: 15%; 
+		left: 50%; 
+		transform: translate(-50%, -28%); 
+		transition-duration: .3s;
+		transition-timing-function: ease;
+	}
+
+	.card-image-activites2 img {
+		width: 100%; 
+		position: absolute;
+		top: 13%; 
+		left: 50%; 
+		transform: translate(-50%, -38%); 
+		transition-duration: .3s;
+		transition-timing-function: ease;
+	}
+
+	.card-image-activites3 img {
+		width: 100%; 
+		position: absolute;
+		top: 23%; 
+		left: 50%; 
+		transform: translate(-50%, -28%); 
+		transition-duration: .3s;
+		transition-timing-function: ease;
+	}
+
+
+	footer {
+		width: 100%;
+	}
 }
 
 
