@@ -2,6 +2,7 @@
 														/* Global */
 /**********************************************************************************************************************/														
 #conteneur {
+	max-width: 1300px;
 	width: 100%;
 	margin: 0 auto; 
 }
@@ -303,7 +304,7 @@ label {
 
 #love-btn { 
 	width: 195px;
-	padding: 12px;
+	padding: 14px;
 }
 
 #dog-btn { 
@@ -416,7 +417,7 @@ main {
 
 .card-heb1 {
 	width: 82%;
-	height: 190px;
+	height: 80%;
 	margin: 15px; /* Centrage au centre de la page, ne pas oublier display block */
 	padding: 4px; /* Contour autour de l'image */
 	background-color: white;
@@ -511,20 +512,20 @@ main {
 /**********************************************************************************************************************/
 aside {
 	display: grid;
-	grid-template-columns: 90% 5% 5%;
-	grid-template-rows: 3% 29% 29% 29%; 
+	grid-template-columns: 1fr 0.1fr;
+	grid-template-rows: 35px 1fr 1fr 1fr; 
 	align-content: center;
-	align-items: end;
+	align-items: center;
 	grid-row-gap: 15px;
 	background-color: #F2F2F2;
 	border-radius: 25px;
 	width: 90%;
-	height: 570px;
+	height: 92%;
 	padding: 25px;
 }
 
 aside h2 {
-	margin-top: 40px;
+	margin-top: 36px;
 	padding: 0;
 	grid-column: 1;
 	grid-row: 1;
@@ -532,13 +533,15 @@ aside h2 {
 	align-self: center;
 	width: 85%;
 	font-size: 24px;
+	white-space: nowrap;
 }
 
 .stats {
 	font-size: 30px;
 	grid-column: 2 / span 3;
 	grid-row: 1;
-	align-self: start;
+	/*align-self: start;*/
+	margin-top: 15px;
 }
 
 .card-pop1 {
@@ -561,7 +564,7 @@ aside h2 {
 
 .card-pop1, .card-pop2, .card-pop3 {
 	width: 100%;
-	height: 130px;
+	height: 80%;
 	padding: 4px; /* Contour autour de l'image */
 	background-color: white;
 	box-shadow: 0px 5px 18px #D8D7D7; /* Ombrage */
@@ -589,8 +592,8 @@ aside h2 {
 .card-image-pop1 {
 	float: left;
 	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	width: 130px;
-	height: 130px;
+	width: 45%;
+	height: 100%;
 	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
 	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
 	border-radius: 25px 0px 0px 25px;
@@ -611,8 +614,8 @@ aside h2 {
 .card-image-pop2 {
 	float: left;
 	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	width: 130px;
-	height: 130px;
+	width: 45%;
+	height: 100%;
 	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
 	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
 	border-radius: 25px 0px 0px 25px;
@@ -633,8 +636,8 @@ aside h2 {
 .card-image-pop3 {
 	float: left;
 	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	width: 130px;
-	height: 130px;
+	width: 45%;
+	height: 100%;
 	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
 	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
 	border-radius: 25px 0px 0px 25px;
@@ -654,10 +657,10 @@ aside h2 {
 
 /* Card-body pop1 */
 .card-body-pop1 {
-	width: 50%;
+	width: 55%;
 	display: flex;
 	flex-wrap: wrap;
-	height: 130px;
+	/*height: 130px;*/
 	letter-spacing: 0.1px;
 	/*text-align: right; /* Alignement de ts les éléments à l'intérieur de .card-body */
 	padding: 0px 5px; /* Evite que les éléments soient collés, et ils sont décalés du rebord */
@@ -679,11 +682,11 @@ aside h2 {
 	margin: 10px;
 	color: #0065fc;
 	font-size: 5px;
-	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .card-except-pop1 i {
-	padding: 0;
+	padding-bottom: 5px;
 	color: #dad6d6;
 	position: relative;
 	font-size: 12px;
@@ -699,40 +702,26 @@ aside h2 {
 /**********************************************************************************************************************/
 #activites {
 	display: grid;
-	grid-template-columns: 24% 24% 24% 24%;
-	grid-template-rows: 8% 92%;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	/*grid-template-rows: 8% 92%;
 	justify-content: center;
-	align-items: center;
-	column-gap: 40px;
-	width: 90%;
-	margin-left: 70px;
+	align-items: center;*/
+	column-gap: 20px;
+	width: 100%;
 	height: 620px;
 	box-sizing: border-box;
+	margin: 30px 0;
+	/*padding: 10px;*/
 }
 
-#grid-act2, #grid-act4 {
+#activites > div {
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
+	grid-gap: 65px;
 }
 
-#grid-act2 {
-	grid-column: 2;
-	grid-row: 2;
-	align-content: space-between;
-	grid-row-gap: 70px;
-}
-
-#grid-act3 {
-	grid-column: 3;
-	grid-row: 2;
-}
-
-#grid-act4 {
-	grid-column: 4;
-	grid-row: 2;
-	align-content: space-between;
-	grid-row-gap: 70px;
+#activites > div > div {
+	display: grid;
+	align-items: space-between;
 }
 
 #activites h2 {
@@ -747,10 +736,10 @@ aside h2 {
 
 /* Container activités1 */
 .card-activites1, .card-activites4 {
-	grid-column: 1;
-	grid-row: 2;
+	/*grid-column: 1;
+	grid-row: 2;*/
 	width: 100%;
-	height: 510px;
+	/*height: 510px;*/
 	background-color: white;
 	box-shadow: 0px 5px 18px #E7E7E7; /* Ombrage */
 	border-radius: 25px;
@@ -769,14 +758,16 @@ aside h2 {
 
 /* Card-image activités1*/
 .card-image-activites1 {
-	height: 450px;
+	height: 90%;
 	position: relative; 
 	overflow: hidden; 
 	border-radius: 25px 25px 0px 0px;
 }
 
 .card-image-activites1 img {
-	width: 277%; /* Taille de l'image */
+	width: 150%; /* Taille de l'image */
+	height: 480px;
+	object-fit: cover;
 	position: absolute;
 	top: 10%; 
 	left: 63%; 
@@ -789,16 +780,17 @@ aside h2 {
 /* Card-body activités1 */
 .card-body-activites1 {
 	text-align: left; 
-	padding: 2px 20px; 
+	padding: 0 20px; 
 	box-sizing: border-box; 
 }
 
 .card-title-activites1, .card-except-activites1 {
-	line-height: 3px;
+	/*line-height: 3px;*/
 }
 
 .card-title-activites1 {
 	position: relative;
+	bottom: 5px;
 	font-size: 16px;
 }
 .card-except-activites1 {
@@ -808,7 +800,7 @@ aside h2 {
 /* Container activités2 */
 .card-activites2, .card-activites6  {
 	width: 100%;
-	height: 260px;
+	height: 100%;
 	background-color: white;
 	box-shadow: 0px 5px 18px #E7E7E7; 
 	border-radius: 25px;
@@ -835,7 +827,9 @@ aside h2 {
 }
 
 .card-image-activites2 img {
-	width: 120%; 
+	width: 100%; 
+	height: 260px;
+	object-fit: cover;
 	position: absolute;
 	top: 43%; 
 	left: 50%; 
@@ -852,7 +846,7 @@ aside h2 {
 }
 
 .card-title-activites2, .card-except-activites2 {
-	line-height: 3px;
+	/*line-height: 3px;*/
 	padding-left: 8px;
 }
 
@@ -867,7 +861,7 @@ aside h2 {
 /* Container activités3 */
 .card-activites3, .card-activites5  {
 	width: 100%;
-	height: 180px;
+	height: 100%;
 	background-color: white;
 	box-shadow: 0px 5px 18px #E7E7E7; 
 	border-radius: 25px;
@@ -881,7 +875,7 @@ aside h2 {
 
 .card-activites3:hover .card-image-activites3 img,
 .card-activites5:hover .card-image-activites3 img {
-	width: 150%; 
+	width: 130%; 
 }
 
 /* Card-image activités3 */
@@ -894,13 +888,16 @@ aside h2 {
 }
 
 .card-image-activites3 img {
-	width: 120%; 
+	width: 100%;
+	height: 100%;
+	object-fit: cover; 
 	position: absolute;
-	top: 43%; 
-	left: 50%; 
-	transform: translate(-50%, -28%); 
+	top: 28%; 
+	left: 10%; 
+	transform: translate(-10%, -28%); 
 	transition-duration: .3s;
 	transition-timing-function: ease;
+	box-sizing: border-box;
 }
 
 /* Card-body activités3 */
@@ -911,16 +908,20 @@ aside h2 {
 }
 
 .card-title-activites3, .card-except-activites3 {
-	line-height: 3px;
+	/*line-height: 3px;*/
 	padding-left: 8px;
 }
 
 .card-title-activites3 {
 	position: relative;
-	font-size: 16px;
+	font-size: 16px;  
 }
 .card-except-activites3 {
 	font-size: 15px;
+}
+
+.gd-card h4{
+	margin-top: 5px;
 }
 
 /**********************************************************************************************************************/
@@ -931,15 +932,17 @@ footer {
 	margin: 0;
 	padding: 0;
 	margin-top: 40px;
-	height: 100%;
+	/*height: 100%;*/
 	background-color: #F2F2F2;
 }
 
 #footer-infos {
-
+	max-width: 1300px;
+	/*width: 100%;*/
 	display: grid;
-	grid-template-columns: 30% 30% 30%;
-	margin-left: 30px;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 footer ul {
@@ -1007,6 +1010,9 @@ footer h3 {
 	/* Navigation */
 	.navheb, .navact {
 		padding: 10% 0;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	#navins {
@@ -1014,31 +1020,32 @@ footer h3 {
 	}
 
 	.navheb:before {
-	position: absolute;
-	content: "";
-	background: lightgrey;
-	width: 96%;
-	height: 4px;
-	top: 35px;
+		position: absolute;
+		content: "";
+		background: lightgrey;
+		width: 100%;
+		height: 4px;
+		top: 35px;
 	}
 
 	header nav ul li a {
-	
+		
 	}
 
 	header nav ul li a:before {
+
 	}
 
 	header nav ul li a:hover {
 	color: #0065FC;
 	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 	}
 
 	header nav ul li a:after {
 	position: absolute;
 	top: 37px;
-	left: 0;
-	height: 4px;
 	}
 	/************ Recherche ****************/
 	#recherche {
@@ -1121,16 +1128,20 @@ footer h3 {
 		grid-row-gap: 5px;
 	}
 
+	.card-heb1 {
+		height: 100%;
+	}
+
 	#hebergements {
 		grid-row: 2;
 		grid-template-rows: 2% repeat(6, 1fr) 2%;
-		grid-row-gap: 15px;
+		grid-row-gap: 25px;
 		justify-items: center;
-		padding-top: 0;
 		width: 88%;
 		height: 100%;
 		background: none;
 		border-radius: 0;
+		padding-top: 40px;
 	}
 
 	#hebergements h2 {
@@ -1184,8 +1195,12 @@ footer h3 {
 	#more {
 		grid-column: span 3;
 		grid-row: 8;
-		margin-left: 12px;
+		margin-right: 155px;
 		width: 30%;
+	}
+
+	#more p {
+		margin-top: 35px;
 	}
 	/************ Populaires ****************/
 	aside {
@@ -1211,19 +1226,36 @@ footer h3 {
 		width: 88%;
 		margin-bottom: 0;
 	}
+
+	.card-image-pop1 {
+		width: 35%;
+	}
+
+	.card-image-pop2 {
+		width: 35%;
+	}
+
+	.card-image-pop3 {
+		width: 35%;
+	}
+
 	/************ Activités ****************/
 	#activites {
 		grid-template-columns: 1fr;
-		grid-template-rows: 0.2fr 0.5fr 1fr 0.5fr;
+		/*grid-template-rows: 0.2fr 0.5fr 1fr 0.5fr;*/
 		justify-items: center;
 		grid-row-gap: 15px;
-		margin: 0;
-		width: 100%;
+		margin: 120px 0 60px 0;
 		height: 100%;
 	}
 
+	#activites > div {
+		grid-row-gap: 15px;
+	}
+
 	#activites h2 {
-		height: 20px;
+		/*height: 20px;*/
+		margin-bottom: 30px;
 		margin-left: 75px;
 		grid-column: 1;
 		grid-row: 1;
@@ -1231,20 +1263,37 @@ footer h3 {
 
 	.card-activites1, .card-activites2, .card-activites3,
 	.card-activites4, .card-activites5, .card-activites6 {
-		width: 400px;
+		width: 100%;
 		height: 185px;
 	}
 
 	.card-image-activites1, .card-image-activites2, .card-image-activites3,
 	.card-image-activites4, .card-image-activites5, .card-image-activites6 {
-		height: 135px;
+		height: 75%;
 	}
 
-	.card-activites1 {
-		grid-column: 1;
-		grid-row: 2;
+	.card-image-activites1 img {
+		height: none;
+		top: 30%;
+		transform: translate(-57%, -40%);
 	}
 
+	.card-activites1, .card-activites4{
+		width: 90%;
+	}
+
+	#grid-act2, #grid-act4 {
+		width: 90%;
+	}
+
+	.card-title-activites1 {
+		top: 10px;
+	}
+
+	.card-title-activites2, .card-title-activites3 {
+		bottom: 10px;
+	}
+/*
 	#grid-act2 {
 		grid-column: 1;
 		grid-row: 3;
@@ -1290,7 +1339,7 @@ footer h3 {
 		transform: translate(-50%, -28%); 
 		transition-duration: .3s;
 		transition-timing-function: ease;
-	}
+	}*/
 	/************ Footer ****************/
 	footer {
 		width: 100%;
@@ -1301,10 +1350,11 @@ footer h3 {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 0.5fr 0.5fr;
+		padding: 25px;
 	}
 }
 
-/* Responsive */
+/* Responsive Tablette */
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
 	/************ Global ****************/
 	.conteneur {
@@ -1345,7 +1395,6 @@ footer h3 {
 
 	header nav ul li a:hover {
 		color: #ffffff;
-		font-weight: 900;
 	}
 
 	header nav ul li a:after {
@@ -1356,39 +1405,14 @@ footer h3 {
 		height: 0;
 	}
 	/************ Recherche ****************/
-	#recherche {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 0.1fr 0.3fr 1fr 1fr 0.5fr;
-		width: 95%;
-		margin-left: 0;
-		padding: 0 0 0 25px;
-	}
-
-	#recherche h1 {
-		width: 100%;
-		margin: 0;
-		grid-column: span 2;
-		grid-row: 1;
-	}
-
-	#lieu {
-		grid-column: span 2;
-		grid-row: 2;
-	}
-
 	#search-bar {
-		margin-top: 70px;
-		width: 70%;
-		height: 40%;
-		grid-column: 1;
-		grid-row: 3 / span 2;
+		width: 80%;
 	}
+
 
 	button { /******************** Icône à rajouter et ôter le texte *************************/
-		position: absolute;
-		width: 8%;
-		left: 30%;
+		width: 50%;
+		/*left: 100%;*/
 	}
 
 	button::before {
@@ -1400,53 +1424,43 @@ footer h3 {
 
 	.toggleBox {
 		display: grid;
-		grid-template-columns: 0.1fr 0.2fr 0.1fr;
-		grid-template-rows: 0.5fr 0.5fr;
+		grid-template-columns: 33% 33% 33%;
+		grid-template-rows: 50px 50px 50px 50px;
 		box-sizing: border-box;
-		grid-column: 2;
-		grid-row: 3 / span 2;
-		height: 100%;
+		grid-gap: 25px 110px;
+		height: 40%;
 		width: 100%;
 	}
 
 	.toggleBox p {
 		grid-column: 1;
-		grid-row: span 2;
-		writing-mode: vertical-lr;
-		text-orientation: upright;
-		font-size: 14px;
-		height: 60px;
-	}
-
-	.toggle {
-		height: 60px;
-	}
-
-	#box-eco {
-		grid-column: 2;
 		grid-row: 1;
 	}
 
-	#box-fam {
+	#grid-eco {
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	#grid-fam {
+		grid-column: 2;
+		grid-row: 3;
+		margin-right: 15px;
+	}
+
+	#grid-love {
 		grid-column: 2;
 		grid-row: 2;
 	}
 
-	#box-love {
-		grid-column: 3;
-		grid-row: 1;
-	}
-
-	#box-dog {
-		grid-column: 3;
-		grid-row: 2;
+	#grid-dog {
+		grid-column: 1;
+		grid-row: 3;
 	}
 
 	#toggle-p {
 		width: 100%;
 		margin-left: 5px;
-		grid-column: span 2;
-		grid-row: 6;
 	}
 
 	#heb-pop {
@@ -1460,32 +1474,46 @@ footer h3 {
 	}
 	/************ Populaires ****************/
 	aside {
-		width: 100%;
-		height: 100%;
+		width: 107%;
+		height: 250px;
 		grid-row: 1;
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 0.1fr 0.5fr;
-		grid-gap: 15px;
+		grid-template-columns: repeat(3, 1fr);
+		/*grid-template-columns: minmax(min-content, 300px) minmax(200px, 1fr) 150px;*/
+		/*grid-template-columns: 1fr 1fr 1fr;*/
+		/*grid-template-rows: 0.1fr 0.2fr;*/
+		justify-content: flex-start;
+		grid-gap: 40px;
+		box-sizing: border-box;
+		
+		padding: 50px 25px 0 25px;
+		/*height: 100%;*/
 	}
 
 	aside h2 {
-		margin-top: 10px;
-		margin-bottom: 5px;
-		grid-column: 1;
+		display: inline-grid;
+		margin-top: 115px;
+		grid-column: 1 / span 2;
 		grid-row: 1;
+
+		/*white-space: nowrap;*/
 	}
 
 	.stats {
-		align-self: flex-end;
-		justify-self: flex-end;
-		grid-column: 3;
-		grid-row: 1;
+		display: none;
+	}
+
+	aside > div {
+		
+		/*display: grid;*/
+		/*grid-template-rows: 0.1fr 1fr;*/
 	}
 
 	.card-pop1 {
 		grid-column: 1;
 		grid-row: 2;
+		/*height: 45%;
+		width: 100%;*/
 	}
 
 	.card-pop2 {
@@ -1497,49 +1525,140 @@ footer h3 {
 		grid-column: 3;
 		grid-row: 2;
 	}
+/*
+	.card-body-pop1 {
+		width: 40%;
+		padding: 0 0 30px 0;
+	}*/
+/*
+	.card-except-pop1 {
+		width: 40%;
+		padding: 0 0 30px 0;
+	}*/
+/*
+	.card-except-pop1 i {
+		padding-bottom: 15px;
+		border: 1px solid blue;
+	}
+
+	.card-except-pop1 span {
+		padding-bottom: 15px;
+		border: 1px solid blue;
+	}
+*/
+	.card-title-pop1 h4 {
+		font-size: 12px;
+		box-sizing: border-box;
+	}
+
+	.card-info-pop1 p {
+		
+	}
+	.card-except-pop1 {
+		
+	}
+
+	#hebergements h2 {
+		margin-bottom: 25px;
+	}
+
+	.card-heb1 {
+		height: 90%;
+		
+	}
+
+	#more {
+		white-space: nowrap;
+	}
+
+	#more p {
+		margin-top: 25px;
+	}
+
 	/************ Activités ****************/
 	#activites {
-		width: 95%;
-		height: 500px;
+		/*max-width: */
+		width: 100%;
+		/*height: 500px;*/
+		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 0.5fr 1fr 1fr;
-		margin: 25px;
+		/*grid-template-rows: 0.5fr 1fr 1fr;*/
+		margin: 25px; /****************************************à modif *****************/
 		grid-gap: 15px;
-		justify-items: center;
-		align-items: center;
-		margin-bottom: 0;
-		margin-top: 0;
+		/*justify-items: space-between;*/
+		align-content: space-between;
+		/*align-items: stretch;*/
+	}
+
+	#activites > div {
+		grid-gap: 5px;
 	}
 
 	#activites h2 {
 		height: 20px;
 		margin-left: 5px;
-		grid-column: 1;
-		grid-row: 1;
-		top: 40px;
+		grid-column: 1 / span 3;
+		margin-top: 55px;
+		/*grid-row: 1;
+		/*top: 40px;*/
 	}
 
-	.card-activites1, .card-activites2, .card-activites3,
-	.card-activites4, .card-activites5, .card-activites6 {
-		width: 300px;
-		height: 185px;
+	.card-image-activites1 {
+		width: 100%;
+		
+		border: 1px solid yellow;
 	}
 
-	.card-image-activites1, .card-image-activites2, .card-image-activites3,
-	.card-image-activites4, .card-image-activites5, .card-image-activites6 {
-		height: 135px;
+	.card-image-activites2 {
+		/*height: 145px;
+	}
+
+	.card-image-activites3 {
+		/*height: 145p;*/
 	}
 
 	.card-activites1 {
 		grid-column: 1;
 		grid-row: 2;
-		margin-top: 52px;
+		margin-top: 2px;
+		width: 85%;
+		height: 126%;
+	}
+
+	.card-activites2 {
+		width: 85%;
+		height: 88%;
+	}
+
+	.card-activites3 {
+		width: 85%;
+		height: 108%;
+	}
+
+	.card-image-activites3 {
+		height: 88%;
+	}
+
+	.card-activites4 {
+		width: 85%;
+		height: 87%;
+	}
+
+	.card-activites5 {
+		width: 85%;
+		height: 85%;
+	}
+
+	.card-activites6 {
+		/*width: 100%;*/
+		height: 88%;
 	}
 
 	#grid-act2 {
+		/*display: grid;*/
 		grid-column: 2;
 		grid-row: 2 / span 2;
-		grid-row-gap: 15px;
+		/*grid-row-gap: 70px;*/
 	}
 
 	#grid-act3 {
@@ -1551,23 +1670,25 @@ footer h3 {
 	#grid-act4 {
 		grid-column: 3;
 		grid-row: 2 / span 2;
-		grid-row-gap: 15px;
+		
 	}
 
 	.card-image-activites1 img  {
 		width: 100%; 
+		height: 100%;
 		position: absolute;
-		top: 15%; 
+		top: 30%; 
 		left: 50%; 
-		transform: translate(-50%, -28%); 
+		transform: translate(-50%, -38%); 
 		transition-duration: .3s;
 		transition-timing-function: ease;
 	}
 
 	.card-image-activites2 img {
-		width: 100%; 
+		width: 100%;
+		height: 100%; 
 		position: absolute;
-		top: 13%; 
+		top: 33%; 
 		left: 50%; 
 		transform: translate(-50%, -38%); 
 		transition-duration: .3s;
@@ -1583,9 +1704,21 @@ footer h3 {
 		transition-duration: .3s;
 		transition-timing-function: ease;
 	}
+
+	#activites h4 {
+		font-size: 12px;
+	}
+/*
+	.card-title-activites1 h4 {
+		margin: 4px;
+	}*/
 	/************ Footer ****************/
 	footer {
 		width: 100%;
+	}
+
+	#footer-infos > div {
+		margin: 25px;
 	}
 }
 
