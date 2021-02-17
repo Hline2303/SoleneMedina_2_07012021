@@ -23,29 +23,36 @@ p {
 ul {
 	list-style: none;
 }
+/*
+img {
+	width: 100%;
+	height: auto;
+}*/
 /**********************************************************************************************************************/
 														/* Header */
 /**********************************************************************************************************************/
 /*********************** Logo ********************/
 header {
-	width: 100%;
-	display: grid;
-	grid-template-columns: 2% 16% 80% 2%;
+	display: flex;
+	justify-content: space-between;
+	/*grid-template-columns: 2% 16% 80% 2%;
 	justify-items: end;
-	align-content: center;
+	align-content: center;*/
 	padding: 20px 0;
+	margin: 25px;
+	border: 1px solid blue;
 }
+/*
  header img {
  	grid-column: 2;
  	align-self: end;
  	justify-self: start;
-}
+}*/
 
 /*********************** Navigation ********************/
 header nav {
-	width: 55%;
+	width: 100%;
 	text-align: right;
-	grid-column: 3;
 	align-self: end;
 }
 
@@ -69,10 +76,10 @@ header nav ul li a {
 header nav ul li a:hover {
 	color: #0065FC;
 }
-
+ 
 header nav ul li a:after {
 	position: absolute;
-	bottom: 68px;
+	bottom: 82px;
 	left: 0;
 	content: "";
 	background: #0065FC;
@@ -99,16 +106,15 @@ h2 {
 /**********************************************************************************************************************/
 
 /*********************** Recherche ********************/
-section {
-	width: 100%;
-}
 
 h1 {
 	margin: 0;
 }
 
 #recherche {
-	margin-left: 35px;
+	margin: 25px;
+	height: auto;
+	border: 1px solid blue;
 }
 
 #recherche #lieu {
@@ -181,7 +187,7 @@ button:hover {
 
 /*********************** Filtres ********************/
 .toggleBox {
-	width: 75%;
+	width: 100%;
 	display: flex;
 	grid-gap: 20px; 
 	justify-content: flex-start;
@@ -195,6 +201,19 @@ button:hover {
 	color: black;
 	font-weight: 900;
 	margin: 0;
+}
+
+.toggle {
+	width: 20%;
+}
+
+#toggle-info {/**//*/*//*/*/
+	display: flex;
+	padding-top: 25px;
+}
+
+#toggle-info p {
+	margin-top: 10px;
 }
 
 input[type="checkbox"] {
@@ -293,8 +312,8 @@ label {
 }
 
 #eco-btn {
-	width: 205px;
-	padding: 13px;
+	width: 195px; /****** Modifier cette partie pour ...*/
+	padding: 10px;/******...changer la taille du bouton ainsi que label et la font-size***************/
 }
 
 #fam-btn { 
@@ -303,13 +322,13 @@ label {
 }
 
 #love-btn { 
-	width: 195px;
-	padding: 14px;
+	width: 185px;
+	padding: 4px;
 }
 
 #dog-btn { 
-	width: 260px;
-	padding: 12px;
+	width: 238px;
+	padding: 2px;
 }
 
 #box-eco:checked ~ #eco-btn, #box-fam:checked ~ #fam-btn, 
@@ -338,156 +357,109 @@ label {
 }
 
 #info {
-	width: 15px;
-	height: 15px;
+	width: 23px;
+	height: 13px;
 	color: #0065FC;
-	border-radius: 50px;
+	border-radius: 46px;
 	border: 1px solid #dfdede;
-	padding: 5px;
+	padding: 12px 8px;
 	text-align: center;
-	margin-right: 15px;
+	margin-right: 20px;
 }
 /**********************************************************************************************************************/
 														/* Container cartes hébergements */
 /**********************************************************************************************************************/
-main {
-	width: 100%;
-}
 
-#heb-pop {
-	width: 88%;
+.heb-pop {
+	height: auto;
 	display: grid;
-	grid-template-columns: 70% 30%;
-	grid-gap: 80px;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 100px;
 	justify-content: center;
-	margin-top: 30px;
-	margin-left: 80px;
+	margin: 25px;
+	border: 1px solid blue;
 }
 
-#hebergements {
-	display: grid;
-	grid-template-columns: 33% 33% 33%;
-	grid-template-rows: 2% auto auto 3%; 
-	/*grid-gap: auto;*/
-	justify-content: start;
-	align-content: space-around;
-	justify-items: end;
-	background-color: #F2F2F2;
+.hebergements {
+	background: #f2f2f2;
 	border-radius: 25px;
-	width: 100%;
-	height: 570px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr; /* Chaque colonne prendra une fraction de celles disponibles. Nous avons une seule colonne qui remplira toute la largeur */ 
+	grid-gap: 20px;
 	padding: 25px;
 }
 
-#hebergements h2 {
-	margin: 0;
-	grid-column: span 3;
+.hebergements h2 {
+	grid-column: 1/ span 3;
 }
 
-/* Container heb1 */
-#grid-heb1 {
-	grid-column: 1;
-	grid-row: 2;
-}
-
-#grid-heb2 {
-	grid-column: 2;
-	grid-row: 2;
-}
-
-#grid-heb3 {
-	grid-column: 3;
-	grid-row: 2;
-}
-
-#grid-heb4 {
-	grid-column: 1;
-	grid-row: 3;
-}
-
-#grid-heb5 {
-	grid-column: 2;
-	grid-row: 3;
-}
-
-#grid-heb6 {
-	grid-column: 3;
-	grid-row: 3;
-}
-
-.card-heb1 {
-	width: 82%;
-	height: 80%;
-	margin: 15px; /* Centrage au centre de la page, ne pas oublier display block */
-	padding: 4px; /* Contour autour de l'image */
-	background-color: white;
-	box-shadow: 0px 5px 18px #D8D7D7; /* Ombrage */
-	border-radius: 25px;
-}
-
-.card-heb1 a { /* Stylisation des liens */
-	color: #333;
+.card { /*** Essai sur activités ****/
+	background: white;
 	text-decoration: none;
+	color: #444;
+	box-shadow: 0 5px 18px #d8d7d7;
+	padding: 4px;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;/* Alignement vertical du contenu de la carte */
+	min-height: 100%;/* Toutes les cartes comblent la hauteur du parent */
+	position: relative;
+	top: 0;
+	transition: all .1s ease-in;
 }
 
-.card-heb1:hover .card-image-heb1 img {
-	width: 120%; /* Zoom de l'image */
-}
- /* Card-image heb1 */
-.card-image-heb1 {
-	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	height: 120px;
-	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
-	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
-	border-radius: 25px 25px 0 0 ;
-}
-
-.card-image-heb1 img {
-	/* Centrage en f° de la taille de l'image */
-	width: 100%; /* Penser à modifier selon la partie de l'img que l'on souhaite */
-	position: absolute;
-	top: 43%; /* Décale l'image de 50% du haut */
-	left: 50%; /* Décale l'image de 50% de left */
-	transform: translate(-50%, -50%); /* Centrage de l'image */
-	/* Dynamiser grâce à une transition */
-	transition-duration: .3s;
-	transition-timing-function: ease;
-}
-
-/* Card-body heb1 */
-.card-body-heb1 {
+.card:hover .img-heb {/* Soulèvement de la carte */
 	width: 100%;
-	line-height: 20px;
-	/*height: 100px;*/
-	text-align: left; /* Alignement de ts les éléments à l'intérieur de .card-body */
-	padding: 5px 10px; /* Evite que les éléments soient collés, et ils sont décalés du rebord */
-	box-sizing: border-box; /* Permet que le padding soit inclus dans notre bloc et non en plus du bloc */
+}  
+
+.card .content-heb {/*content-heb*/
+	padding: 5px;
 }
 
-.card-body-heb1 h4, .card-body-heb1 p {
-	margin: 0;
+/* typo */
+.card h4 { /*h4*/
 	font-size: 16px;
+	margin: 0;
+	color: #333;
 }
 
-.card-body-heb1 p {
+.card p {
 	margin: 0;
 	font-size: 14px;
+	/*line-height: 1.4; /* Utile pour le responsive */
+	flex: 1; /* Remplisse tout l'espace vertical restant s'alignant vers le haut */
 }
 
-.card-except-heb1 {
-	color: #0065FC;
-	font-size: 1px;
+.stars {
+	padding: 0 5px;
 }
 
-.card-except-heb1 i {
+.card i {
 	color: #dad6d6;
-	line-height: 25px;
+	line-height: 5px;
 	font-size: 12px;
 }
 
-.card-except-heb1 span {
-	line-height: 25px;
+.card span {
+	color: #0065FC;
+	line-height: 5px;
 	font-size: 12px;
+}
+
+.card .img-heb {
+	padding-bottom: 50%;
+	background-size: cover;
+	background-position: center center; /* Centrage de l'image */
+	overflow: hidden;
+	border-radius: 25px 25px 0 0;
+	transition-duration: .3s;
+	transition-timing-function: ease;
+	transform: scale(1);
+}
+
+.card .content-heb h4, .card .content-heb p {/*content-heb*/
+	padding: 5px;
+	flex: 1;
 }
 
 #more {
@@ -507,488 +479,202 @@ main {
 #more:hover {
 	color: #0065FC;
 }
+
 /**********************************************************************************************************************/
 														/* Container populaires */
 /**********************************************************************************************************************/
-aside {
-	display: grid;
-	grid-template-columns: 1fr 0.1fr;
-	grid-template-rows: 35px 1fr 1fr 1fr; 
-	align-content: center;
-	align-items: center;
-	grid-row-gap: 15px;
-	background-color: #F2F2F2;
+.populaires {
+	background: #f2f2f2;
 	border-radius: 25px;
-	width: 90%;
-	height: 92%;
-	padding: 25px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr; /* Chaque colonne prendra une fraction de celles disponibles. Nous avons une seule colonne qui remplira toute la largeur */ 
+	grid-template-rows: auto; /* Valeur par défaut, les hauteurs de ligne seront déterminées par le contenu */
+	grid-gap: 20px;
+	padding: 35px;
 }
 
-aside h2 {
-	margin-top: 36px;
+.popstats {
+	display: flex;
+	align-content: center;
+}
+
+.populaires h2 {
 	padding: 0;
-	grid-column: 1;
-	grid-row: 1;
-	justify-self: start;
-	align-self: center;
-	width: 85%;
-	font-size: 24px;
-	white-space: nowrap;
 }
 
 .stats {
-	font-size: 30px;
-	grid-column: 2 / span 3;
-	grid-row: 1;
-	/*align-self: start;*/
-	margin-top: 15px;
+	font-size: 24px;
+	padding-top: 22px;
 }
 
-.card-pop1 {
-	grid-column: 1 / span 3;
-	grid-row: 2;
-	margin-bottom: 7px;
-}
-
-.card-pop2 {
-	grid-column: 1 / span 3;
-	grid-row: 3;
-	margin-bottom: 7px;
-}
-
-.card-pop3 {
-	grid-column: 1 / span 3;
-	grid-row: 4;
-	margin-bottom: 7px;
-}
-
-.card-pop1, .card-pop2, .card-pop3 {
-	width: 100%;
-	height: 80%;
-	padding: 4px; /* Contour autour de l'image */
-	background-color: white;
-	box-shadow: 0px 5px 18px #D8D7D7; /* Ombrage */
-	border-radius: 25px;
-}
-
-.card-pop1 a, .card-pop2 a, .card-pop3 a { /* Stylisation des liens */
-	color: #333;
+.card-pop {
+	background: white;
 	text-decoration: none;
-}
-
-.card-pop1:hover .card-image-pop1 img { 
-	width: 210%; /* Zoom de l'image */
-}
-
-.card-pop2:hover .card-image-pop2 img { 
-	width: 210%; /* Zoom de l'image */
-}
-
-.card-pop3:hover .card-image-pop3 img { 
-	width: 210%; /* Zoom de l'image */
-}
-
-/* Card-image pop1, pop2, pop3 */
-.card-image-pop1 {
-	float: left;
-	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	width: 45%;
-	height: 100%;
-	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
-	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
-	border-radius: 25px 0px 0px 25px;
-}
-
-.card-image-pop1 img {
-	/* Centrage en f° de la taille de l'image */
-	width: 170%; /* Penser à modifier selon la partie de l'img que l'on souhaite */
-	position: absolute;
-	top: 49%; /* Décale l'image de 50% du haut */
-	left: 10%; /* Décale l'image de 50% de left */
-	transform: translate(-27%, -50%); /* Centrage de l'image */
-	/* Dynamiser grâce à une transition */
-	transition-duration: .3s;
-	transition-timing-function: ease;
-}
-
-.card-image-pop2 {
-	float: left;
-	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	width: 45%;
-	height: 100%;
-	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
-	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
-	border-radius: 25px 0px 0px 25px;
-}
-
-.card-image-pop2 img {
-	/* Centrage en f° de la taille de l'image */
-	width: 150%; /* Penser à modifier selon la partie de l'img que l'on souhaite */
-	position: absolute;
-	top: 50%; /* Décale l'image de 50% du haut */
-	left: 10%; /* Décale l'image de 50% de left */
-	transform: translate(-23%, -50%); /* Centrage de l'image */
-	/* Dynamiser grâce à une transition */
-	transition-duration: .3s;
-	transition-timing-function: ease;
-}
-
-.card-image-pop3 {
-	float: left;
-	/* Taille du conteneur de l'image, la taille entre toutes les img est respectée */
-	width: 45%;
-	height: 100%;
-	position: relative; /* Car il y aura des éléments absolute à l'intérieur de lui */
-	overflow: hidden; /* Tous les éléments qui peuvent déborder de notre bloc sont cachés, commme le contour de l'image */
-	border-radius: 25px 0px 0px 25px;
-}
-
-.card-image-pop3 img {
-	/* Centrage en f° de la taille de l'image */
-	width: 100%; /* Penser à modifier selon la partie de l'img que l'on souhaite */
-	position: absolute;
-	top: 50%; /* Décale l'image de 50% du haut */
-	left: 10%; /* Décale l'image de 50% de left */
-	transform: translate(-10%, -50%); /* Centrage de l'image */
-	/* Dynamiser grâce à une transition */
-	transition-duration: .3s;
-	transition-timing-function: ease;
-}
-
-/* Card-body pop1 */
-.card-body-pop1 {
-	width: 55%;
+	color: #444;
+	box-shadow: 0 5px 18px #d8d7d7;
+	padding: 4px;
+	border-radius: 25px;
 	display: flex;
-	flex-wrap: wrap;
-	/*height: 130px;*/
-	letter-spacing: 0.1px;
-	/*text-align: right; /* Alignement de ts les éléments à l'intérieur de .card-body */
-	padding: 0px 5px; /* Evite que les éléments soient collés, et ils sont décalés du rebord */
-	box-sizing: border-box; /* Permet que le padding soit inclus dans notre bloc et non en plus du bloc */
+	flex-direction: row;/* Alignement vertical du contenu de la carte */
+	min-height: 100%;/* Toutes les cartes comblent la hauteur du parent */
+	position: relative;
+	top: 0;
+	transition: all .1s ease-in;
 }
 
-.card-body-pop1 h4 {
-	position: relative;
-	margin: 10px 0 0 10px;
+.card-pop:hover .img-pop {/* Soulèvement de la carte */
+	width: 5%;
+}  
+
+.card-pop .content-pop {
+	padding: 5px;
+}
+/* typo */
+.card-pop h4 { 
+	font-size: 16px;
+	margin: 0;
+	color: #333;
+}
+
+.card-pop p {
+	margin: 0;
 	font-size: 14px;
+	/*line-height: 1.4; /* Utile pour le responsive */
+	flex: 1; /* Remplisse tout l'espace vertical restant s'alignant vers le haut */
 }
 
-.card-body-pop1 p {
-	position: relative;
-	margin: 0 10px;
-	font-size: 12px;
-}
-.card-except-pop1 {
-	margin: 10px;
-	color: #0065fc;
-	font-size: 5px;
-	padding-bottom: 30px;
+.stars {
+	padding: 0 5px;
 }
 
-.card-except-pop1 i {
-	padding-bottom: 5px;
+.card-pop i {
 	color: #dad6d6;
-	position: relative;
+	line-height: 5px;
 	font-size: 12px;
 }
 
-.card-except-pop1 span {
-	padding: 0;
-	position: relative;
-	font-size: 12px;
-}
-/**********************************************************************************************************************/
-														/* Container activités */
-/**********************************************************************************************************************/
-#activites {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	/*grid-template-rows: 8% 92%;
-	justify-content: center;
-	align-items: center;*/
-	column-gap: 20px;
-	width: 100%;
-	height: 620px;
-	box-sizing: border-box;
-	margin: 30px 0;
-	/*padding: 10px;*/
-}
-
-#activites > div {
-	display: grid;
-	grid-gap: 65px;
-}
-
-#activites > div > div {
-	display: grid;
-	align-items: space-between;
-}
-
-#activites h2 {
-	grid-column: span 4;
-	grid-row: 1;
-	margin: 0;
-	padding: 0; 
-	position: relative;
-	width: 100%;
-	top: 20px;
-}
-
-/* Container activités1 */
-.card-activites1, .card-activites4 {
-	/*grid-column: 1;
-	grid-row: 2;*/
-	width: 100%;
-	/*height: 510px;*/
-	background-color: white;
-	box-shadow: 0px 5px 18px #E7E7E7; /* Ombrage */
-	border-radius: 25px;
-	box-sizing: border-box;
-}
-
-.card-activites1 a, .card-activites4 a {
-	color: #333;
-	text-decoration: none;
-}
-
-.card-activites1:hover .card-image-activites1 img, 
-.card-activites4:hover .card-image-activites1 img {
-	width: 300%; 
-}
-
-/* Card-image activités1*/
-.card-image-activites1 {
-	height: 90%;
-	position: relative; 
-	overflow: hidden; 
-	border-radius: 25px 25px 0px 0px;
-}
-
-.card-image-activites1 img {
-	width: 150%; /* Taille de l'image */
-	height: 480px;
-	object-fit: cover;
-	position: absolute;
-	top: 10%; 
-	left: 63%; 
-	transform: translate(-57%, -10%); 
-	transition-duration: .3s;
-	transition-timing-function: ease;
-	box-sizing: border-box;
-}
-
-/* Card-body activités1 */
-.card-body-activites1 {
-	text-align: left; 
-	padding: 0 20px; 
-	box-sizing: border-box; 
-}
-
-.card-title-activites1, .card-except-activites1 {
-	/*line-height: 3px;*/
-}
-
-.card-title-activites1 {
-	position: relative;
-	bottom: 5px;
-	font-size: 16px;
-}
-.card-except-activites1 {
-	font-size: 15px;
-}
-
-/* Container activités2 */
-.card-activites2, .card-activites6  {
-	width: 100%;
-	height: 100%;
-	background-color: white;
-	box-shadow: 0px 5px 18px #E7E7E7; 
-	border-radius: 25px;
-	box-sizing: border-box;
-}
-
-.card-activites2 a, .card-activites6 a {
-	color: #333;
-	text-decoration: none;
-}
-
-.card-activites2:hover .card-image-activites2 img,
-.card-activites6:hover .card-image-activites2 img {
-	width: 150%; 
-}
-
-/* Card-image activités2*/
-.card-image-activites2 {
-	height: 210px;
-	position: relative; 
-	overflow: hidden; 
-	border-radius: 25px 25px 0px 0px;
-	box-sizing: border-box;
-}
-
-.card-image-activites2 img {
-	width: 100%; 
-	height: 260px;
-	object-fit: cover;
-	position: absolute;
-	top: 43%; 
-	left: 50%; 
-	transform: translate(-50%, -38%); 
-	transition-duration: .3s;
-	transition-timing-function: ease;
-}
-
-/* Card-body activités2 */
-.card-body-activites2 {
-	text-align: left; 
-	padding: 2px 20px; 
-	box-sizing: border-box; 
-}
-
-.card-title-activites2, .card-except-activites2 {
-	/*line-height: 3px;*/
-	padding-left: 8px;
-}
-
-.card-title-activites2 {
-	position: relative;
-	font-size: 16px;
-}
-.card-except-activites2 {
-	font-size: 15px;
-}
-
-/* Container activités3 */
-.card-activites3, .card-activites5  {
-	width: 100%;
-	height: 100%;
-	background-color: white;
-	box-shadow: 0px 5px 18px #E7E7E7; 
-	border-radius: 25px;
-	box-sizing: border-box;
-}
-
-.card-activites3 a, .card-activites5 a {
-	color: #333;
-	text-decoration: none;
-}
-
-.card-activites3:hover .card-image-activites3 img,
-.card-activites5:hover .card-image-activites3 img {
-	width: 130%; 
-}
-
-/* Card-image activités3 */
-.card-image-activites3 {
-	height: 129px;
-	position: relative; 
-	overflow: hidden; 
-	border-radius: 25px 25px 0px 0px;
-	box-sizing: border-box;
-}
-
-.card-image-activites3 img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover; 
-	position: absolute;
-	top: 28%; 
-	left: 10%; 
-	transform: translate(-10%, -28%); 
-	transition-duration: .3s;
-	transition-timing-function: ease;
-	box-sizing: border-box;
-}
-
-/* Card-body activités3 */
-.card-body-activites3 {
-	text-align: left; 
-	padding: 2px 20px; 
-	box-sizing: border-box; 
-}
-
-.card-title-activites3, .card-except-activites3 {
-	/*line-height: 3px;*/
-	padding-left: 8px;
-}
-
-.card-title-activites3 {
-	position: relative;
-	font-size: 16px;  
-}
-.card-except-activites3 {
-	font-size: 15px;
-}
-
-.gd-card h4{
-	margin-top: 5px;
-}
-
-/**********************************************************************************************************************/
-														/* Footer */
-/**********************************************************************************************************************/
-footer {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	margin-top: 40px;
-	/*height: 100%;*/
-	background-color: #F2F2F2;
-}
-
-#footer-infos {
-	max-width: 1300px;
-	/*width: 100%;*/
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-footer ul {
-	padding: 0;
-}
-
-footer li {
-	line-height: 30px;
-	font-size: 16px;
-}
-
-footer li a {
-	text-decoration: none;
-	color: black;
-}
-
-footer li a:hover {
+.card-pop span {
 	color: #0065FC;
+	line-height: 5px;
+	font-size: 12px;
 }
 
-footer h3 {
-	margin-bottom: 0;
+.card-pop .img-pop {
+	padding-left: 30%;
+	background-size: cover;
+	background-position: center center; /* Centrage de l'image */
+	overflow: hidden;
+	border-radius: 25px 0 0 25px ;
+	transition-duration: .3s;
+	transition-timing-function: ease;
+	transform: scale(1);
+	border: 3px solid yellow;
 }
-/*****************************************************************************************************************************/
-/*****************************************************************************************************************************/
-/******************************************************Responsive*************************************************************/
-/* Mobile */
-@media only screen and (max-width: 480px)
-{	/* Global */
-	#conteneur {
-		width: 100%;
-	}
 
-	body 
-	{
-		margin: 0;
-	}
-	/************ Header ****************/
-	header {
-		width: 100%;
-	}
+.card-pop .content-pop h4, .card-pop .content-pop p {/*content-heb*/
+	padding: 5px;
+	flex: 1;
+}
 
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
 	header img {
-		margin-bottom: 25px;
+		margin-bottom: 45px;
 	}
 
+	header nav ul {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, 1fr);
+		justify-items: flex-end;
+	}
+
+	header nav ul li {
+		width: 160px;
+		text-align: center;
+		background: #0065FC;
+		border: 1px solid white;
+	}
+
+	.navheb, .navact, #navins {
+		padding: 2% 0;
+	}
+
+	header nav ul li {
+		background: lightblue;
+	}
+
+	header nav ul li a:hover {
+		color: #ffffff;
+	}
+
+	header nav ul li a:after {
+		position: relative;
+		bottom: 0;
+		left: 0;
+		content: "";
+		height: 0;
+	}
+
+	.recherche {
+		width: auto;
+	}
+
+	.toggleBox {
+		width: auto;
+		display: grid;
+		grid-gap: 15px;
+		grid-template-columns: 0.1fr 0.1fr;
+		grid-template-rows: 0.1fr 0.1fr 0;
+	}
+
+	.toggleBox p {
+		grid-column: span 2;
+	}
+
+	#toggle-info {
+		display: flex;
+		margin-top: 35px;
+	}
+
+	.heb-pop {
+		grid-template-columns: 1fr;
+	}
+
+	.populaires {
+		height: auto;
+		grid-template-columns: repeat(3, 1fr);
+		grid-row: 1;
+	}
+
+	.popstats {
+		grid-column: span 3;
+	}
+
+	.populaires h2 {
+		grid-column: span 3;
+	}
+
+	.card-activites {	
+		grid-template-columns: 1fr 1fr 1fr;	
+	}
+
+	/*
+	.activites {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	*/
+	.activites h2 {
+		grid-column: 1;
+	}
+	
+	footer #footer-infos {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
 	header nav ul {
 		width: 480px;
 		height: 70px;
@@ -1037,695 +723,259 @@ footer h3 {
 	}
 
 	header nav ul li a:hover {
-	color: #0065FC;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+		color: #0065FC;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	header nav ul li a:after {
-	position: absolute;
-	top: 37px;
-	}
-	/************ Recherche ****************/
-	#recherche {
-		width: 100%;
-		margin-top: 50px;
-		margin-left: 0;
-		padding: 0 0 0 25px;
-	}
-
-	#recherche h1 {
-		width: 90%;
-		margin: 0;
-	}
-
-	#search-bar {
-		margin-top: 20px;
-		width: 80%;
-	}
-
-	button {
 		position: absolute;
-		width: 14%;
-		border-radius: 30%;
-		left: 78%;
+		top: 37px;
 	}
-
-	button::before {
-		font-family: "Font Awesome 5 Free"; 
-    	font-weight: 900; 
-    	color: white;
-    	content: "\f002"; 
-	}
-
 	.toggleBox {
 		display: grid;
-		grid-template-columns: 33% 33% 33%;
-		grid-template-rows: 50px 50px 50px 50px;
-		box-sizing: border-box;
-		grid-gap: 25px 100px;
-		height: 40%;
-		width: 100%;
+		grid-template-columns: 1fr 1fr;
 	}
 
 	.toggleBox p {
-		grid-column: 1;
-		grid-row: 1;
+		grid-column: span 2;
 	}
 
-	#grid-eco {
-		grid-column: 1;
-		grid-row: 2;
+	#toggle-info {
+		display: flex;
+		padding-top: 25px;
 	}
 
-	#grid-fam {
-		grid-column: 2;
-		grid-row: 2;
+	#toggle-info p {
+		margin-top: 0;
 	}
 
-	#grid-love {
-		grid-column: 1;
-		grid-row: 3;
-	}
-
-	#grid-dog {
-		grid-column: 1;
-		grid-row: 4;
-	}
-
-	#toggle-p {
-		width: 100%;
-		margin-left: 5px;
-	}
-	/************ Hébergements ****************/
-	#heb-pop {
-		width: 100%;
-		margin: 0;
-		display: grid;
-		grid-template-columns: 100%;
-		grid-template-rows: 30% 70%;
-		grid-row-gap: 5px;
-	}
-
-	.card-heb1 {
-		height: 100%;
-	}
-
-	#hebergements {
-		grid-row: 2;
-		grid-template-rows: 2% repeat(6, 1fr) 2%;
-		grid-row-gap: 25px;
-		justify-items: center;
-		width: 88%;
-		height: 100%;
-		background: none;
-		border-radius: 0;
-		padding-top: 40px;
-	}
-
-	#hebergements h2 {
-		grid-column: span 3;
-		grid-row: 1;
-		margin-right: 20px;
-	}
-
-	#grid-heb1 {
-		margin: 0;
-		grid-column: span 3;
-		grid-row: 2;
-		width: 100%;
-	}
-
-	#grid-heb2 {
-		margin: 0;
-		grid-column: span 3;
-		grid-row: 3;
-		width: 100%;
-	}
-
-	#grid-heb3 {
-		margin: 0;
-		grid-column: span 3;
-		grid-row: 4;
-		width: 100%;
-	}
-
-	#grid-heb4 {
-		margin: 0;
-		grid-column: span 3;
-		grid-row: 5;
-		width: 100%;
-	}
-
-	#grid-heb5 {
-		margin: 0;
-		grid-column: span 3;
-		grid-row: 6;
-		width: 100%;
-	}
-
-	#grid-heb6 {
-		margin: 0;
-		grid-column: span 3;
-		grid-row: 7;
-		width: 100%;
-	}
-
-	#more {
-		grid-column: span 3;
-		grid-row: 8;
-		margin-right: 155px;
-		width: 30%;
-	}
-
-	#more p {
-		margin-top: 35px;
-	}
-	/************ Populaires ****************/
-	aside {
-		grid-row-gap: 1px;
-		border-radius: 0;
-		width: 100%;
-		height: 90%;
-		justify-items: center;
-		padding: 0 0 20px 0;
-	}
-
-	aside h2 {
-		margin-left: 25px;
-		margin-bottom: 45px;
-	}
-
-	.stats {
-		align-self: end;
-		margin-right: 20px;
-	}
-
-	.card-pop1, .card-pop2, .card-pop3 {
-		width: 88%;
-		margin-bottom: 0;
-	}
-
-	.card-image-pop1 {
-		width: 35%;
-	}
-
-	.card-image-pop2 {
-		width: 35%;
-	}
-
-	.card-image-pop3 {
-		width: 35%;
-	}
-
-	/************ Activités ****************/
-	#activites {
+	.heb-pop, .hebergements, #activites {
 		grid-template-columns: 1fr;
-		/*grid-template-rows: 0.2fr 0.5fr 1fr 0.5fr;*/
-		justify-items: center;
-		grid-row-gap: 15px;
-		margin: 120px 0 60px 0;
-		height: 100%;
 	}
 
-	#activites > div {
-		grid-row-gap: 15px;
+	.populaires {
+		width: auto;
+		height: auto;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(4, 0.1fr);
 	}
 
-	#activites h2 {
-		/*height: 20px;*/
-		margin-bottom: 30px;
-		margin-left: 75px;
+	.heb-pop {
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.hebergements {
+		grid-template-columns: 1fr;
+		grid-row: 2;
+	}
+
+	.hebergements h2 {
 		grid-column: 1;
-		grid-row: 1;
 	}
 
-	.card-activites1, .card-activites2, .card-activites3,
-	.card-activites4, .card-activites5, .card-activites6 {
-		width: 100%;
-		height: 185px;
+	.activites {
+		grid-template-columns: 1fr;
 	}
 
-	.card-image-activites1, .card-image-activites2, .card-image-activites3,
-	.card-image-activites4, .card-image-activites5, .card-image-activites6 {
-		height: 75%;
+	.activites h2 {
+		grid-column: 1;
 	}
 
-	.card-image-activites1 img {
-		height: none;
-		top: 30%;
-		transform: translate(-57%, -40%);
+	.card-activites {	
+		grid-template-columns: 1fr;	
 	}
-
-	.card-activites1, .card-activites4{
-		width: 90%;
+	/*
+	.card-activites-bloc {
+		grid-template-columns: 1fr;
 	}
-
-	#grid-act2, #grid-act4 {
-		width: 90%;
-	}
-
-	.card-title-activites1 {
-		top: 10px;
-	}
-
-	.card-title-activites2, .card-title-activites3 {
-		bottom: 10px;
+	*/
+	footer #footer-infos {
+		grid-template-columns: 1fr;
 	}
 /*
-	#grid-act2 {
-		grid-column: 1;
-		grid-row: 3;
-		grid-row-gap: 15px;
-	}
-
-	#grid-act3 {
-		grid-column: 1;
-		grid-row: 4;
-	}
-
-	#grid-act4 {
-		grid-column: 1;
-		grid-row: 5;
-		grid-row-gap: 15px;
-	}
-
-	.card-image-activites1 img  {
-		width: 100%; 
-		position: absolute;
-		top: 15%; 
-		left: 50%; 
-		transform: translate(-50%, -28%); 
-		transition-duration: .3s;
-		transition-timing-function: ease;
-	}
-
-	.card-image-activites2 img {
-		width: 100%; 
-		position: absolute;
-		top: 13%; 
-		left: 50%; 
-		transform: translate(-50%, -38%); 
-		transition-duration: .3s;
-		transition-timing-function: ease;
-	}
-
-	.card-image-activites3 img {
-		width: 100%; 
-		position: absolute;
-		top: 23%; 
-		left: 50%; 
-		transform: translate(-50%, -28%); 
-		transition-duration: .3s;
-		transition-timing-function: ease;
-	}*/
-	/************ Footer ****************/
-	footer {
-		width: 100%;
-		height: 100%;
-	}
-
 	#footer-infos {
 		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 0.5fr 0.5fr;
 		padding: 25px;
-	}
-}
-
-/* Responsive Tablette */
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
-	/************ Global ****************/
-	.conteneur {
-		width: 100%;
-	}
-
-	body 
-	{
-		margin: 0;
-		width: auto;
-	}
-	/************ Header ****************/
-	header img {
-		margin-bottom: 45px;
-	}
-
-	header nav ul {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(3, 1fr);
-		justify-items: flex-end;
-	}
-
-	header nav ul li {
-		width: 160px;
-		text-align: center;
-		background: #0065FC;
-		border: 1px solid white;
-	}
-
-	.navheb, .navact, #navins {
-		padding: 2% 0;
-	}
-
-	header nav ul li {
-		background: lightblue;
-	}
-
-	header nav ul li a:hover {
-		color: #ffffff;
-	}
-
-	header nav ul li a:after {
-		position: relative;
-		bottom: 0;
-		left: 0;
-		content: "";
-		height: 0;
-	}
-	/************ Recherche ****************/
-	#search-bar {
-		width: 80%;
-	}
-
-
-	button { /******************** Icône à rajouter et ôter le texte *************************/
-		width: 50%;
-		/*left: 100%;*/
-	}
-
-	button::before {
-		font-family: "Font Awesome 5 Free"; 
-    	font-weight: 900; 
-    	color: white;
-    	content: "\f002"; 
-	}
-
-	.toggleBox {
-		display: grid;
-		grid-template-columns: 33% 33% 33%;
-		grid-template-rows: 50px 50px 50px 50px;
-		box-sizing: border-box;
-		grid-gap: 25px 110px;
-		height: 40%;
-		width: 100%;
-	}
-
-	.toggleBox p {
-		grid-column: 1;
-		grid-row: 1;
-	}
-
-	#grid-eco {
-		grid-column: 1;
-		grid-row: 2;
-	}
-
-	#grid-fam {
-		grid-column: 2;
-		grid-row: 3;
-		margin-right: 15px;
-	}
-
-	#grid-love {
-		grid-column: 2;
-		grid-row: 2;
-	}
-
-	#grid-dog {
-		grid-column: 1;
-		grid-row: 3;
-	}
-
-	#toggle-p {
-		width: 100%;
-		margin-left: 5px;
-	}
-
-	#heb-pop {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 200px 1fr;
-		grid-gap: 75px;
-		justify-items: center;
-		align-items: center;
-		margin-left: 60px;
-	}
-	/************ Populaires ****************/
-	aside {
-		width: 107%;
-		height: 250px;
-		grid-row: 1;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		/*grid-template-columns: minmax(min-content, 300px) minmax(200px, 1fr) 150px;*/
-		/*grid-template-columns: 1fr 1fr 1fr;*/
-		/*grid-template-rows: 0.1fr 0.2fr;*/
-		justify-content: flex-start;
-		grid-gap: 40px;
-		box-sizing: border-box;
-		
-		padding: 50px 25px 0 25px;
-		/*height: 100%;*/
-	}
-
-	aside h2 {
-		display: inline-grid;
-		margin-top: 115px;
-		grid-column: 1 / span 2;
-		grid-row: 1;
-
-		/*white-space: nowrap;*/
-	}
-
-	.stats {
-		display: none;
-	}
-
-	aside > div {
-		
-		/*display: grid;*/
-		/*grid-template-rows: 0.1fr 1fr;*/
-	}
-
-	.card-pop1 {
-		grid-column: 1;
-		grid-row: 2;
-		/*height: 45%;
-		width: 100%;*/
-	}
-
-	.card-pop2 {
-		grid-column: 2;
-		grid-row: 2;
-	}
-
-	.card-pop3 {
-		grid-column: 3;
-		grid-row: 2;
-	}
-/*
-	.card-body-pop1 {
-		width: 40%;
-		padding: 0 0 30px 0;
-	}*/
-/*
-	.card-except-pop1 {
-		width: 40%;
-		padding: 0 0 30px 0;
-	}*/
-/*
-	.card-except-pop1 i {
-		padding-bottom: 15px;
-		border: 1px solid blue;
-	}
-
-	.card-except-pop1 span {
-		padding-bottom: 15px;
-		border: 1px solid blue;
-	}
-*/
-	.card-title-pop1 h4 {
-		font-size: 12px;
-		box-sizing: border-box;
-	}
-
-	.card-info-pop1 p {
-		
-	}
-	.card-except-pop1 {
-		
-	}
-
-	#hebergements h2 {
-		margin-bottom: 25px;
-	}
-
-	.card-heb1 {
-		height: 90%;
-		
-	}
-
-	#more {
-		white-space: nowrap;
-	}
-
-	#more p {
-		margin-top: 25px;
-	}
-
-	/************ Activités ****************/
-	#activites {
-		/*max-width: */
-		width: 100%;
-		/*height: 500px;*/
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		/*grid-template-rows: 0.5fr 1fr 1fr;*/
-		margin: 25px; /****************************************à modif *****************/
-		grid-gap: 15px;
-		/*justify-items: space-between;*/
-		align-content: space-between;
-		/*align-items: stretch;*/
-	}
-
-	#activites > div {
-		grid-gap: 5px;
-	}
-
-	#activites h2 {
-		height: 20px;
-		margin-left: 5px;
-		grid-column: 1 / span 3;
-		margin-top: 55px;
-		/*grid-row: 1;
-		/*top: 40px;*/
-	}
-
-	.card-image-activites1 {
-		width: 100%;
-		
-		border: 1px solid yellow;
-	}
-
-	.card-image-activites2 {
-		/*height: 145px;
-	}
-
-	.card-image-activites3 {
-		/*height: 145p;*/
-	}
-
-	.card-activites1 {
-		grid-column: 1;
-		grid-row: 2;
-		margin-top: 2px;
-		width: 85%;
-		height: 126%;
-	}
-
-	.card-activites2 {
-		width: 85%;
-		height: 88%;
-	}
-
-	.card-activites3 {
-		width: 85%;
-		height: 108%;
-	}
-
-	.card-image-activites3 {
-		height: 88%;
-	}
-
-	.card-activites4 {
-		width: 85%;
-		height: 87%;
-	}
-
-	.card-activites5 {
-		width: 85%;
-		height: 85%;
-	}
-
-	.card-activites6 {
-		/*width: 100%;*/
-		height: 88%;
-	}
-
-	#grid-act2 {
-		/*display: grid;*/
-		grid-column: 2;
-		grid-row: 2 / span 2;
-		/*grid-row-gap: 70px;*/
-	}
-
-	#grid-act3 {
-		grid-column: 1;
-		grid-row: 3;
-		margin-bottom: 52px;
-	}
-
-	#grid-act4 {
-		grid-column: 3;
-		grid-row: 2 / span 2;
-		
-	}
-
-	.card-image-activites1 img  {
-		width: 100%; 
-		height: 100%;
-		position: absolute;
-		top: 30%; 
-		left: 50%; 
-		transform: translate(-50%, -38%); 
-		transition-duration: .3s;
-		transition-timing-function: ease;
-	}
-
-	.card-image-activites2 img {
-		width: 100%;
-		height: 100%; 
-		position: absolute;
-		top: 33%; 
-		left: 50%; 
-		transform: translate(-50%, -38%); 
-		transition-duration: .3s;
-		transition-timing-function: ease;
-	}
-
-	.card-image-activites3 img {
-		width: 100%; 
-		position: absolute;
-		top: 23%; 
-		left: 50%; 
-		transform: translate(-50%, -28%); 
-		transition-duration: .3s;
-		transition-timing-function: ease;
-	}
-
-	#activites h4 {
-		font-size: 12px;
-	}
-/*
-	.card-title-activites1 h4 {
-		margin: 4px;
-	}*/
-	/************ Footer ****************/
-	footer {
-		width: 100%;
 	}
 
 	#footer-infos > div {
-		margin: 25px;
-	}
+		display: grid;
+		grid-template-rows: 1fr 0.5fr 0.5fr;
+		
+	}*/
+}
+
+
+/**********************************************************************************************************************/
+														/* Container activités */
+/**********************************************************************************************************************/
+.activites {
+	
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	margin: 25px;
+	border: 1px solid blue;
+}
+
+.card-activites {	
+	border-radius: 25px;
+	background: #f2f2f2;		
+	background: lightblue;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);	
+	grid-gap: 20px;
+	padding: 25px;	
+	border: 1px solid blue;
+}
+
+.card-activites-bloc {
+	display: grid;
+	grid-template-rows: 0.1fr 0.2fr;
+	grid-gap: 20px;
+	background: purple;
 }
 
 
 
+/*
+.activites {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 0.1fr 1fr;
+}*/
+
+.activites h2 {
+	grid-column: span 4;
+}
+
+.card-act-title {
+	padding: 2px 15px;
+}
+
+.card-ui {
+	background: white;
+	border-radius: 25px;
+	height: 500px;
+}
+
+.activites a {
+	text-decoration: none;
+	color: black;
+}
+
+.card-act img {
+	object-fit: cover;
+	width: 100%;
+	height: 90%;
+	border-radius: 25px 25px 0 0;
+}
+
+.card-activites2 .card-ui {
+	height: 20%;
+}
+/*
+.card-activites2 .card-act {
+	height: 50%;
+}
+
+/*
+.card-activites1 .card-ui {
+	grid-column: 1;
+	grid-row: 2/ 3;
+}
+
+.card-activites2 {
+	grid-column: 2;
+	
+}
+
+.card-activites3 {
+	grid-column: 2;
+	grid-row: 3;
+}
+
+.card-activites4 {
+	grid-column: 3;
+	grid-row: 2/ span 2;
+}
+
+.card-activites5 {
+	grid-column: 4;
+	grid-row: 2;
+}
+
+.card-activites6 {
+	grid-column: 4;
+	grid-row: 3;
+}*/
 
 
+/*
+.card-activites2, .card-activites2 .card-act img {
+	height: 60%;
+}
+
+.card-activites3, .card-activites3 .card-act img {
+	height: 70%;
+}
+
+.card-activites-bloc {
+	width: 100%;
+	height: 500px;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 20px;
+	background: pink;
+}
+
+.card-activites1 {
+	grid-row: span 2;
+}*/
 
 
+/**********************************************************************************************************************/
+														/* Footer */
+/**********************************************************************************************************************/
+footer {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin-top: 40px;
+	height: 100%;
+	background-color: #F2F2F2;
+	border: 1px solid blue;
+}
 
+#footer-infos {
+	max-width: 1300px;
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer ul {
+	padding: 0;
+}
+
+footer li {
+	line-height: 30px;
+	font-size: 16px;
+}
+
+footer li a {
+	text-decoration: none;
+	color: black;
+}
+
+footer li a:hover {
+	color: #0065FC;
+}
+
+footer h3 {
+	margin-bottom: 0;
+}
