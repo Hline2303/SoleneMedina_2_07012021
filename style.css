@@ -10,6 +10,7 @@
 body {
 	padding: 0;
 	font-family: 'Raleway', sans-serif;
+	/*background: #303030;  Mode nuit */
 }
 
 h1 {
@@ -124,7 +125,7 @@ h1 {
 
 #search-bar {
 	margin-top: 20px;
-	width: 38%;
+	width: 100%;
 	display: flex;
 	box-sizing: border-box;
 }
@@ -135,7 +136,7 @@ h1 {
 	font-size: 24px;
 	border-radius: 14px 0 0 14px;
 	padding: 14px;
-	width: 10%;
+	/*width: 10%;*/
 	height: 32px;
 }
 
@@ -147,7 +148,7 @@ h1 {
 }
 
 input {
-	width: 100%;
+	/*width: 100%;*/
 }
 
 input #search {
@@ -171,7 +172,7 @@ button {
 	border: none;
 	border-radius: 0 14px 14px 0;
 	padding: 13px;
-	width: 30%;
+	/*width: 30%;*/
 	height: 60px;
 }
 
@@ -221,7 +222,7 @@ input[type="checkbox"] {
 	top: 26px;
 	 /* Taille de ....... */
 	height: 40px; /* ...... la checkbox */
-	background: white; /* Couleur de fond de la checkbox */
+	background: purple; /* Couleur de fond de la checkbox */ /* rendre transparent  avec opacity */
 	-webkit-appearance: none; /* Annule la forme de base de la checkbox */
 	border-radius: 20px; /* Arrondi la forme de la checkbox */
 	cursor: pointer; /* Modifie la forme du curseur de la souris flèche en main */
@@ -271,20 +272,20 @@ input:checked[type="checkbox"]::before {
 }
 
 input:checked[type="checkbox"][id="box-eco"]::before {
-	left: 95%; /* Déplacement du bouton vers la droite */
+	left: 91%; /* Déplacement du bouton vers la droite */
 	outline: none;
 }
 
 input:checked[type="checkbox"][id="box-fam"]::before {
-	left: 89%; 
+	left: 84%; 
 }
 
 input:checked[type="checkbox"][id="box-love"]::before {
-	left: 102%; 
+	left: 95%; 
 }
 
 input:checked[type="checkbox"][id="box-dog"]::before {
-	left: 96%; 
+	left: 89%; 
 }
 
 input[type="checkbox"]:hover::before {
@@ -301,9 +302,9 @@ label {
 	align-items: center;
 	color: black;
 	font-weight: 900;
-	font-size: 20px;
+	font-size: 16px;
 	background-color: white; 
-	width: 148px;
+	width: 80%;
 	height: 60px;
 	border-radius: 50px;
 	box-sizing: border-box; /* Permet de mettre un padding-right sur le texte sans modifier la width */
@@ -312,22 +313,22 @@ label {
 }
 
 #eco-btn {
-	width: 195px; /****** Modifier cette partie pour ...*/
-	padding: 10px;/******...changer la taille du bouton ainsi que label et la font-size***************/
+	width: 80%; /****** Modifier cette partie pour ...*/
+	padding: 10px;/******...changer la taille du bouton ainsi que label et la font-size et le bouton lors du clic***************/
 }
 
 #fam-btn { 
-	width: 160px;
+	width: 62%;
 	padding: 12px;
 }
 
 #love-btn { 
-	width: 185px;
+	width: 75%;
 	padding: 4px;
 }
 
 #dog-btn { 
-	width: 238px;
+	width: 98%;
 	padding: 2px;
 }
 
@@ -341,19 +342,19 @@ label {
 }
 
 #box-eco:checked ~ #eco-btn {
-	padding-right: 70px;
+	padding-right: 60px;
 }
 
 #box-fam:checked ~ #fam-btn {
-	padding-right: 70px;
+	padding-right: 60px;
 }
 
 #box-love:checked ~ #love-btn {
-	padding-right: 68px;
+	padding-right: 58px;
 }
 
 #box-dog:checked ~ #dog-btn { 
-	padding-right: 68px;
+	padding-right: 58px;
 }
 
 #info {
@@ -381,7 +382,8 @@ label {
 }
 
 .hebergements {
-	background: #f2f2f2;
+	background: #f2f2f2; /*Mode jour */
+	/* background: #303030; Mode nuit */
 	border-radius: 25px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr; /* Chaque colonne prendra une fraction de celles disponibles. Nous avons une seule colonne qui remplira toute la largeur */ 
@@ -394,7 +396,8 @@ label {
 }
 
 .card { /*** Essai sur activités ****/
-	background: white;
+	background: white; /*Mode jour */
+	/*background: #303030;  Mode nuit */
 	text-decoration: none;
 	color: #444;
 	box-shadow: 0 5px 18px #d8d7d7;
@@ -484,7 +487,8 @@ label {
 														/* Container populaires */
 /**********************************************************************************************************************/
 .populaires {
-	background: #f2f2f2;
+	background: #f2f2f2; /*Mode jour */
+	/*background: #303030;  Mode nuit */
 	border-radius: 25px;
 	margin: 0 auto;
 	display: grid;
@@ -509,7 +513,8 @@ label {
 }
 
 .card-pop {
-	background: white;
+	background: white; /*Mode jour */
+	/* background: #303030; Mode nuit */
 	text-decoration: none;
 	color: #444;
 	box-shadow: 0 5px 18px #d8d7d7;
@@ -617,10 +622,10 @@ label {
 		height: 0;
 	}
 
-	.recherche {
-		width: auto;
+	#search-bar {
+		/*width: 50%;*/
 	}
-
+/*
 	.toggleBox {
 		width: auto;
 		display: grid;
@@ -632,6 +637,27 @@ label {
 	.toggleBox p {
 		grid-column: span 2;
 	}
+/*
+	#eco-btn {
+		width: 175px; 
+		font-size: 16px;
+	}
+
+	#fam-btn { 
+		width: 140px;
+		font-size: 16px;
+	}
+
+	#love-btn { 
+		width: 165px;
+		font-size: 16px;
+	}
+
+	#dog-btn { 
+		width: 208px;
+		font-size: 16px;
+	}*/
+
 
 	#toggle-info {
 		display: flex;
@@ -655,19 +681,63 @@ label {
 	.populaires h2 {
 		grid-column: span 3;
 	}
-
+/*
 	.card-activites {	
 		grid-template-columns: 1fr 1fr 1fr;	
-	}
+	}*/
 
-	/*
+	
 	.activites {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-	*/
-	.activites h2 {
-		grid-column: 1;
+	
+
+	.cd-activites { 
+		grid-template-columns: 1fr;
 	}
+/*
+	.activites {
+		grid-template-columns: 1fr 1fr 1fr;
+	}*/
+
+	.activites h2 { 
+		/*grid-column: 1;
+		grid-row: 1;*/
+		
+	}
+
+
+	.card-act-1 {
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	.card-act-2 {
+		grid-column: 2;
+		grid-row: 2;
+	}
+
+	.card-act-3 {
+		grid-column: 3;
+		grid-row: 2;
+	}
+
+	.card-act-4 {
+		grid-column: 1;
+		grid-row: 3;
+	}
+
+	.card-act-5 {
+		grid-column: 2;
+		grid-row: 3;
+	}
+
+	.card-act-6 {
+		grid-column: 3;
+		grid-row: 3;
+	}
+
+
 	
 	footer #footer-infos {
 		grid-template-columns: 1fr;
@@ -733,9 +803,28 @@ label {
 		position: absolute;
 		top: 37px;
 	}
+
+	button {
+		position: absolute;
+		width: 14%;
+		border-radius: 30%;
+		left: 78%;
+	}
+
+	button::before {
+		font-family: "Font Awesome 5 Free"; 
+    	font-weight: 900; 
+    	color: white;
+    	content: "\f002"; 
+	}
+/*
 	.toggleBox {
+		width: auto;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 15px;
+		grid-column-gap: 2px;
+		grid-template-columns: 0.1fr 0.1fr;
+		grid-template-rows: 0.1fr 0.1fr 0;
 	}
 
 	.toggleBox p {
@@ -746,12 +835,32 @@ label {
 		display: flex;
 		padding-top: 25px;
 	}
+/*
+	#eco-btn {
+		width: 175px; 
+		font-size: 16px;
+	}
+
+	#fam-btn { 
+		width: 140px;
+		font-size: 16px;
+	}
+
+	#love-btn { 
+		width: 155px;
+		font-size: 16px;
+	}
+
+	#dog-btn { 
+		width: 188px;
+		font-size: 16px;
+	}*/
 
 	#toggle-info p {
 		margin-top: 0;
 	}
 
-	.heb-pop, .hebergements, #activites {
+	.heb-pop {
 		grid-template-columns: 1fr;
 	}
 
@@ -775,22 +884,25 @@ label {
 		grid-column: 1;
 	}
 
-	.activites {
-		grid-template-columns: 1fr;
-	}
-
-	.activites h2 {
-		grid-column: 1;
-	}
-
-	.card-activites {	
-		grid-template-columns: 1fr;	
-	}
 	/*
 	.card-activites-bloc {
 		grid-template-columns: 1fr;
 	}
 	*/
+
+	.cd-activites { /* a modif */
+		/*grid-template-columns: 1fr;*/
+	}
+
+	.activites {
+		grid-template-columns: 1fr;
+		
+	}
+
+	.activites h2 { /* a modif */
+		grid-column: 1;
+	}
+
 	footer #footer-infos {
 		grid-template-columns: 1fr;
 	}
@@ -811,6 +923,110 @@ label {
 /**********************************************************************************************************************/
 														/* Container activités */
 /**********************************************************************************************************************/
+.activites {
+	background: #f2f2f2;
+	border-radius: 25px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr; /* Chaque colonne prendra une fraction de celles disponibles. Nous avons une seule colonne qui remplira toute la largeur */ 
+	grid-template-rows: auto;
+	grid-gap: 20px;
+	padding: 25px;
+	border: 1px solid blue;
+}
+
+.activites h2 {
+	grid-column: 1/ span 4;
+	grid-row: 1;
+}
+/*
+.card-act-1 { /****** changer target, et prendre responsive hebergement tab et mob******/
+	/*grid-column: 1;
+	grid-row: 1/ span 2;
+}*/
+
+.card-act-1 {
+	grid-column: 1;
+	grid-row: 2/ span 2;
+}
+
+.card-act-2 {
+	grid-column: 2;
+	grid-row: 2;
+}
+
+.card-act-3 {
+	grid-column: 2;
+	grid-row: 3;
+}
+
+.card-act-4 {
+	grid-column: 3;
+	grid-row: 2/ span 2;
+}
+
+.card-act-5 {
+	grid-column: 4;
+	grid-row: 2;
+}
+
+.card-act-6 {
+	grid-column: 4;
+	grid-row: 3;
+}
+/*
+.bloc {en attente
+	display: grid;
+	grid-gap: 30px;
+}*/
+
+.card-act { /*** Essai sur activités ****/
+	background: white;
+	text-decoration: none;
+	color: #444;
+	box-shadow: 0 5px 18px #d8d7d7;
+	padding: 4px;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;/* Alignement vertical du contenu de la carte */
+	min-height: 100%;/* Toutes les cartes comblent la hauteur du parent */
+	position: relative;
+	top: 0;
+	transition: all .1s ease-in;
+}
+
+.card-act:hover .img-act {/* Soulèvement de la carte */
+	width: 100%;
+}  
+
+.card-act .content-act {/*content-heb*/
+	padding: 5px;
+}
+
+/* typo */
+.card-act h4 { /*h4*/
+	font-size: 16px;
+	margin: 0;
+	color: #333;
+}
+
+.card-act .img-act {
+	padding-bottom: 50%;
+	background-size: cover;
+	background-position: center center; /* Centrage de l'image */
+	overflow: hidden;
+	border-radius: 25px 25px 0 0;
+	transition-duration: .3s;
+	transition-timing-function: ease;
+	transform: scale(1);
+}
+
+.card-act .content-act h4, .card-act .content-act p {/*content-heb*/
+	padding: 5px;
+	flex: 1;
+}
+
+/****************En attente***********************/
+/*
 .activites {
 	
 	display: grid;
@@ -846,7 +1062,7 @@ label {
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 0.1fr 1fr;
 }*/
-
+/*
 .activites h2 {
 	grid-column: span 4;
 }

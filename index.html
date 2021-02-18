@@ -36,7 +36,7 @@
 					<p id="lieu">En plein centre ville ou en pleine nature</p>
 
 					<div id="search-bar">
-					<span id="location" class="fa fa-map-marker" aria-hidden="true"></span><input id="search" type="text" placeholder="Marseille, France"><button></button>
+					<span id="location" class="fa fa-map-marker" aria-hidden="true"></span><input id="search" type="text" value="Marseille, France"><button></button>
 					</div>
 
 					<div class="toggleBox">
@@ -247,15 +247,79 @@
 				</section>
 
 				<!-- Partie activités ligne 700 -->
-				<section class="activites">
+				<section class="cd-activites">
+					<article class="activites"><!-- Elément parent -->
+
+						<h2>Hébergements à Marseille</h2>
+						<div class="card-act-1"><!-- Elément enfant -->
+							<a href="#" class="card-act">
+								<div style="background-image:url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg)" alt="Port, bateaux et immeubles" class="img-act">
+								</div>
+								<div class="content-act">
+									<h4>Auberge la Cannebière</h4>			
+								</div>	
+							</a>
+						</div>
+						
+						<!--<div class="bloc">-->
+						<div class="card-act-2">								
+							<a href="#" class="card-act">				
+								<div style="background-image:url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg)" alt="Fort" class="img-act">
+								</div>
+								<div class="content-act">		
+									<h4>Hôtel du port</h4>	
+								</div>
+							</a>
+						</div>
+
+						<div class="card-act-3">							
+							<a href="#" class="card-act">					
+								<div style="background-image:url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg)" alt="Télescope donnant sur les Iles du Frioul" class="img-act">									
+								</div>
+								<div class="content-act">
+									<h4>Hôtel Les mouettes</h4>	
+								</div>
+							</a>
+						</div>
+						<!--</div>-->
+	
+						<div class="card-act-4">	
+							<a href="#" class="card-act">									
+								<div style="background-image:url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg)" alt="Calanques et la mer" class="img-act">								
+								</div>
+								<div class="content-act">
+									<h4>Hôtel de la mer</h4>
+								</div>
+							</a>
+						</div>
+						
+						<!--<div class="bloc">-->
+						<div class="card-act-5">
+							<a href="#" class="card-act">												
+								<div style="background-image:url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg)" alt="Basilique" class="img-act">
+								</div>	
+								<div class="content-act">
+									<h4>Auberge Le Panier</h4>							
+								</div>
+							</a>
+						</div>
+
+						<div class="card-act-6">
+							<a href="#" class="card-act">
+								<div style="background-image:url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg)" alt="Palais de Napoléon 3" class="img-act">
+								</div>
+								<div class="content-act">
+									<h4>Hôtel chez Amina</h4>				
+								</div>	
+							</a>
+						<!--</div>-->
+						</div>
+					</article>
+					<!--
 					<div class="card-activites">
 						<h2>Activités à Marseille</h2> 						
 		                    <div class="card-activites1 card-ui">
 		                        <a href="#" class="card-act">
-		                        	<!--
-		                            <div style="background-image:url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Port, bateaux et immeubles" class="thumb-act">
-		                            </div>
-		                        	-->
 		                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Port, bateaux et immeubles">		                               
 		                            <div class="card-act-title">
 		                            <h4>Vieux Port</h4>	
@@ -265,9 +329,7 @@
 
 		                   	<div class="card-activites-bloc">
 				                <div class="card-activites2 card-ui">
-				                    <a href="#" class="card-act">			                       				                        
-				                       <!--<div style="background-image:url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg)" alt="Fort" class="thumb-act">
-				                       </div>-->
+				                    <a href="#" class="card-act">
 				                       <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort">	    
 				                       <div class="card-act-title">
 				                       <h4>Fort de Pomègues</h4>
@@ -277,9 +339,7 @@
 
 				                <div class="card-activites3 card-ui">
 				                    <a href="#" class="card-act">
-				                        <!--<div style="background-image:url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg)" alt="Télescope donnant sur les Iles du Frioul" class="thumb-act">
-				                        </div>-->
-				                        <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Télescope donnant sur les Iles du Frioul">
+				                     <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Télescope donnant sur les Iles du Frioul">
 				                         <div class="card-act-title">
 				                         <h4>Îles du Frioul</h4>	
 				                         </div>			                         			
@@ -289,9 +349,7 @@
 		            
 			                <div class="card-activites4 card-ui">
 			                    <a href="#" class="card-act">
-			                       <!--<div style="background-image:url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg)" alt="Calanques et la mer" class="thumb-act">
-			                       </div>-->
-			                       <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques et la mer">
+			                      <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques et la mer">
 			                       <div class="card-act-title">
 			                       <h4>Parc National des Calanques</h4> 
 			                       </div> 
@@ -301,9 +359,7 @@
 			                <div class="card-activites-bloc">   
 				                <div class="card-activites5 card-ui">
 				                    <a href="#" class="card-act">
-				                       <!--<div style="background-image:url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg)" alt="Basilique" class="thumb-act">
-				                       </div>-->
-				                       <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Basilique">
+				                      <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Basilique">
 				                       <div class="card-act-title">
 				                       <h4>Notre-Dame-de-la-Garde</h4> 
 				                       </div>
@@ -312,8 +368,6 @@
 
 				                <div class="card-activites6 card-ui">
 				                    <a href="#" class="card-act">
-				                        <!--<div style="background-image:url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg)" alt="Palais de Napoléon 3" class="thumb-act">
-				                        </div>-->
 				                        <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Palais de Napoléon 3">
 				                        <div class="card-act-title">
 				                        <h4>Parc Longchamp</h4> 
@@ -321,7 +375,7 @@
 				                    </a>
 				                </div>	
 				            </div>	
-				        </div>               
+				        </div> -->              
 		        </section>					
 			</main>
 		</div>
