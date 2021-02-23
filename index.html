@@ -14,22 +14,22 @@
 	</head>
 	
 	<body>
-		<div id="conteneur">
-			<!-- Header ligne 29 -->
+		<!-- Header ligne 29 -->
 			<header>
-				<img src="images/logo/Reservia.svg" alt="logo reservia" width="130">
-				<nav>
-					<ul>
-						<li class="navheb"><a href="#hebergements" class="navheb">Hébergements</a></li>
-						<li class="navact"><a href="#activites" class="navact">Activités</a></li>
-						<li id="navins"><a href="">S'inscrire</a></li>
-						<span></span>
-					</ul>
-				</nav>
+				<div id="navigation">
+					<img src="images/logo/Reservia.svg" alt="logo reservia">
+					<nav>
+						<ul>
+							<li class="navheb"><a href="#hebergements">Hébergements</a></li>
+							<li class="navact"><a href="#activites">Activités</a></li>
+							<li id="navins"><a href="">S'inscrire</a></li>
+						</ul>
+					</nav>
+				</div>
 			</header>
 
 			<!-- Content -->
-			<main>
+			<main id="conteneur">
 				<!-- Zone de recherche ligne 101 -->
 				<section id="recherche">
 					<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -70,12 +70,12 @@
 
 				<!-- Partie hébergements ligne 352 -->
 				<section class="heb-pop">
-					<article class="hebergements"><!-- Elément parent -->
+					<article id="hebergements"><!-- Elément parent -->
 
 						<h2>Hébergements à Marseille</h2>
 						<div class="card-heb-1"><!-- Elément enfant -->
 							<a href="#" class="card">
-								<div style="background-image:url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg)" alt="lits superposés" class="img-heb">
+								<div alt="lits superposés" class="img-heb img-heb1">
 								</div>
 								<div class="content-heb">
 									<h4>Auberge la Cannebière</h4>			
@@ -93,7 +93,7 @@
 	
 						<div class="card-heb-2">								
 							<a href="#" class="card">				
-								<div style="background-image:url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg)" alt="2 lits" class="img-heb">
+								<div alt="2 lits" class="img-heb img-heb2">
 								</div>
 								<div class="content-heb">		
 									<h4>Hôtel du port</h4>	
@@ -111,7 +111,7 @@
 
 						<div class="card-heb-3">							
 							<a href="#" class="card">					
-								<div style="background-image:url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg)" alt="Lit et armoire avec miroir" class="img-heb">									
+								<div alt="Lit et armoire avec miroir" class="img-heb img-heb3">									
 								</div>
 								<div class="content-heb">
 									<h4>Hôtel Les mouettes</h4>	
@@ -129,7 +129,7 @@
 	
 						<div class="card-heb-4">	
 							<a href="#" class="card">									
-								<div style="background-image:url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg)" alt="Lit avec une peinture représentant des vagues" class="img-heb">								
+								<div alt="Lit avec une peinture représentant des vagues" class="img-heb img-heb4">								
 								</div>
 								<div class="content-heb">
 									<h4>Hôtel de la mer</h4>
@@ -147,7 +147,7 @@
 						
 						<div class="card-heb-5">
 							<a href="#" class="card">												
-								<div style="background-image:url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg)" alt="4 lits superposés en bois" class="img-heb">
+								<div alt="4 lits superposés en bois" class="img-heb img-heb5">
 								</div>	
 								<div class="content-heb">
 									<h4>Auberge Le Panier</h4>							
@@ -165,7 +165,7 @@
 
 						<div class="card-heb-6">
 							<a href="#" class="card">
-								<div style="background-image:url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg)" alt="Lit et bureau" class="img-heb">
+								<div alt="Lit et bureau" class="img-heb img-heb6">
 								</div>
 								<div class="content-heb">
 									<h4>Hôtel chez Amina</h4>				
@@ -192,7 +192,7 @@
 						</div>
 						<div class="card-pop-1"> <!--card-heb-6-->
 							<a href="#" class="card-pop"><!--card-->
-								<div style="background-image:url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg)" alt="Lit avec miroir au-dessus de la tête de lit" class="img-pop"><!--thumb-->
+								<div alt="Lit avec miroir au-dessus de la tête de lit" class="img-pop img-pop1"><!--thumb-->
 								</div>
 								<div class="content-pop"><!--content-heb-->
 									<h4>Hôtel Le soleil du matin</h4>
@@ -210,7 +210,7 @@
 
 						<div class="card-pop-2"> <!--card-heb-6-->
 							<a href="#" class="card-pop"><!--card-->
-								<div style="background-image:url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg)" alt="Lit 2 personnes" class="img-pop"><!--thumb-->
+								<div alt="Lit 2 personnes" class="img-pop img-pop2"><!--thumb-->
 								</div>
 								<div class="content-pop"><!--content-heb-->
 									<h4>Au coeur de l'eau Chambres d'hôtes</h4>
@@ -228,7 +228,7 @@
 
 						<div class="card-pop-3"> <!--card-heb-6-->
 							<a href="#" class="card-pop"><!--card-->
-								<div style="background-image:url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg)" alt="Lit 2 personnes" class="img-pop"><!--thumb-->
+								<div alt="Lit 2 personnes" class="img-pop img-pop3"><!--thumb-->
 								</div>
 								<div class="content-pop"><!--content-heb-->
 									<h4>Hôtel Tout bleu et Blanc</h4>				
@@ -247,138 +247,56 @@
 				</section>
 
 				<!-- Partie activités ligne 700 -->
-				<section class="cd-activites">
-					<article class="activites"><!-- Elément parent -->
 
-						<h2>Hébergements à Marseille</h2>
-						<div class="card-act-1"><!-- Elément enfant -->
-							<a href="#" class="card-act">
-								<div style="background-image:url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg)" alt="Port, bateaux et immeubles" class="img-act">
-								</div>
-								<div class="content-act">
-									<h4>Auberge la Cannebière</h4>			
-								</div>	
-							</a>
-						</div>
-						
-						<!--<div class="bloc">-->
-						<div class="card-act-2">								
-							<a href="#" class="card-act">				
-								<div style="background-image:url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg)" alt="Fort" class="img-act">
-								</div>
-								<div class="content-act">		
-									<h4>Hôtel du port</h4>	
-								</div>
-							</a>
-						</div>
+					<section id="activites"><!-- Elément parent grid --> 
+						<article class="grid-activites">
+							<h2>Activités à Marseille</h2>						
+							<div class="lgcard1"> <!-- Test en enlevant la div et mettre <a> en subgrid -->
+								<a href="#" alt="Port, bateaux et immeubles">
+									<div class="card-act act1">
+										<h4>Vieux Port</h4>
+									</div>
+								</a>
+							</div>
 
-						<div class="card-act-3">							
-							<a href="#" class="card-act">					
-								<div style="background-image:url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg)" alt="Télescope donnant sur les Iles du Frioul" class="img-act">									
-								</div>
-								<div class="content-act">
-									<h4>Hôtel Les mouettes</h4>	
-								</div>
-							</a>
-						</div>
-						<!--</div>-->
-	
-						<div class="card-act-4">	
-							<a href="#" class="card-act">									
-								<div style="background-image:url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg)" alt="Calanques et la mer" class="img-act">								
-								</div>
-								<div class="content-act">
-									<h4>Hôtel de la mer</h4>
-								</div>
-							</a>
-						</div>
-						
-						<!--<div class="bloc">-->
-						<div class="card-act-5">
-							<a href="#" class="card-act">												
-								<div style="background-image:url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg)" alt="Basilique" class="img-act">
-								</div>	
-								<div class="content-act">
-									<h4>Auberge Le Panier</h4>							
-								</div>
-							</a>
-						</div>
+							<div class="double1"> <!-- Test en enlevant la div et mettre <a> en subgrid -->
+								<a href="#" alt="Fort">
+									<div class="card-act act2">
+										<h4>Fort de Pomègues</h4>
+									</div>
+								</a>
 
-						<div class="card-act-6">
-							<a href="#" class="card-act">
-								<div style="background-image:url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg)" alt="Palais de Napoléon 3" class="img-act">
-								</div>
-								<div class="content-act">
-									<h4>Hôtel chez Amina</h4>				
-								</div>	
-							</a>
-						<!--</div>-->
-						</div>
-					</article>
-					<!--
-					<div class="card-activites">
-						<h2>Activités à Marseille</h2> 						
-		                    <div class="card-activites1 card-ui">
-		                        <a href="#" class="card-act">
-		                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Port, bateaux et immeubles">		                               
-		                            <div class="card-act-title">
-		                            <h4>Vieux Port</h4>	
-		                            </div>	                             
-		                    	</a>
-		                    </div>
+								<a href="#" alt="Télescope donnant sur les Iles du Frioul">
+									<div class="card-act act3">
+										<h4>Iles du Frioul</h4>
+									</div>	
+								</a>
+							</div>
 
-		                   	<div class="card-activites-bloc">
-				                <div class="card-activites2 card-ui">
-				                    <a href="#" class="card-act">
-				                       <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort">	    
-				                       <div class="card-act-title">
-				                       <h4>Fort de Pomègues</h4>
-				                       </div>				                        
-				                    </a>
-				                </div>
+							<div class="lgcard2"> <!-- Test en enlevant la div et mettre <a> en subgrid -->
+								<a href="#" alt="Calanques et la mer">
+									<div class="card-act act4">
+										<h4>Parc National des Calanques</h4>
+									</div>		
+								</a>
+							</div>
 
-				                <div class="card-activites3 card-ui">
-				                    <a href="#" class="card-act">
-				                     <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Télescope donnant sur les Iles du Frioul">
-				                         <div class="card-act-title">
-				                         <h4>Îles du Frioul</h4>	
-				                         </div>			                         			
-				                    </a>
-				                </div>
-			                </div>
-		            
-			                <div class="card-activites4 card-ui">
-			                    <a href="#" class="card-act">
-			                      <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques et la mer">
-			                       <div class="card-act-title">
-			                       <h4>Parc National des Calanques</h4> 
-			                       </div> 
-			                    </a>
-			                </div>
+							<div class="double2"> <!-- Test en enlevant la div et mettre <a> en subgrid -->
+								<a href="#" alt="Basilique">
+									<div class="card-act act5">
+										<h4>Notre-Dame-de-la-Garde</h4>
+									</div>	
+								</a>
 
-			                <div class="card-activites-bloc">   
-				                <div class="card-activites5 card-ui">
-				                    <a href="#" class="card-act">
-				                      <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Basilique">
-				                       <div class="card-act-title">
-				                       <h4>Notre-Dame-de-la-Garde</h4> 
-				                       </div>
-				                    </a>
-				                </div>
-
-				                <div class="card-activites6 card-ui">
-				                    <a href="#" class="card-act">
-				                        <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Palais de Napoléon 3">
-				                        <div class="card-act-title">
-				                        <h4>Parc Longchamp</h4> 
-				                    	</div>
-				                    </a>
-				                </div>	
-				            </div>	
-				        </div> -->              
-		        </section>					
+								<a href="#" alt="Palais de Napoléon 3">
+									<div class="card-act act6">
+										<h4>Parc Longchamp</h4>
+									</div>	
+								</a>
+							</div>
+						</article>	
+					</section>
 			</main>
-		</div>
 		<!-- Footer ligne 929 -->
 	    <footer>
 	    	<div id="footer-infos"> <!-- Elément parent -->
