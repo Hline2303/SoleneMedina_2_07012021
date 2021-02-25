@@ -167,6 +167,7 @@ button {
 	border: none;
 	border-radius: 0 14px 14px 0;
 	padding: 13px 17px;
+	outline-color: white;
 }
 
 button::before {
@@ -176,6 +177,8 @@ button::before {
 button:hover {
 	background: #cbe3fe;
 	cursor: pointer;
+	outline-color: white;
+	border-radius: 0 14px 14px 0;
 }
 
 /*********************** Filtres ********************/
@@ -350,7 +353,7 @@ label {
 	border-radius: 25px;
 	display: flex;
 	flex-direction: column;/* Alignement vertical du contenu de la carte */
-	min-height: 100%;/* Toutes les cartes comblent la hauteur du parent */
+	min-height: 90%;/* Toutes les cartes comblent la hauteur du parent */
 	position: relative;
 	top: 0;
 	transition-duration: .3s;
@@ -1056,6 +1059,11 @@ footer h3 {
     	content: "\f002"; 
 	}
 
+	button:hover::before {
+		color: #0065FC;
+		font-weight: 900;
+	}
+
 	.toggleBox {
 		width: auto;
 		flex-wrap: wrap;
@@ -1130,11 +1138,11 @@ footer h3 {
 	}
 
 	.card-pop .img-pop {
-		padding-left: 45%;
+		padding-left: 40%;
 	}
 
 	.card-pop {
-		min-height: 200px;
+		min-height: 170px;
 	}
 
 	.card-pop h4 {
@@ -1145,8 +1153,12 @@ footer h3 {
 		font-size: 18px;
 	}
 
+	.card-pop .content-pop {
+		padding: 5px 5px 5px 20px;
+	}
+
 	.content-pop .stars {
-		margin-top: 60px;
+		margin-top: 30px;
 	}
 
 	#hebergements {
@@ -1177,7 +1189,7 @@ footer h3 {
 	}
 
 	.card .content-heb {
-		padding: 5px 5px;
+		padding: 5px 10px;
 	}
 
 	#hebergements h2 {
@@ -1206,16 +1218,16 @@ footer h3 {
 	}
 
 	.card-act {
-		min-height: 200px;
+		min-height: 250px;
 	}
 
 	.act1 h4, .act4 h4 {
-		top: 125px;
+		top: 175px;
 	}
 
 	.act2 h4, .act3 h4,
 	.act5 h4, .act6 h4 {
-		top: 142px;
+		top: 192px;
 		
 	}
 
