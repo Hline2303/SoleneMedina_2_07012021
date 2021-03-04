@@ -987,7 +987,6 @@ footer h3 {
 
 	header nav ul li a {
 		width: 100%;
-		margin: 0;
 	}
 
 	header nav ul li a::after {
@@ -1050,7 +1049,7 @@ footer h3 {
 		position: absolute;
 		padding: 22px 27px;
 		border-radius: 30%;
-		left: 82%;
+		left: 80%;
 	}
 
 	button::before {
